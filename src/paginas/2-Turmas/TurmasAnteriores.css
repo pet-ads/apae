@@ -1,0 +1,14 @@
+.CarouselTurma{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.CarouselTurma .aluno{
+    cursor: grab;
+}
+.CarouselTurma img{
+    height: 250px;
+    width: auto;
+    margin: auto;
+    border-radius: 15px;
+}
