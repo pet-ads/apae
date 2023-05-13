@@ -1,77 +1,73 @@
-
 .img-home{
-    height: 689px;
-    width: 383px;
-    margin-right: 150px;
-    margin-top: 170px;
+    height: 89.8%;
+    width: 31.9%;
+    padding-right: 5%;
+    padding-top: 12%;
     float: right;
     position: relative;
     display: block;
-  }
+}
 
 
 .home-container{
     background-color: #ffffff;
-    background-position: 0% 0%;
-    height: 767px;
-    padding-left: 300px;
-    padding-top: 190px;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+    height: 89,8%;
+    width: 31,9%;
+    padding-left: 15%;
+    padding-top: 8%;
+    padding-bottom: 12%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
     display: block;
     z-index: 20;
 }
 
-
-.home-titulo-principal{
-    font-family: "Shadows Into Light";
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 82px;
-    text-decoration: none solid rgb(38,36,36);
-    text-align: left;
-    word-spacing: 0px;
-}
-
-
 .home-titulo-principal-container{
-    height: 300px;
-    width: 600px;
+    height: 39.2%;
+    width: 39.2%;
     position: relative;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
     display: block;
     z-index: 5;
 }
 
+
+.home-titulo-principal{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3vw;
+    font-weight: 100;
+    line-height: 5vw;
+    text-align: left;
+    word-spacing: 0vw;
+}
+
+
 .button-home{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 3vw;
     text-decoration: none solid rgb(38,36,36);
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
     word-spacing: 0px;
-    
-    background-color: #4633ee;
+    background-color: #10813c;
     color: #fff;
     background-position: 0% 0%;
-
-    height: 49px;
-    width: 200px;
-    padding: 8px 10px 2px 9px;
-
+    height: 6%;
+    width: 15%;
+    padding: 0.4% 1.1% 0.4% 1.1%;
     position: relative;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
     display: block;
     z-index: 7;
     cursor: pointer;
@@ -79,5 +75,4 @@
 }
 
 .button-home:hover {
-    background-color: #0f316e;
-  }
+    background-color: #1f6853;
