@@ -1,0 +1,35 @@
+.nav_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5em;
+
+    border-bottom: 3px green solid;
+}
+
+.nav_link a{
+    color: black;
+    text-decoration: none;
+    padding: 2em 1em;
+}
+
+.nav_link a:hover{
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    transition: color .7s, background-color .7s;
+}
+
+.vertical_line{
+    border-right: 2px grey solid;
+    height: 5em;
+    
+}
+
+img{
+    width: 7.2em;
+    height: 4.5em;
+    padding-left: 0.8em;
+    margin: 0px;
+}
