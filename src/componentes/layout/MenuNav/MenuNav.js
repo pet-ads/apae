@@ -4,18 +4,18 @@ import logo from './logo_navheader.png';
 
 function MenuNav(){
     return(
-
-        <nav className={styles.nav_container}>
-            <a className={styles.nav_link}><Link to="/">Home</Link></a>
-            <a className={styles.nav_link}><Link to="/Projeto">Projeto</Link></a>
-            <a className={styles.nav_link}><Link to="/Turmas">Turmas</Link></a>
-            <a className={styles.nav_link}><Link to="/Monitores">Monitores</Link></a>
-            <a className={styles.nav_link}><Link to="/Acoes">Ações</Link></a>
-            <a className={styles.nav_link}><Link to="/Blog">Blog</Link></a>
-            <a className={styles.nav_link}><Link to="/Contato">Contato</Link></a>
-            <div className={styles.vertical_line}></div>
+        <div className={styles.component_container}>
             <img src={logo} alt="Logo do IFSP e APAE" />
-        </nav>
+            <nav className={styles.nav_container}>
+                <a className={styles.nav_link}><Link to="/">Home</Link></a>
+                <a className={styles.nav_link}><Link to="/Projeto">Projeto</Link></a>
+                <a className={styles.nav_link}><Link to="/Turmas">Turmas</Link></a>
+                <a className={styles.nav_link}><Link to="/Monitores">Monitores</Link></a>
+                <a className={styles.nav_link}><Link to="/Acoes">Ações</Link></a>
+                <a className={styles.nav_link}><Link to="/Blog">Blog</Link></a>
+                <a className={styles.nav_link}><Link to="/Contato">Contato</Link></a>
+            </nav>
+        </div>
         /*
         <ul className={styles.list}>
             <li className={styles.item}>

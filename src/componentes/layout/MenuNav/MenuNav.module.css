@@ -1,11 +1,18 @@
+.component_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-top: green solid 5px;
+}
+
 .nav_container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     height: 5em;
-
-    border-bottom: 3px green solid;
+    font-size: larger;
 }
 
 .nav_link a{
@@ -21,15 +28,10 @@
     transition: color .7s, background-color .7s;
 }
 
-.vertical_line{
-    border-right: 2px grey solid;
-    height: 5em;
-    
-}
-
 img{
-    width: 7.2em;
-    height: 4.5em;
+    width: 9em;
+    height: 5.5em;
     padding-left: 0.8em;
+    padding-top: 1.2em;
     margin: 0px;
 }
