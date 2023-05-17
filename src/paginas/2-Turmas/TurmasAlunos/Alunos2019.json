@@ -1,4 +1,4 @@
-export const Turma2019 = [
+[
     {
         "id": "t20191",
         "name": "Amanda Cristina Motta de Oliveira",
@@ -63,5 +63,5 @@ export const Turma2019 = [
         "id": "t201913",
         "name": "Viviane de Paula Vieira ",
         "image": "AlunosFotos/AlunosFotos2019/Viviane de Paula Vieira .jpg"
-    },
+    }
 ]

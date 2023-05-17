@@ -1,4 +1,4 @@
-export const Turma2017 = [
+[
     {
         "id": "t20171",
         "name": "Fabiana",
@@ -32,7 +32,7 @@ export const Turma2017 = [
     },
     {
         "id": "t20177",
-        "name": "Vinicuis",
+        "name": "Vinicius",
         "image": "AlunosFotos/AlunosFotos2017/vinicius.jpg"
     },
     {

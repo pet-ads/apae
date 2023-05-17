@@ -1,4 +1,4 @@
-export const Turma2022 = [
+[
     {
         "id": "t20221",
         "name": "Adenilson Cardoso A Guimarães",
@@ -48,6 +48,5 @@ export const Turma2022 = [
         "id": "t202210",
         "name": "Paula Francismara M Urba",
         "image": "AlunosFotos/AlunosFotos2022/Paula Francismara M Urba.jpg"
-    },
-
+    }
 ]
