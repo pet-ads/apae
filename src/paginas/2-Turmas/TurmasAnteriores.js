@@ -76,13 +76,11 @@ const TurmasAnteriores = () => {
         <Slider {...settings}>
           {turma2017.map((item) => (
             <div className="CardAluno">
-              <div className="aluno">
-                <div className="foto">
-                  <img src={item.image} alt={item.name} />
-                </div>
-                <div className="nome">
-                  <p>{item.name}</p>
-                </div>
+              <div className="foto">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="nome">
+                <p>{item.name}</p>
               </div>
             </div>
           ))}
@@ -96,7 +94,6 @@ const TurmasAnteriores = () => {
         <Slider {...settings}>
           {turma2018.map((item) => (
             <div className="CardAluno">
-            <div className="aluno">
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -104,7 +101,6 @@ const TurmasAnteriores = () => {
                 <p>{item.name}</p>
               </div>
             </div>
-          </div>
           ))}
         </Slider>
       </div>
@@ -116,7 +112,6 @@ const TurmasAnteriores = () => {
         <Slider {...settings}>
           {turma2019.map((item) => (
             <div className="CardAluno">
-            <div className="aluno">
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -124,7 +119,6 @@ const TurmasAnteriores = () => {
                 <p>{item.name}</p>
               </div>
             </div>
-          </div>
           ))}
         </Slider>
 
@@ -136,7 +130,6 @@ const TurmasAnteriores = () => {
         <Slider {...settings}>
           {turma2022.map((item) => (
             <div className="CardAluno">
-            <div className="aluno">
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -144,7 +137,6 @@ const TurmasAnteriores = () => {
                 <p>{item.name}</p>
               </div>
             </div>
-          </div>
           ))}
         </Slider>
       </div>
