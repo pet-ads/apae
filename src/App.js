@@ -8,7 +8,7 @@ import Monitores from './paginas/3-Monitores/monitores';
 import Acoes from './paginas/4-Acoes/acoes';
 import Blog from './paginas/5-Blog/blog';
 import Contato from './paginas/6-Contato/contato';
-import MenuNav from './componentes/layout/MenuNav';
+import MenuNav from './componentes/layout/MenuNav/MenuNav';
 import Footer from './componentes/layout/Footer';
 
 function App() {
