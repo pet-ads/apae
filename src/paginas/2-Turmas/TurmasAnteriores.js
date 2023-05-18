@@ -15,7 +15,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block"}}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     />
   );
@@ -26,7 +26,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block"}}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     />
   );
@@ -70,53 +70,85 @@ const TurmasAnteriores = () => {
         <button className="Show2022Carousel" onClick={() => handleSlideChange(4)}>2022</button>
       </div>
 
-      <div className={`CarouselTurma2017 ${activeSlide === 1 ? 'active' : ''}`}>
+      <div className={`CarouselTurma2017 TurmaCards ${activeSlide === 1 ? 'active' : ''}`}>
+
         <h2> Turma 2017</h2>
         <Slider {...settings}>
           {turma2017.map((item) => (
-            <div className="aluno">
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
+            <div className="CardAluno">
+              <div className="aluno">
+                <div className="foto">
+                  <img src={item.image} alt={item.name} />
+                </div>
+                <div className="nome">
+                  <p>{item.name}</p>
+                </div>
+              </div>
             </div>
           ))}
         </Slider>
+
       </div>
 
       <div className={`CarouselTurma2018 ${activeSlide === 2 ? 'active' : ''}`}>
+
         <h2> Turma 2018</h2>
         <Slider {...settings}>
           {turma2018.map((item) => (
+            <div className="CardAluno">
             <div className="aluno">
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
+              <div className="foto">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="nome">
+                <p>{item.name}</p>
+              </div>
             </div>
+          </div>
           ))}
         </Slider>
       </div>
 
+
       <div className={`CarouselTurma2019 ${activeSlide === 3 ? 'active' : ''}`}>
         <h2> Turma 2019</h2>
+
         <Slider {...settings}>
           {turma2019.map((item) => (
+            <div className="CardAluno">
             <div className="aluno">
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
+              <div className="foto">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="nome">
+                <p>{item.name}</p>
+              </div>
             </div>
+          </div>
           ))}
         </Slider>
+
       </div>
 
       <div className={`CarouselTurma2022 ${activeSlide === 4 ? 'active' : ''}`}>
         <h2> Turma 2022</h2>
+
         <Slider {...settings}>
           {turma2022.map((item) => (
+            <div className="CardAluno">
             <div className="aluno">
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
+              <div className="foto">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="nome">
+                <p>{item.name}</p>
+              </div>
             </div>
+          </div>
           ))}
         </Slider>
       </div>
+
 
     </div>
   );
