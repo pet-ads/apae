@@ -1,0 +1,11 @@
+.footer{
+    background-color: #c4f2ff;
+}
+.list {
+    list-style: none;
+    align-content: center;
+}
+.p{
+    display: flex-box;
+    text-align: center;
+}
