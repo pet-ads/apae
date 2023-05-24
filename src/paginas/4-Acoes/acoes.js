@@ -1,12 +1,36 @@
-import "./acoes.css"
+import React from "react";
+import "./acoes.css";
+import Card from '../../componentes/Card_Acoes/card';
+import img_aula from '../../componentes/Card_Acoes/aula_informatica.jpg';
+import img_visita from '../../componentes/Card_Acoes/visita_tecnica.jpg';
+import img_palestra from '../../componentes/Card_Acoes/palestra.jpeg';
+
 
 export default function Acoes(){
     return(
-        <section className="acoes-container">
-            <h1>Ações</h1>
-            <p> O projeto prevê três ações: aulas de informática básica, visita técnica à APAE e uma palestra sobre deficiência intelectual.</p>
-            <p>Em relação ao curso de informática, os alunos aprendem desde a fazer tarefas básicas, como ligar o computador, manusear o mouse e escrever com o teclado, até em mexer em softwares específicos, como o browser e aplicativos do LibreOffice. Em relação à visita técnica, é marcada uma data para que os alunos bolsistas e voluntários façam uma visita técnica à APAE para conhecer o espaço e o trabalho desenvolvido nesta instituição. Sobre a palestra, é convidado um um profissional da APAE para ministrar uma palestra no IFSP sobre as pessoas com deficiência intelectual.</p>
-            <h4>CARDS??</h4>
-        </section>
+        <div className="acoes-container">
+            <h4>Ações</h4>
+            <div className="cards-container-geral">
+             <div className="cards-container">
+                <Card 
+                    title='Aulas de Informática'
+                    imageUrl={img_aula}
+                    body='No curso de informática, os alunos aprendem desde a fazer tarefas básicas, como ligar o computador, manusear o mouse e escrever com o teclado, até em mexer em softwares específicos, como o browser e aplicativos do LibreOffice.'
+                />
+
+                <Card 
+                    title='Visita Técnica'
+                    imageUrl={img_visita}
+                    body='Na visita técnica, é marcada uma data para que os alunos bolsistas e voluntários façam uma visita técnica à APAE para conhecer o espaço e o trabalho desenvolvido nesta instituição.'
+                />
+
+                <Card
+                    title='Palestra'
+                    imageUrl={img_palestra}
+                    body='Na palestra é convidado um um profissional da APAE para ministrar uma palestra no IFSP sobre as pessoas com deficiência intelectual.'
+                />
+            </div>
+        </div>
+        </div>
     )
 }
