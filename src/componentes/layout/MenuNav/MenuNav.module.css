@@ -1,4 +1,4 @@
-.component_container{
+.component_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,29 +6,29 @@
     border-top: green solid 5px;
 }
 
-.nav_container{
+.list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     height: 5em;
     font-size: larger;
+    list-style: none;
 }
 
-.nav_link a{
+.item a {
     color: black;
-    text-decoration: none;
     padding: 2em 1em;
 }
 
-.nav_link a:hover{
+.item a:hover {
     color: white;
     background-color: green;
     text-decoration: none;
     transition: color .7s, background-color .7s;
 }
 
-img{
+img {
     width: 9em;
     height: 5.5em;
     padding-left: 0.8em;

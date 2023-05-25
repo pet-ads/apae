@@ -1,0 +1,27 @@
+.footer{
+    display: flex-box;
+    flex-direction: row;
+    border-bottom:green solid 5px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.item a{
+    color: black;
+    padding: 2em 1em;
+    text-decoration: none;
+}
+
+.p {
+    display: flex-box;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+}

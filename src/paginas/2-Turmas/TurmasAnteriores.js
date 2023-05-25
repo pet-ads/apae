@@ -1,14 +1,13 @@
-import React from "react";
-import { useState, useEffect } from 'react';
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./TurmasAnteriores.css"
+import "slick-carousel/slick/slick.css";
+import "./TurmasAnteriores.css";
 
 import alunos2017 from './TurmasAlunos/Alunos2017.json';
-import alunos2018 from './TurmasAlunos/Alunos2018.json'
-import alunos2019 from './TurmasAlunos/Alunos2019.json'
-import alunos2022 from './TurmasAlunos/Alunos2022.json'
+import alunos2018 from './TurmasAlunos/Alunos2018.json';
+import alunos2019 from './TurmasAlunos/Alunos2019.json';
+import alunos2022 from './TurmasAlunos/Alunos2022.json';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -135,7 +134,6 @@ const TurmasAnteriores = () => {
           ))}
         </Slider>
       </div>
-      
     </div>
   );
 }
