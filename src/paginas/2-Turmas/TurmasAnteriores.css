@@ -1,28 +1,81 @@
 .CarouselTurma{
-    width: 80%;
-    margin: auto;
-    text-align: center;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
 
+.CarouselTurma * h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 1.5vw;
+  color: #001a3b;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.CarouselTurma .CardAluno{
-    cursor: grab;
-}
-.CarouselTurma img{
-    height: 200px;
-    width: auto;
-    margin: auto;
 
+.CarouselTurma .CardAluno {
+  cursor: grab;
+  height: 350px;
+  color: #001a3b;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1vw;
+  box-sizing: border-box;
 }
+
+.CarouselTurma .CardAluno:hover{
+  transform: scale(1.02);
+}
+
+.CarouselTurma .CardAluno img{
+  padding: 10px;
+  height: 300px;
+  width: auto;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #10813c;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #10813c;
+}
+
+.ButtonsTurmas * {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 24px;
+  background-color: #10813c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.ButtonsTurmas *:hover {
+  background-color: #0f3100;
+}
+
 .CarouselTurma2017,
 .CarouselTurma2018,
 .CarouselTurma2019,
 .CarouselTurma2022 {
-  display: none;
+display: none;
 }
 
 .CarouselTurma2017.active,
 .CarouselTurma2018.active,
 .CarouselTurma2019.active,
 .CarouselTurma2022.active {
-  display: block;
+display: block;
 }
