@@ -1,4 +1,14 @@
 .turmas-container{
-    background-color: #FF6969;
-    height: 500px;
+    background-color: white;
+    height: 650px;
+}
+.turmas-container h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 2.3vw;
+    background-color: #10813c;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
