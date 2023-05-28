@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     return(
-        <body>
+        <div>
             <section className="home-container">
             <div className="img-home">
                 <img src="./imagem-home.apae.jpg" alt="Img_Home"/>
@@ -16,6 +16,6 @@ export default function Home() {
         
         <Link to="/projeto" className="button-home" as="button">Conheça o projeto</Link>
             </section>
-        </body>
+        </div>
     )  
 }

@@ -1,30 +1,31 @@
 import React from 'react';
 import styles from "./Footer.module.css"
+
 function Footer({ scrollToSection }) {
   return (
     <div className={styles.footer}>
       <nav className="Footer">
         <ul className={styles.list}>
           <li className={styles.item}>
-            <a href="#home" onClick={() => scrollToSection("home")}>Home</a>
+            <button onClick={() => scrollToSection("home")}>Home</button>
           </li>
           <li className={styles.item}>
-            <a href="#projeto" onClick={() => scrollToSection("projeto")}>Projeto</a>
+            <button onClick={() => scrollToSection("projeto")}>Projeto</button>
           </li>
           <li className={styles.item}>
-            <a href="#turmas" onClick={() => scrollToSection("turmas")}>Turmas</a>
+            <button onClick={() => scrollToSection("turmas")}>Turmas</button>
           </li>
-          <li  className={styles.item}>
-            <a href="#monitores" onClick={() => scrollToSection("monitores")}>Monitores</a>
+          <li className={styles.item}>
+            <button onClick={() => scrollToSection("monitores")}>Monitores</button>
           </li>
-          <li  className={styles.item}>
-            <a href="#acoes" onClick={() => scrollToSection("acoes")}>Ações</a>
+          <li className={styles.item}>
+            <button onClick={() => scrollToSection("acoes")}>Ações</button>
           </li>
-          <li  className={styles.item}>
-            <a href="#blog" onClick={() => scrollToSection("blog")}>Blog</a>
+          <li className={styles.item}>
+            <button onClick={() => scrollToSection("blog")}>Blog</button>
           </li>
-          <li  className={styles.item}>
-            <a href="#contato" onClick={() => scrollToSection("contato")}>Contato</a>
+          <li className={styles.item}>
+            <button onClick={() => scrollToSection("contato")}>Contato</button>
           </li>
         </ul>
       </nav>
@@ -33,4 +34,4 @@ function Footer({ scrollToSection }) {
   );
 }
 
-export default Footer;
+export default Footer
