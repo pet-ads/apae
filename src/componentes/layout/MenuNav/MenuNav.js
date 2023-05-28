@@ -6,28 +6,28 @@ function MenuNav({ scrollToSection }) {
   return (
     <div className={styles.component_container}>
       <img src={logo} alt="Logo do IFSP e APAE" />
-      <nav className="MenuNav">
+      <nav>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <a href="#home" onClick={() => scrollToSection("home")}>Home</a>
+            <button onClick={() => scrollToSection("home")}>Home</button>
           </li>
           <li className={styles.item}>
-            <a href="#projeto" onClick={() => scrollToSection("projeto")}>Projeto</a>
+            <button onClick={() => scrollToSection("projeto")}>Projeto</button>
           </li>
           <li className={styles.item}>
-            <a href="#turmas" onClick={() => scrollToSection("turmas")}>Turmas</a>
+            <button onClick={() => scrollToSection("turmas")}>Turmas</button>
           </li>
           <li className={styles.item}>
-            <a href="#monitores" onClick={() => scrollToSection("monitores")}>Monitores</a>
+            <button onClick={() => scrollToSection("monitores")}>Monitores</button>
           </li>
           <li className={styles.item}>
-            <a href="#acoes" onClick={() => scrollToSection("acoes")}>Ações</a>
+            <button onClick={() => scrollToSection("acoes")}>Ações</button>
           </li>
           <li className={styles.item}>
-            <a href="#blog" onClick={() => scrollToSection("blog")}>Blog</a>
+            <button onClick={() => scrollToSection("blog")}>Blog</button>
           </li>
           <li className={styles.item}>
-            <a href="#contato" onClick={() => scrollToSection("contato")}>Contato</a>
+            <button onClick={() => scrollToSection("contato")}>Contato</button>
           </li>
         </ul>
       </nav>
@@ -36,4 +36,6 @@ function MenuNav({ scrollToSection }) {
 }
 
 export default MenuNav;
+
+
 

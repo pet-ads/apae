@@ -13,51 +13,52 @@ import Home from './paginas/Home/home';
 function App() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    let ordinate = element.offsetTop-120;
+    window.scroll({ top: ordinate, behavior: 'smooth' });
   };
 
   return (
-    <Router>
+    <div>
       <div>
         <MenuNav scrollToSection={scrollToSection} />
       </div>
 
-      <div id="ancoras">
-        <section id="home">
-          <Home />
-        </section>
+      <Router>
+        <div id="ancoras">
+          <section id="home">
+            <Home />
+          </section>
 
-        <section id="projeto">
-          <Projeto />
-        </section>
+          <section id="projeto">
+            <Projeto />
+          </section>
 
-        <section id="turmas">
-          <Turmas />
-        </section>
+          <section id="turmas">
+            <Turmas />
+          </section>
 
-        <section id="monitores">
-          <Monitores />
-        </section>
+          <section id="monitores">
+            <Monitores />
+          </section>
 
-        <section id="acoes">
-          <Acoes />
-        </section>
+          <section id="acoes">
+            <Acoes />
+          </section>
 
-        <section id="blog">
-          <Blog />
-        </section>
+          <section id="blog">
+            <Blog />
+          </section>
 
-        <section id="contato">
-          <Contato />
-        </section>
-      </div>
+          <section id="contato">
+            <Contato />
+          </section>
+        </div>
+      </Router>
 
       <div>
         <Footer scrollToSection={scrollToSection} />
       </div>
-    </Router>
+    </div>
   );
 }
 

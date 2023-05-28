@@ -1,8 +1,16 @@
-.footer{
-    display: flex-box;
-    flex-direction: row;
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: rgba(0, 128, 0, 0.473) solid 5px;
     border-bottom:green solid 5px;
-}
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    margin-top: -200;
+  }
 
 .list {
     display: flex;
@@ -10,18 +18,20 @@
     justify-content: center;
     font-size: small;
     list-style: none;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
-.item a{
-    color: black;
-    padding: 2em 1em;
+.item button{
+    padding: 0.8em 1em;
+    background-color: transparent; 
+    border: none; 
     text-decoration: none;
 }
 
 .p {
-    display: flex-box;
     align-items: center;
     font-size: small;
     text-align: center;
+    height: 10px;
+    margin-bottom: 20px;
 }
