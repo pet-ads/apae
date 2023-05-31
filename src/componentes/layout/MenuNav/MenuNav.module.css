@@ -1,46 +1,45 @@
 .component_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: green solid 5px;
-    border-bottom: rgba(0, 128, 0, 0.473) solid 5px;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    width: 100%;
-    background-color: white;
-  }
-  
-  .list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    height: 5em;
-    list-style: none;
-  }
-  
-  .item button {
-    color: black;
-    padding: 2em 1em;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size:larger;
-  }
-  
-  .item button:hover {
-    color: white;
-    background-color: green;
-    text-decoration: none;
-    transition: color 0.7s, background-color 0.7s;
-  }
-  
-  img {
-    width: 9em;
-    height: 5.5em;
-    padding-left: 0.8em;
-    padding-top: 1.2em;
-    margin: 0px;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: green solid 5px;
+  border-bottom: rgba(0, 128, 0, 0.473) solid 5px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4.2em;
+  list-style: none;
+}
+
+.item button {
+  color: black;
+  padding: 2em 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size:larger;
+}
+
+.item button:hover {
+  color: white;
+  background-color: #10813c;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+img {
+  width: 9em;
+  height: 5.5em;
+  padding-left: 1.2em;
+  padding-top: 0.3em;
+  margin: 0px;
+}

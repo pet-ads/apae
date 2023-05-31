@@ -17,15 +17,15 @@
     align-items: center;
     justify-content: center;
     font-size: small;
+    font-family: Arial;
     list-style: none;
-    padding-top: 5px;
 }
 
 .item button{
-    padding: 0.8em 1em;
     background-color: transparent; 
     border: none; 
     text-decoration: none;
+    color: gray;
 }
 
 .p {
@@ -33,5 +33,7 @@
     font-size: small;
     text-align: center;
     height: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: Arial;
+    color: gray;
 }

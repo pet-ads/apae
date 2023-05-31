@@ -9,11 +9,12 @@ import Acoes from './paginas/4-Acoes/acoes';
 import Blog from './paginas/5-Blog/blog';
 import Contato from './paginas/6-Contato/contato';
 import Home from './paginas/Home/home';
+import './App.css';
 
 function App() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
-    let ordinate = element.offsetTop-120;
+    let ordinate = element.offsetTop-106;
     window.scroll({ top: ordinate, behavior: 'smooth' });
   };
 
