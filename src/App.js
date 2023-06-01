@@ -46,13 +46,14 @@ function App() {
             <Acoes />
           </section>
 
+          <section id="contato">
+            <Contato />
+          </section>
+
           <section id="blog">
             <Blog />
           </section>
 
-          <section id="contato">
-            <Contato />
-          </section>
         </div>
       </Router>
 
