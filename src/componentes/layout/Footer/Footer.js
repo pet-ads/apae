@@ -16,7 +16,7 @@ function Footer({ scrollToSection }) {
             <button onClick={() => scrollToSection("turmas")}>Turmas</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("monitores")}>Monitores</button>
+            <button onClick={() => scrollToSection("equipe")}>Monitores</button>
           </li>
           <li className={styles.item}>
             <button onClick={() => scrollToSection("acoes")}>Ações</button>
