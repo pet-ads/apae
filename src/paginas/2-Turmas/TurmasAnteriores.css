@@ -4,33 +4,25 @@
   text-align: center;
 }
 
-.CarouselTurma * h2 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: block;
-  text-align: center;
-  font-size: 1.5vw;
-  color: #001a3b;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .CarouselTurma .CardAluno {
   cursor: grab;
-  height: 350px;
-  color: #001a3b;
+  height: 380px;
+  color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1vw;
   box-sizing: border-box;
 }
 
-.CarouselTurma .CardAluno:hover {
-  transform: scale(1.02);
+.CarouselTurma .CardAluno p {
+  text-align: center !important;
+  max-width: 180px;
+  margin: auto;
 }
 
 .CarouselTurma .CardAluno img {
   padding: 10px;
   height: 300px;
-  width: auto;
+  width: 200px;
   margin: auto;
   border-radius: 30px;
 }
@@ -46,9 +38,13 @@
   color: #10813c;
 }
 
+.ButtonsTurmas {
+  margin-bottom: 30px;
+}
+
 .ButtonsTurmas * {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 30px;
   padding: 12px 24px;
   background-color: #10813c;
   color: #fff;
@@ -69,13 +65,31 @@
 .CarouselTurma2017,
 .CarouselTurma2018,
 .CarouselTurma2019,
-.CarouselTurma2022 {
+.CarouselTurma2022,
+.CarouselTurma2023 {
   display: none;
 }
 
 .CarouselTurma2017.active,
 .CarouselTurma2018.active,
 .CarouselTurma2019.active,
-.CarouselTurma2022.active {
+.CarouselTurma2022.active,
+.CarouselTurma2023.active {
   display: block;
+}
+
+.Show2017Carousel,
+.Show2018Carousel,
+.Show2019Carousel,
+.Show2022Carousel,
+.Show2023Carousel {
+  background-color: #10813c;
+}
+
+.Show2017Carousel.selected,
+.Show2018Carousel.selected,
+.Show2019Carousel.selected,
+.Show2022Carousel.selected,
+.Show2023Carousel.selected {
+  background-color: #0f3100;
 }

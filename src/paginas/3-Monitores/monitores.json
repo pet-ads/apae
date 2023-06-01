@@ -1,0 +1,37 @@
+[
+    {
+        "id": "monit1",
+        "name": "Ana Clara Colognezi",
+        "image": "MonitoresFotos/Ana Clara Colognezi.jpeg"
+    },
+    {
+        "id": "monit2",
+        "name": "Ana Lívia Hernandes da Motta",
+        "image": "MonitoresFotos/Ana Lívia Hernandes da Motta.jpeg"
+    },
+    {
+        "id": "monit3",
+        "name": "Heloisa Alves da Silva",
+        "image": "MonitoresFotos/Heloisa Alves da Silva.jpeg"
+    },
+    {
+        "id": "monit4",
+        "name": "Isabelly de Cassia Benedito",
+        "image": "MonitoresFotos/Isabelly de Cassia Benedito.jpeg"
+    },
+    {
+        "id": "monit5",
+        "name": "Kamila Aleixo Hungaro",
+        "image": "MonitoresFotos/Kamila Aleixo Hungaro.jpeg"
+    },
+    {
+        "id": "monit6",
+        "name": "Letícia Kaori Yabuuti",
+        "image": "MonitoresFotos/Letícia Kaori Yabuuti.jpeg"
+    },
+    {
+        "id": "monit7",
+        "name": "Valentine Lorena Ferrarini do Amaral",
+        "image": "MonitoresFotos/Valentine Lorena Ferrarini do Amaral.jpeg"
+    }
+]
