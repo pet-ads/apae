@@ -20,7 +20,7 @@ function MenuNav({ scrollToSection }) {
             <button onClick={() => scrollToSection("turmas")}>Turmas</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("monitores")}>Monitores</button>
+            <button onClick={() => scrollToSection("equipe")}>Equipe</button>
           </li>
           <li className={styles.item}>
             <button onClick={() => scrollToSection("acoes")}>Ações</button>
