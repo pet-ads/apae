@@ -4,7 +4,7 @@ import Footer from './componentes/layout/Footer/Footer.js';
 import MenuNav from './componentes/layout/MenuNav/MenuNav.js';
 import Projeto from './paginas/1-Projeto/projeto';
 import Turmas from './paginas/2-Turmas/turmas';
-import Monitores from './paginas/3-Monitores/monitores';
+import Equipe from './paginas/3-Equipe/equipe';
 import Acoes from './paginas/4-Acoes/acoes';
 import Blog from './paginas/5-Blog/blog';
 import Contato from './paginas/6-Contato/contato';
@@ -38,8 +38,8 @@ function App() {
             <Turmas />
           </section>
 
-          <section id="monitores">
-            <Monitores />
+          <section id="equipe">
+            <Equipe />
           </section>
 
           <section id="acoes">

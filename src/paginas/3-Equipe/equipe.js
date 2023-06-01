@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "./monitores.css"
+import "./equipe.css"
 
 import monitoresInfo from './monitores.json';
 import professoresInfo from './professores.json';
