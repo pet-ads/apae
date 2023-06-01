@@ -1,5 +1,73 @@
-.contato-container{
-    background-color: #e0a251;
+.contato-container {
+    background-color: #F7F7F7;
     height: 500px;
     margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.titulo-container-contato{
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 2.8vw;   
+    padding-bottom: 5%;
+    margin-top: auto;
+    text-align: center;
+    
+
+    
+    
 }
+  
+  
+  .contato-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: -30px;
+  }
+  
+  .mapa-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 370px;
+    margin-left: 370px;
+  }
+  
+  .mapa-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .mapaApae,
+  .mapaIFSP {
+    width: 200px;
+    height: 160px;
+    gap: 10px;
+    
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 17px;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
