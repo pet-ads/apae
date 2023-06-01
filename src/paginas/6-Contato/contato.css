@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
+
 .titulo-container-contato{
 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -14,10 +15,6 @@
     padding-bottom: 5%;
     margin-top: auto;
     text-align: center;
-    
-
-    
-    
 }
   
   
@@ -60,14 +57,4 @@
     margin-bottom: 17px;
     
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   

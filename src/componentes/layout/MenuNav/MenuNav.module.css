@@ -36,10 +36,9 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-img {
+.logo{
   width: 9em;
   height: 5.5em;
-  padding-left: 1.2em;
-  padding-top: 0.3em;
-  margin: 0px;
+  margin-left: 20px;
+  margin-top: 6px;
 }

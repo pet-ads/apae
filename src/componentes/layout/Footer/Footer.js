@@ -22,10 +22,10 @@ function Footer({ scrollToSection }) {
             <button onClick={() => scrollToSection("acoes")}>Ações</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("blog")}>Blog</button>
+            <button onClick={() => scrollToSection("contato")}>Contato</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("contato")}>Contato</button>
+            <button onClick={() => scrollToSection("blog")}>Blog</button>
           </li>
         </ul>
       </nav>
