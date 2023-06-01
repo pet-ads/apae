@@ -1,4 +1,121 @@
-.monitores-container{
-    background-color: #FFD3B0;
-    height: 500px;
+.monitores-container {
+    background-color: #fff;
+    height: 650px;
+}
+
+.monitores-container h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    text-align: left;
+    font-size: 2.3vw;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8%;
+}
+
+.CarouselMonitores {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.CarouselMonitores .CardMonitor {
+    cursor: grab;
+    height: 380px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+
+.CarouselMonitores .CardMonitor p {
+    text-align: center !important;
+    max-width: 180px;
+    margin: auto;
+}
+
+.CarouselMonitores .CardMonitor img {
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.CarouselProfessores {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.CarouselProfessores .CardProfessor {
+    cursor: grab;
+    height: 380px;
+    color: #001a3b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+
+.CarouselProfessores .CardProfessor p {
+    text-align: center !important;
+    max-width: 180px;
+    margin: auto;
+}
+
+.CarouselProfessores .CardProfessor img {
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.ButtonsEquipe {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ButtonsEquipe * {
+    display: inline-block;
+    margin: 0 30px;
+    padding: 12px 24px;
+    background-color: #10813c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.ButtonsEquipe *:hover {
+    background-color: #0f3100;
+}
+
+.CarouselProfessores,
+.CarouselMonitores {
+    display: none;
+}
+
+.CarouselProfessores.active,
+.CarouselMonitores.active {
+    display: block;
+}
+
+.ShowMonitoresCarousel,
+.ShowProfessoresCarousel {
+    background-color: #10813c;
+}
+
+.ShowMonitoresCarousel.selected,
+.ShowProfessoresCarousel.selected {
+    background-color: #0f3100;
 }

@@ -8,6 +8,7 @@ import alunos2017 from './TurmasAlunos/Alunos2017.json';
 import alunos2018 from './TurmasAlunos/Alunos2018.json';
 import alunos2019 from './TurmasAlunos/Alunos2019.json';
 import alunos2022 from './TurmasAlunos/Alunos2022.json';
+import alunos2023 from './TurmasAlunos/Alunos2023.json';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -45,10 +46,15 @@ const TurmasAnteriores = () => {
   const [turma2022, setTurma2022] = useState([]);
   useEffect(() => { setTurma2022(alunos2022); }, []);
 
-  const [activeSlide, setActiveSlide] = useState(4);
+  const [turma2023, setTurma2023] = useState([]);
+  useEffect(() => { setTurma2023(alunos2023); }, []);
+
+  const [activeSlide, setActiveSlide] = useState(5);
   const handleSlideChange = (slideNumber) => {
     setActiveSlide(slideNumber);
   };
+
+  const [selectedButton, setSelectedButton] = useState(5);
 
   const settings = {
     dots: true,
@@ -65,17 +71,43 @@ const TurmasAnteriores = () => {
   return (
     <div className="CarouselTurma">
       <div className="ButtonsTurmas">
-        <button className="Show2017Carousel" onClick={() => handleSlideChange(1)}>2017</button>
-        <button className="Show2018Carousel" onClick={() => handleSlideChange(2)}>2018</button>
-        <button className="Show2019Carousel" onClick={() => handleSlideChange(3)}>2019</button>
-        <button className="Show2022Carousel" onClick={() => handleSlideChange(4)}>2022</button>
+
+        <button className={`Show2017Carousel ${selectedButton === 1 ? 'selected' : ''}`}
+          onClick={() => {
+            handleSlideChange(1);
+            setSelectedButton(1);
+          }}>2017</button>
+
+        <button className={`Show2018Carousel ${selectedButton === 2 ? 'selected' : ''}`}
+          onClick={() => {
+            handleSlideChange(2);
+            setSelectedButton(2);
+          }}>2018</button>
+
+        <button className={`Show2019Carousel ${selectedButton === 3 ? 'selected' : ''}`}
+          onClick={() => {
+            handleSlideChange(3);
+            setSelectedButton(3);
+          }}>2019</button>
+
+        <button className={`Show2022Carousel ${selectedButton === 4 ? 'selected' : ''}`}
+          onClick={() => {
+            handleSlideChange(4);
+            setSelectedButton(4);
+          }}>2022</button>
+
+        <button className={`Show2023Carousel ${selectedButton === 5 ? 'selected' : ''}`}
+          onClick={() => {
+            handleSlideChange(5);
+            setSelectedButton(5);
+          }}>2023</button>
+
       </div>
 
       <div className={`CarouselTurma2017${activeSlide === 1 ? 'active' : ''}`}>
-        <h2>2017</h2>
         <Slider {...settings}>
           {turma2017.map((item) => (
-            <div className="CardAluno">
+            <div className="CardAluno" key={item.id}>
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -88,10 +120,9 @@ const TurmasAnteriores = () => {
       </div>
 
       <div className={`CarouselTurma2018 ${activeSlide === 2 ? 'active' : ''}`}>
-        <h2>2018</h2>
         <Slider {...settings}>
           {turma2018.map((item) => (
-            <div className="CardAluno">
+            <div className="CardAluno" key={item.id}>
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -104,10 +135,9 @@ const TurmasAnteriores = () => {
       </div>
 
       <div className={`CarouselTurma2019 ${activeSlide === 3 ? 'active' : ''}`}>
-        <h2>2019</h2>
         <Slider {...settings}>
           {turma2019.map((item) => (
-            <div className="CardAluno">
+            <div className="CardAluno" key={item.id}>
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -120,10 +150,9 @@ const TurmasAnteriores = () => {
       </div>
 
       <div className={`CarouselTurma2022 ${activeSlide === 4 ? 'active' : ''}`}>
-        <h2>2022</h2>
         <Slider {...settings}>
           {turma2022.map((item) => (
-            <div className="CardAluno">
+            <div className="CardAluno" key={item.id}>
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
@@ -134,6 +163,22 @@ const TurmasAnteriores = () => {
           ))}
         </Slider>
       </div>
+
+      <div className={`CarouselTurma2023 ${activeSlide === 5 ? 'active' : ''}`}>
+        <Slider {...settings}>
+          {turma2023.map((item) => (
+            <div className="CardAluno" key={item.id}>
+              <div className="foto">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="nome">
+                <p>{item.name}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+      
     </div>
   );
 }
