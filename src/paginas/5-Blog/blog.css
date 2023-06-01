@@ -1,4 +1,45 @@
-.blog-container{
-    background-color: #e0ce7d;
-    height: 500px;
+section.blog-container {
+    background-color:green;
+    padding: 2.5%;
+}
+
+.blog-container {
+    display: flex;
+    height: 100%; 
+    width: auto;
+    align-items: center;
+}
+  
+.paragrafo-blog {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4vw;
+    font-weight: bold;
+    word-spacing: 0.2vw;
+    text-align: right;
+    flex: 1; 
+    color: white;
+    padding-right: 20%;
+    padding-left: 19%;
+}
+
+@keyframes pulando {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+.imagem-blog{
+    padding-right: 16%;
+}
+
+.imagem-link-blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    max-width: 80%;
+    flex: 1; 
+    animation: pulando 1s infinite;
 }
