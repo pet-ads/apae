@@ -63,7 +63,7 @@ const Equipe = () => {
     prevArrow: <SamplePrevArrow />,
   };
 
-  const sliderClassName = slidesToShow <= 4 ? "slider-default" : "";
+  const sliderClassName = slidesToShow <= 4 ? "slider-cursor-default" : "";
 
   return (
     <section className="equipe-container">
