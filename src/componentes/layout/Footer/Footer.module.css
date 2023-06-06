@@ -1,7 +1,6 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-top: rgba(0, 128, 0, 0.473) solid 5px;
     border-bottom:green solid 5px;
@@ -9,7 +8,6 @@
     bottom: 0;
     width: 100%;
     background-color: white;
-    margin-top: -200;
   }
 
 .list {
@@ -28,12 +26,16 @@
     color: gray;
 }
 
-.p {
-    align-items: center;
+.paragrafo {
+    display: flex;
+    align-items: flex-end;
     font-size: small;
     text-align: center;
     height: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-block-start: auto;
+    margin-left: 2.5%;
     font-family: Arial;
     color: gray;
 }
