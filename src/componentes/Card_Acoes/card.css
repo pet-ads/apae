@@ -6,11 +6,11 @@
     transition: 0.3s;
     animation: ease-in;
     margin-left: 8%;
-    border-radius: 5%;
+    border-radius: 30px;
 }
 
 .card-container:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 0px 0px 15px 0px;
 }
 
@@ -22,12 +22,12 @@
 }
 
 .imgcard {
-    width: 265px;
-    height: 222px;
+    width: 253px;
+    height: 212px;
     border-radius: 10%;
     align-items: center;
     box-sizing: border-box;
-    margin: 1rem;
+    margin: 24px;
 }
 
 .card-content {
@@ -36,15 +36,13 @@
     margin-right: 1rem;
 }
 
-h3 {
-    margin: 0;
-    padding: 0;
+.titulo-card {
     text-align: center;
 }
 
-p {
-    margin: 0;
-    padding-bottom: 10px;
+.paragrafo-card {
+    margin: 10px;
+    padding-bottom: 20px;
     text-align: justify;
 }
 

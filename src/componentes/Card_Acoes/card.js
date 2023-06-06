@@ -9,10 +9,10 @@ function Card({title,imageUrl,body}){
             </div>
             <div className="card-content">
                 <div className="card-title">
-                    <h3>{title}</h3>
+                    <h3 className="titulo-card">{title}</h3>
                 </div>
                 <div className="card-body">
-                    <p>{body}</p>
+                    <p className="paragrafo-card">{body}</p>
                 </div>
             </div>
         </div>

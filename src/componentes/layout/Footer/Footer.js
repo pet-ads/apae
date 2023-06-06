@@ -29,7 +29,7 @@ function Footer({ scrollToSection }) {
           </li>
         </ul>
       </nav>
-      <p className={styles.p}>Desenvolvido ♥ por PET/ADS-IFSP São Carlos</p>
+      <p className={styles.paragrafo}>Desenvolvido com ♥ por PET/ADS @ IFSP São Carlos</p>
     </div>
   );
 }
