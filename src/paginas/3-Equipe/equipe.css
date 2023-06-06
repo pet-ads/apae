@@ -1,6 +1,7 @@
 .equipe-container {
     background-color: #fff;
-    height: 650px;
+    min-height: 75vh;
+    width: auto;
 }
 
 .equipe-container h1 {
@@ -74,7 +75,6 @@
 .buttons-equipe .selected {
     background-color: #0f3100;
 }
-
 .slider-default {
     cursor: default !important;
-  }
+}
