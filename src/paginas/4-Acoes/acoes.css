@@ -1,5 +1,5 @@
 .acoes-container {
-    height: 89.8%;
+    min-height: 68vh;
     width: auto;
     background-color: white;
     padding-top: 3%;

@@ -27,7 +27,7 @@ function App() {
       <Router>
         <div id="ancoras">
           <section id="home">
-            <Home />
+            <Home scrollToSection={scrollToSection}/>
           </section>
 
           <section id="projeto">
