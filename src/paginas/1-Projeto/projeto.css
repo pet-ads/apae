@@ -1,8 +1,8 @@
 .projeto-container{
     background-color: #F7F7F7;
     background-position: 0% 0%;
-    height: 89,8%;
-    width: 31,9%;
+    min-height: 55vh;
+    width: auto;
     padding-left: 8%;
     padding-top: 3%;
     padding-bottom: 10%;
