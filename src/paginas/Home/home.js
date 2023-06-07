@@ -1,22 +1,29 @@
 import "./home.css";
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Banner from './bannner.png';
 
-
-function Home({ scrollToSection }) {
+export default function Home({ scrollToSection }) {
     return(
-        <section className="home-container">
-            <div className="img-home">
-                <img src="./imagem-home.apae.jpg" alt="Img_Home"/>
-            </div>
+        <div>
+            <section className="home-container">
 
-            <div className="home-titulo-principal-container">
-                <h1 className="home-titulo-principal">Atuando pela inclusão digital: uma parceria entre o IFSP e a APAE</h1>
-            </div>
+                <div className="titulo-button-banner">
 
-            <button className="button-home" onClick={() => scrollToSection("projeto")}>Conheça o projeto</button>
-        </section>
-    );  
+                    <div className="titulo-button">
+                        <h1 className="home-titulo">Atuando pela inclusão digital: uma parceria entre o IFSP <br/> e a APAE</h1>
+                        <button className="button-home" onClick={() => scrollToSection("projeto")}>Conheça o Projeto</button>
+
+                    </div>
+
+                    <div className="img-home">
+                        <img src={Banner} alt="Img_Home"/>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    )  
 }
-
-export default Home;
-
