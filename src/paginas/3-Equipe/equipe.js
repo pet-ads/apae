@@ -67,7 +67,7 @@ const Equipe = () => {
 
   return (
     <section className="equipe-container">
-      <h1>Equipe</h1>
+      <p className="titulo-equipe">Equipe</p>
       <div className="buttons-equipe">
         <button
           className={selectedButton === 1 ? "selected" : ""}

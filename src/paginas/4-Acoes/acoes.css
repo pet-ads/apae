@@ -15,13 +15,15 @@
     background-color: white;
   }
   
-  h4 {
+  .titulo-acoes {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5vw; 
     padding-bottom: 2%;
+ 
   }
   
   .cards-container {

@@ -4,7 +4,7 @@ import TurmasAnteriores from "./TurmasAnteriores.js"
 export default function Turmas(){
     return(
         <section className="turmas-container">
-            <h1>Turmas</h1>
+            <p className="titulo-turmas">Turmas</p>
             <TurmasAnteriores/>
         </section>
     )
