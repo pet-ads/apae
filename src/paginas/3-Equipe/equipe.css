@@ -1,14 +1,15 @@
 .equipe-container {
     background-color: #fff;
-    min-height: 75vh;
+    min-height: 76vh;
     width: auto;
 }
 
-.equipe-container h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.titulo-equipe {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5vw; 
     display: block;
     text-align: left;
-    font-size: 2.3vw;
     color: black;
     padding-top: 5px;
     padding-bottom: 5px;

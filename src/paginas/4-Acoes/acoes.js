@@ -9,7 +9,7 @@ import "./acoes.css";
 export default function Acoes() {
     return (
         <div className="acoes-container">
-            <h4>Ações</h4>
+            <p className="titulo-acoes">Ações</p>
             <div className="cards-container-geral">
                 <div className="cards-container">
                     <Card

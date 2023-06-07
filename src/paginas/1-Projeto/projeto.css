@@ -16,23 +16,24 @@
 }
 
 .projeto-titulo-container{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 3vw;   
+    font-size: 3vw; 
     padding-bottom: 5%;
 }
 
 .descricao-projeto-p1{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1vw;
     line-height: 1.8vw;
     text-align: left;
     word-spacing: 0.2vw;
     text-align: justify;
 }
+
 
 .descricao-projeto-p2{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1vw;
     line-height: 1.8vw;
     text-align: left;
@@ -40,3 +41,4 @@
     text-align: justify;
 
 }
+

@@ -20,6 +20,7 @@
 }
 
 .item button{
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: transparent; 
     border: none; 
     text-decoration: none;
@@ -27,6 +28,7 @@
 }
 
 .paragrafo {
+    font-family: 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: flex-end;
     font-size: small;
