@@ -2,118 +2,100 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "./equipe.css"
+import "./equipe.css";
 
-import monitoresInfo from './monitores.json';
-import professoresInfo from './professores.json';
+import equipe from './equipe.json';
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "none" }}
-            onClick={onClick}
-        />
-    );
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
 }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "none" }}
-            onClick={onClick}
-        />
-    );
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
 }
 
-const Monitores = () => {
+const Equipe = () => {
+  const [selectedButton, setSelectedButton] = useState(1);
+  const [equipeData, setEquipeData] = useState([]);
 
-    const [professores, setProfessores] = useState([]);
-    useEffect(() => { setProfessores(professoresInfo); }, []);
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      let updatedEquipeData = [];
+      if (selectedButton === 1) {
+        updatedEquipeData = equipe.filter(item => item.funcao === 'professor');
+      } else if (selectedButton === 2) {
+        updatedEquipeData = equipe.filter(item => item.funcao === 'monitor');
+      }
+      
+      updatedEquipeData.sort((a, b) => a.name.localeCompare(b.name));
+      
+      setEquipeData(updatedEquipeData);
+    }, 10);
 
-    const [monitores, setMonitores] = useState([]);
-    useEffect(() => { setMonitores(monitoresInfo); }, []);
+    return () => clearTimeout(delay);
+  }, [selectedButton]);
 
-    const [activeSlide, setActiveSlide] = useState(1);
-    const handleSlideChange = (slideNumber) => {
-        setActiveSlide(slideNumber);
-    };
+  const slidesToShow = equipeData.length <= 4 ? equipeData.length : 5;
 
-    const [selectedButton, setSelectedButton] = useState(1);
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: slidesToShow,
+    slidesToScroll: slidesToShow,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 10000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
 
-    const settingsProfessores = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: true,
-        speed: 5000,
-        autoplaySpeed: 10000,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-    };
+  const sliderClassName = slidesToShow <= 4 ? "slider-cursor-default" : "";
 
-    const settingsMonitores = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        autoplay: true,
-        speed: 5000,
-        autoplaySpeed: 10000,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-    };
+  return (
+    <section className="equipe-container">
+      <h1>Equipe</h1>
+      <div className="buttons-equipe">
+        <button
+          className={selectedButton === 1 ? "selected" : ""}
+          onClick={() => setSelectedButton(1)}>
+          Professores
+        </button>
+        <button
+          className={selectedButton === 2 ? "selected" : ""}
+          onClick={() => setSelectedButton(2)}>
+          Monitores
+        </button>
+      </div>
 
-    return (
-        <section className="monitores-container">
-            <h1>Equipe</h1>
-            <div className="ButtonsEquipe">
-                <button className={`ShowProfessoresCarousel ${selectedButton === 1 ? 'selected' : ''}`}
-                    onClick={() => {
-                        handleSlideChange(1);
-                        setSelectedButton(1);
-                    }}>Professores</button>
-                <button className={`ShowMonitoresCarousel ${selectedButton === 2 ? 'selected' : ''}`}
-                    onClick={() => {
-                        handleSlideChange(2);
-                        setSelectedButton(2);
-                    }}>Monitores</button>
+      <Slider {...settings}>
+        {equipeData.map((item) => (
+          <div className={`card-equipe ${sliderClassName}`} key={item.id}>
+            <div className="foto">
+              <img src={item.image} alt={item.name} />
             </div>
-            
-            <div className={`CarouselProfessores ${activeSlide === 1 ? 'active' : ''}`}>
-                <Slider {...settingsProfessores}>
-                    {professores.map((item) => (
-                        <div className="CardProfessor" key={item.id}>
-                            <div className="foto">
-                                <img src={item.image} alt={item.name} />
-                            </div>
-                            <div className="nome">
-                                <p>{item.name}</p>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+            <div className="nome">
+              <p>{item.name}</p>
             </div>
-            <div className={`CarouselMonitores ${activeSlide === 2 ? 'active' : ''}`}>
-                <Slider {...settingsMonitores}>
-                    {monitores.map((item) => (
-                        <div className="CardMonitor" key={item.id}>
-                            <div className="foto">
-                                <img src={item.image} alt={item.name} />
-                            </div>
-                            <div className="nome">
-                                <p>{item.name}</p>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+          </div>
+        ))}
+      </Slider>
+    </section>
+  );
+};
 
-        </section>
-    )
-}
-export default Monitores
+export default Equipe;
+

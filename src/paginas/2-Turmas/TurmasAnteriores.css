@@ -1,10 +1,10 @@
-.CarouselTurma {
+.carousel-turmas {
   width: 90%;
   margin: auto;
   text-align: center;
 }
 
-.CarouselTurma .CardAluno {
+.carousel-turmas .aluno {
   cursor: grab;
   height: 380px;
   color: black;
@@ -13,13 +13,13 @@
   box-sizing: border-box;
 }
 
-.CarouselTurma .CardAluno p {
+.carousel-turmas .aluno p {
   text-align: center !important;
   max-width: 180px;
   margin: auto;
 }
 
-.CarouselTurma .CardAluno img {
+.carousel-turmas .aluno img {
   padding: 10px;
   height: 300px;
   width: 200px;
@@ -38,11 +38,11 @@
   color: #10813c;
 }
 
-.ButtonsTurmas {
+.buttons-turmas {
   margin-bottom: 30px;
 }
 
-.ButtonsTurmas * {
+.buttons-turmas * {
   display: inline-block;
   margin: 0 30px;
   padding: 12px 24px;
@@ -58,38 +58,14 @@
   cursor: pointer;
 }
 
-.ButtonsTurmas *:hover {
+.buttons-turmas *:hover {
   background-color: #0f3100;
 }
 
-.CarouselTurma2017,
-.CarouselTurma2018,
-.CarouselTurma2019,
-.CarouselTurma2022,
-.CarouselTurma2023 {
-  display: none;
-}
-
-.CarouselTurma2017.active,
-.CarouselTurma2018.active,
-.CarouselTurma2019.active,
-.CarouselTurma2022.active,
-.CarouselTurma2023.active {
-  display: block;
-}
-
-.Show2017Carousel,
-.Show2018Carousel,
-.Show2019Carousel,
-.Show2022Carousel,
-.Show2023Carousel {
-  background-color: #10813c;
-}
-
-.Show2017Carousel.selected,
-.Show2018Carousel.selected,
-.Show2019Carousel.selected,
-.Show2022Carousel.selected,
-.Show2023Carousel.selected {
+.buttons-turmas .selected {
   background-color: #0f3100;
+}
+
+.slider-default {
+  cursor: default !important;
 }

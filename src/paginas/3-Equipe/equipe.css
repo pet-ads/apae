@@ -1,10 +1,10 @@
-.monitores-container {
+.equipe-container {
     background-color: #fff;
     min-height: 75vh;
     width: auto;
 }
 
-.monitores-container h1 {
+.equipe-container h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
     text-align: left;
@@ -12,16 +12,16 @@
     color: black;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 8%;
+    padding-left: 4%;
 }
 
-.CarouselMonitores {
+.equipe-container {
     width: 90%;
     margin: auto;
     text-align: center;
 }
 
-.CarouselMonitores .CardMonitor {
+.equipe-container .card-equipe {
     cursor: grab;
     height: 380px;
     color: black;
@@ -30,13 +30,13 @@
     box-sizing: border-box;
 }
 
-.CarouselMonitores .CardMonitor p {
+.equipe-container .card-equipe p {
     text-align: center !important;
     max-width: 180px;
     margin: auto;
 }
 
-.CarouselMonitores .CardMonitor img {
+.equipe-container .card-equipe img {
     padding: 10px;
     height: 300px;
     width: 200px;
@@ -44,36 +44,7 @@
     border-radius: 30px;
 }
 
-.CarouselProfessores {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-.CarouselProfessores .CardProfessor {
-    cursor: grab;
-    height: 380px;
-    color: #001a3b;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1vw;
-    box-sizing: border-box;
-}
-
-.CarouselProfessores .CardProfessor p {
-    text-align: center !important;
-    max-width: 180px;
-    margin: auto;
-}
-
-.CarouselProfessores .CardProfessor img {
-    padding: 10px;
-    height: 300px;
-    width: 200px;
-    margin: auto;
-    border-radius: 30px;
-}
-
-.ButtonsEquipe {
+.buttons-equipe {
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -81,7 +52,7 @@
     margin-bottom: 30px;
 }
 
-.ButtonsEquipe * {
+.buttons-equipe * {
     display: inline-block;
     margin: 0 30px;
     padding: 12px 24px;
@@ -97,26 +68,10 @@
     cursor: pointer;
 }
 
-.ButtonsEquipe *:hover {
+.buttons-equipe *:hover {
     background-color: #0f3100;
 }
 
-.CarouselProfessores,
-.CarouselMonitores {
-    display: none;
-}
-
-.CarouselProfessores.active,
-.CarouselMonitores.active {
-    display: block;
-}
-
-.ShowMonitoresCarousel,
-.ShowProfessoresCarousel {
-    background-color: #10813c;
-}
-
-.ShowMonitoresCarousel.selected,
-.ShowProfessoresCarousel.selected {
+.buttons-equipe .selected {
     background-color: #0f3100;
 }

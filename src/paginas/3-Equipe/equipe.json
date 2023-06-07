@@ -1,37 +1,75 @@
 [
     {
         "id": "monit1",
+        "funcao": "monitor",
         "name": "Ana Clara Colognezi",
         "image": "MonitoresFotos/Ana Clara Colognezi.jpeg"
     },
     {
         "id": "monit2",
+        "funcao": "monitor",
         "name": "Ana Lívia Hernandes da Motta",
         "image": "MonitoresFotos/Ana Lívia Hernandes da Motta.jpeg"
     },
     {
         "id": "monit3",
+        "funcao": "monitor",
         "name": "Heloisa Alves da Silva",
         "image": "MonitoresFotos/Heloisa Alves da Silva.jpeg"
     },
     {
         "id": "monit4",
+        "funcao": "monitor",
         "name": "Isabelly de Cassia Benedito",
         "image": "MonitoresFotos/Isabelly de Cassia Benedito.jpeg"
     },
     {
         "id": "monit5",
+        "funcao": "monitor",
         "name": "Kamila Aleixo Hungaro",
         "image": "MonitoresFotos/Kamila Aleixo Hungaro.jpeg"
     },
     {
         "id": "monit6",
+        "funcao": "monitor",
         "name": "Letícia Kaori Yabuuti",
         "image": "MonitoresFotos/Letícia Kaori Yabuuti.jpeg"
     },
     {
         "id": "monit7",
+        "funcao": "monitor",
         "name": "Valentine Lorena Ferrarini do Amaral",
         "image": "MonitoresFotos/Valentine Lorena Ferrarini do Amaral.jpeg"
+    },
+    {
+        "id": "monit8",
+        "funcao": "monitor",
+        "name": "Bianca Carvalio Antonietti",
+        "image": "MonitoresFotos/Bianca Carvalio Antonietti.jpg"
+    },
+
+    {
+        "id": "prof1",
+        "funcao": "professor",
+        "name": "Célia Kawabata",
+        "image": "ProfessoresFotos/Célia Kawabata.jpg"
+    },
+    {
+        "id": "prof2",
+        "funcao": "professor",
+        "name": "Danilo Moschetto",
+        "image": "ProfessoresFotos/Danilo Moschetto.jpg"
+    },
+    {
+        "id": "prof3",
+        "funcao": "professor",
+        "name": "Fernando Salina",
+        "image": "ProfessoresFotos/Fernando Salina.jpg"
+    },
+    {
+        "id": "prof4",
+        "funcao": "professor",
+        "name": "Jorge Francisco Cutigi",
+        "image": "ProfessoresFotos/Jorge Francisco Cutigi.jpeg"
     }
 ]
