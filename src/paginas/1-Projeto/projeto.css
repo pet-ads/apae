@@ -16,16 +16,15 @@
     text-transform: uppercase;
     font-size: 2.5vw; 
     display: block;
-    text-align: left;
+    text-align: center;
     font-weight: lighter;
     color: black;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 8%;
 }
 
 .descricao-projeto{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.3vw;
     line-height: 1.8vw;
     text-align: left;

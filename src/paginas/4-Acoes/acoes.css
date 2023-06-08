@@ -1,11 +1,10 @@
 .acoes-container {
-    min-height: 68vh;
+    display: flex;
+    flex-direction: column;
     width: auto;
     background-color: white;
     padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-bottom: 7%;
   }
   
   .cards-container-geral {
@@ -28,8 +27,9 @@
   
   .cards-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 5px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }

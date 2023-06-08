@@ -4,7 +4,7 @@ import styles from "./Footer.module.css"
 function Footer({ scrollToSection }) {
   return (
     <div className={styles.footer}>
-      <nav className="Footer">
+      <nav className={styles.navfooter}>
         <ul className={styles.list}>
           <li className={styles.item}>
             <button onClick={() => scrollToSection("home")}>Home</button>
@@ -29,7 +29,10 @@ function Footer({ scrollToSection }) {
           </li>
         </ul>
       </nav>
-      <p className={styles.paragrafo}>Desenvolvido com ♥ por PET/ADS @ IFSP São Carlos</p>
+      <div className={styles.textofooter}>
+        <p className={styles.paragrafo}>Desenvolvido com ♥ por PET/ADS @ </p>
+        <a className={styles.linkifsp} href='https://portais.ifsp.edu.br/scl/'>IFSP São Carlos</a>
+      </div>
     </div>
   );
 }
