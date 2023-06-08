@@ -30,10 +30,12 @@
     text-align: left;
     word-spacing: 0.2vw;
     text-align: justify;
-
     width: 45em;
-
     margin-left: 1em;
     margin-right: 2em;
+}
+
+.texto-proj{
+    text-indent: 5%;
 }
 
