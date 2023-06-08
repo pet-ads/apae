@@ -10,7 +10,7 @@
     background-color: white;
   }
 
-.list {
+.list{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,17 +27,43 @@
     color: gray;
 }
 
+.item button:hover{
+    font-weight: bold;
+}
+
 .paragrafo {
     font-family: 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: flex-end;
     font-size: small;
     text-align: center;
-    height: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     margin-block-start: auto;
-    margin-left: 2.5%;
     font-family: Arial;
     color: gray;
+}
+
+.textofooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.linkifsp{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    color: gray;
+}
+
+.linkifsp:hover{
+    font-weight: bold;
+}
+
+.navfooter{
+    display: flex;
+    align-items: center;
+    margin-left: -2.5%;
 }
