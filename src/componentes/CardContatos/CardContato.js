@@ -12,11 +12,11 @@ function CardContato({ nome, descricao, email, telefone }) {
         <h4 style={{ fontSize: '14px' }}>{descricao}</h4>
       </div>
       <div className="card-email">
-        <p>{email}</p>
+      <a href={`mailto:${email}`} id="email">{email}</a>
       </div>
       {telefone && ( 
         <div className="card-telefone">
-          <p>{telefone}</p>
+          <a href={`tel:${telefone}`} id="telefone">{telefone}</a>
         </div>
       )}
     </div>
