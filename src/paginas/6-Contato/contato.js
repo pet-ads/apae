@@ -13,22 +13,23 @@ export default function Contato(){
             <div className= "cards">
 
                 <CardContato 
-                    nome = 'Célia Kawabata'
-                    descricao = 'Docente IFSP'
-                    email = 'E-mail: celiak@ifsp.edu.br'
+                    nome = 'Mariana Schiabel'
+                    descricao = 'Coordenadora de Projetos da APAE'
+                    email = 'coordenacao@apaesaocarlossp.org.br'
+                    telefone = '(16)98166-9175'
                     
                 />
                 <CardContato 
-                    nome = 'Gisele'
-                    descricao = 'Professora APAE'
-                    email = 'E-mail: giselelabor@yahoo.com.br'
+                    nome = 'Gisele Dovigo'
+                    descricao = 'Docente APAE'
+                    email = 'giselelabor@yahoo.com.br'
                     telefone= '(16)99117-3816'
                 />
                 <CardContato 
-                    nome = 'Mariana Schiabel'
-                    descricao = 'Coordenadora de Projetos da APAE'
-                    email = 'E-mail: coordenacao@apaesaocarlossp.org.br'
-                    telefone = '(16) 98166-9175'/>
+                    nome = 'Célia Kawabata'
+                    descricao = 'Docente IFSP'
+                    email = 'celiak@ifsp.edu.br'
+                />
                     
                
                     
