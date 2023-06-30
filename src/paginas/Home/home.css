@@ -1,49 +1,51 @@
-.img-home img{
+.img-home img {
     width: 30em;
     height: 30em;
     animation: fade-in 2s;
 }
 
 @keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.titulo-button-banner{
+.titulo-button-banner {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
 }
 
-
-.titulo-button{
+.titulo-button {
     width: 45em;
+    padding-left: 20%;
 }
 
-.home-container{
-    display: block;
-    flex-direction: row-reverse;
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #ffffff;
     height: 70%;
-    width: 31,9%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 8%;
-    padding-bottom: 12%;
+    width: 31.9%;
+    padding: 8% 15% 12% 15%;
     z-index: 20;
+    }
 
-}
-
-.home-titulo{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.home-titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3vw;
     font-weight: 100;
     line-height: 5vw;
     text-align: left;
     word-spacing: 0vw;
+    padding-left: 20%;
 }
 
-.button-home{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.button-home {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2vw;
     font-weight: bold;
     line-height: 3vw;
@@ -54,7 +56,7 @@
     background-color: #10813c;
     color: #fff;
     background-position: 0% 0%;
-    padding: 1% 2% 1% 2%;    
+    padding: 1% 2% 1% 2%;
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
@@ -66,4 +68,54 @@
 
 .button-home:hover {
     background-color: #0f3100;
+}
+
+
+
+@media (max-width: 400px) {
+    .img-home img {
+        padding-top: 25%;
+        width: 95%;
+        height: auto;
+    }
+    
+    .home-container {
+        width: 100%;
+        padding: 8% 5% 12% 5%;
+        height: auto;
+        text-align: center;
+    }
+
+    .home-container {
+        display: block;
+        flex-direction: row-reverse;
+        background-color: #ffffff;
+        height: 70%;
+        width: 31.9%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 8%;
+        padding-bottom: 12%;
+        z-index: 20;
+        width: 100%;
+        padding: 8% 5% 12% 5%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .home-titulo {
+        font-size: 8vw;
+        line-height: 14.5vw;
+        text-align: center; 
+        padding: 0 10%; 
+    }
+    
+    .button-home {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 10px 12px;
+    }
+    .titulo-button {
+        padding-right: 20%;
+    }
 }

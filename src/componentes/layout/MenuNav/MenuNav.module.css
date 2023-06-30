@@ -45,3 +45,22 @@
   margin-left: 20px;
   margin-top: 6px;
 }
+
+
+@media (max-width: 400px) {
+  .img_container {
+    padding-left: 14.5%;
+  }
+
+  nav {
+    display: none; 
+  }
+
+  .list {
+    display: none; 
+  }
+
+  
+
+  
+}

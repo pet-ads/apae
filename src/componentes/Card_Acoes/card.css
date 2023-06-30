@@ -43,3 +43,35 @@
 .card-title {
     margin-bottom: 1%;
 }
+
+
+@media (max-width: 400px) {
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      height: auto;
+      overflow: hidden;
+      border: 2px rgba(0, 128, 0, 0.473) solid;
+      border-radius: 5%;
+      margin-bottom: 28px;
+    }
+
+    .paragrafo-card {
+        text-align: justify;
+        font-size: 4.5vw;
+        line-height: 2;
+        word-spacing: normal;
+    
+    }
+    
+    .imgcard {
+        width: 90%;
+        height: 90%;
+        border-radius: 5%;
+        align-items: center;
+        margin: 5%;
+    }
+  }
+  
