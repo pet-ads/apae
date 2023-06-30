@@ -1,81 +1,81 @@
 .contato-container {
-    background-color: white;
-    min-height: 70vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: white;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .titulo-container-contato{
     
-    text-transform: uppercase;
-    font-size: 2.5vw;     
-    padding-bottom: 7%;
-    margin-top: auto;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5vw;     
+  padding-bottom: 7%;
+  margin-top: auto;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
-  .contato-cards {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    margin-top: -60px;
-  }
+.contato-cards {
+  display: flex;
+  justify-content: center;
+}
   
-  .mapa-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    margin-right: 370px;
-    margin-left: 370px;
-    gap: 20px;
-  }
+.mapa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  gap: 5px;
+  column-gap:30px;
   
-  .mapa-cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-  }
+}
   
-  .mapaApae,
-  .mapaIFSP {
-    display: inline-block; 
-    border: 2px solid;
-    border-color:rgb(151, 214, 151);
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    
-    
-  }
+.mapa-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 17px;
-    
-  }
   
-  .mapaApae {
-    margin-right: 0;
-  }
+}
 
-  .mapaApae,
-  .mapaIFSP {
-  margin-bottom: 20px;
+.mapaApae,
+.mapaIFSP {
+  
+  display: flex; 
+  border: 2px solid;
+  border-radius: 20px;
+  border-color:rgb(151, 214, 151);
+  overflow: hidden;
+  margin-bottom: 5%;
+ 
+  
+  
+  
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 30px;
+  margin-bottom: 4%;
+  
+  
+}
+
+.mapaApae {
+  margin-right: 0;
+}
+
 .local h4{
-  margin-bottom: 5px;
+  margin-bottom: 2%;
   text-align: center;
 }
 .local p {
-  margin-top: 5px;
+  margin-top: 2%;
   text-align: center;
   font-size: 13px;
   
