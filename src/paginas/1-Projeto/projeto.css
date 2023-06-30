@@ -4,9 +4,9 @@
 }
 
 .img-container img {
-    width: 40em;
-    height: 30em;
-
+    width: 100%;
+    max-width: 40em;
+    height: auto;
     border-right: solid green 4px;
     animation: fade-in 1s;
 }
@@ -28,14 +28,53 @@
     font-size: 1.3vw;
     line-height: 1.8vw;
     text-align: left;
+    width: 100%;
+    max-width: 45em;
     word-spacing: 0.2vw;
     text-align: justify;
-    width: 45em;
     margin-left: 1em;
     margin-right: 2em;
 }
+
 
 .texto-proj{
     text-indent: 5%;
 }
 
+
+
+@media (max-width: 400px) {
+    .projeto-container{
+        padding-left: 5%;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container img {
+        padding-left: 3.5%;
+        border-right: none;
+        max-width: 100%;
+        height: auto;
+    }
+  
+    .projeto-titulo-container h3 {
+      font-size: 10vw;
+      padding-left: 4%;
+      padding-top: 4%;
+    }
+
+    .descricao-projeto {
+        font-size: 4.5vw;
+        line-height: 2;
+        word-spacing: normal;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+}
+      
