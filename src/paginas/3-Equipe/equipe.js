@@ -49,7 +49,35 @@ const Equipe = () => {
     return () => clearTimeout(delay);
   }, [selectedButton]);
 
-  const slidesToShow = equipeData.length <= 4 ? equipeData.length : 5;
+  const [largura, setLargura] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleRedimensionamento = () => {
+      setLargura(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleRedimensionamento);
+
+    return () => {
+      window.removeEventListener('resize', handleRedimensionamento);
+    };
+  }, []);
+
+  const getSlidesToShow = (equipeData, largura) => {
+    if (largura < 480) {
+      return Math.min(equipeData.length, 1);
+    } else if (largura < 665) {
+      return Math.min(equipeData.length, 2);
+    } else if (largura < 1024) {
+      return Math.min(equipeData.length, 3);
+    } else if (largura < 1150){
+      return Math.min(equipeData.length, 4);
+    } else {
+      return Math.min(equipeData.length, 5);
+    }
+  };
+
+  const slidesToShow = getSlidesToShow(equipeData, largura);
 
   const settings = {
     dots: true,
@@ -63,7 +91,7 @@ const Equipe = () => {
     prevArrow: <SamplePrevArrow />,
   };
 
-  const sliderClassName = slidesToShow <= 4 ? "slider-cursor-default" : "";
+  const sliderClassName = slidesToShow <= 4 ? "slider-default" : "";
 
   return (
     <section className="equipe-container">
