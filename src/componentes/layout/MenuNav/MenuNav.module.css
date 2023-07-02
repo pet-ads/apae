@@ -47,6 +47,7 @@
 }
 
 
+
 @media (max-width: 400px) {
   .component_container{
     margin-left: -8%;
@@ -62,4 +63,12 @@
   .list {
     display: none; 
   }
+}
+
+
+@media (max-width: 300px) {
+  .img_container {
+    margin-left: -8.5%;
+  }
+
 }

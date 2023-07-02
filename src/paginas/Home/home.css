@@ -85,9 +85,6 @@
         padding: 8% 5% 12% 5%;
         height: auto;
         text-align: center;
-    }
-
-    .home-container {
         display: block;
         flex-direction: row-reverse;
         background-color: #ffffff;
@@ -95,7 +92,7 @@
         height: auto;
         text-align: center;
     }
-    
+
     .home-titulo {
         font-size: 8vw;
         line-height: 13vw;
@@ -113,4 +110,29 @@
         margin-right: 31%;
         margin-top: -4%;
     }
+}
+
+@media (max-width: 300px) {
+    .img-home img{
+        padding-top: 40%;
+    }
+
+    .home-titulo {
+        margin-top: 15%;
+        font-size: 8vw;
+        line-height: 15vw;
+        margin-right: 12%;
+    }
+    
+    .button-home {
+        font-size: 12px;
+        line-height: 25px;
+        padding: 10px 12px;
+    }
+    .titulo-button {
+        margin-right: 31%;
+        margin-top: 3%;
+    }
+
+
 }

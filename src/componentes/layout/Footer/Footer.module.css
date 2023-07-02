@@ -77,7 +77,14 @@
     .navfooter{
         margin-left: -18%;
     }
-   
-    
 }
-  
+
+@media (max-width: 300px) {
+    .navfooter{
+        display: none;
+    }
+    .paragrafo{
+        font-size: 11.6px;
+        margin-left: -1%;
+    }
+}
