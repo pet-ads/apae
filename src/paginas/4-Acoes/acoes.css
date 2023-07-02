@@ -35,15 +35,15 @@
 
 @media (max-width: 400px) {
   .titulo-acoes {
-    font-size: 10vw;
-    padding-left: 4%;
-    padding-top: 25%;
+    padding-top: 15%;
     padding-bottom: 10%;
+    margin-right: 15%;
+    font-size: 10vw;
+    
   }
 
   .acoes-container {
     padding-left: 12%;
-
   }
 
   .cards-container {
@@ -53,39 +53,3 @@
 }
 
 
-  /*
-@media (max-width: 400px) {
-    .projeto-container{
-        padding-left: 5%;
-    }
-
-    .conteudo{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .img-container img {
-        padding-left: 3.5%;
-        border-right: none;
-        max-width: 100%;
-        height: auto;
-    }
-  
-    .projeto-titulo-container h3 {
-      font-size: 10vw;
-      padding-left: 4%;
-      padding-top: 4%;
-    }
-
-    .descricao-projeto {
-        font-size: 4.5vw;
-        line-height: 2;
-        word-spacing: normal;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      
-}
-      */

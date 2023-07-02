@@ -48,8 +48,11 @@
 
 
 @media (max-width: 400px) {
+  .component_container{
+    margin-left: -8%;
+  }
   .img_container {
-    padding-left: 14.5%;
+    padding-left: 31%;
   }
 
   nav {
@@ -59,8 +62,4 @@
   .list {
     display: none; 
   }
-
-  
-
-  
 }
