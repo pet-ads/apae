@@ -78,6 +78,18 @@
         flex-wrap: wrap;
         justify-content: center;
       }
-      
+}
+
+@media (max-width: 300px){
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        margin-left: -1.8%;
+    }
+    .descricao-projeto{
+        font-size: 4.3vw;
+        line-height: 2;
+        margin-left: 0.2%;
+    }
 }
       
