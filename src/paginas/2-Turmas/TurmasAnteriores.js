@@ -31,7 +31,7 @@ function SamplePrevArrow(props) {
 const TurmasAnteriores = () => {
 
   const [turma, setTurma] = useState([]);
-  useEffect(() => {setTurma(alunos);}, []);
+  useEffect(() => { setTurma(alunos); }, []);
 
   const [selectedButton, setSelectedButton] = useState();
   const handleButtonClick = (ano) => {
@@ -51,9 +51,37 @@ const TurmasAnteriores = () => {
   const distinctYears = getDistinctYears();
 
   const maxYear = Math.max(...distinctYears);
-  useEffect(() => {setSelectedButton(maxYear);}, [maxYear]);
+  useEffect(() => { setSelectedButton(maxYear); }, [maxYear]);
 
-  const slidesToShow = filteredAlunos.length <= 4 ? filteredAlunos.length : 5;
+  const [largura, setLargura] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleRedimensionamento = () => {
+      setLargura(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleRedimensionamento);
+
+    return () => {
+      window.removeEventListener('resize', handleRedimensionamento);
+    };
+  }, []);
+
+  const getSlidesToShow = (filteredAlunos, largura) => {
+    if (largura < 480) {
+      return Math.min(filteredAlunos.length, 1);
+    } else if (largura < 665) {
+      return Math.min(filteredAlunos.length, 2);
+    } else if (largura < 1024) {
+      return Math.min(filteredAlunos.length, 3);
+    } else if (largura < 1150){
+      return Math.min(filteredAlunos.length, 4);
+    } else {
+      return Math.min(filteredAlunos.length, 5);
+    }
+  };
+
+  const slidesToShow = getSlidesToShow(filteredAlunos, largura);
 
   const settings = {
     dots: true,

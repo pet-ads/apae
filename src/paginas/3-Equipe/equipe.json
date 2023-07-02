@@ -47,7 +47,24 @@
         "name": "Bianca Carvalio Antonietti",
         "image": "MonitoresFotos/Bianca Carvalio Antonietti.jpg"
     },
-
+    {
+        "id": "monit9",
+        "funcao": "monitor",
+        "name": "Marilia Paula Venega Alvares",
+        "image": "MonitoresFotos/Marilia Paula Venega Alvares.jpg"
+    },
+    {
+        "id": "monit10",
+        "funcao": "monitor",
+        "name": "Isabella Oliveira Marcelli",
+        "image": "MonitoresFotos/Isabella Oliveira Marcelli.jpeg"
+    },
+    {
+        "id": "monit11",
+        "funcao": "monitor",
+        "name": "Felipe Eduardo de Souza",
+        "image": "MonitoresFotos/Felipe Eduardo de Souza.jpeg"
+    },
     {
         "id": "prof1",
         "funcao": "professor",
