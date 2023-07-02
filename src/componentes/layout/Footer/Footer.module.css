@@ -67,3 +67,17 @@
     align-items: center;
     margin-left: -2.5%;
 }
+
+
+@media (max-width: 400px) {
+    .textofooter{
+        margin-left: -12%;
+    }
+
+    .navfooter{
+        margin-left: -18%;
+    }
+   
+    
+}
+  

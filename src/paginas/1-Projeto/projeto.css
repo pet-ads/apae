@@ -11,6 +11,7 @@
     animation: fade-in 1s;
 }
 
+
 .projeto-titulo-container h3{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
@@ -45,7 +46,8 @@
 
 @media (max-width: 400px) {
     .projeto-container{
-        padding-left: 5%;
+        margin-left: 1%;
+        margin-right: 5%;
     }
 
     .conteudo{
@@ -54,10 +56,10 @@
     }
 
     .img-container img {
-        padding-left: 3.5%;
         border-right: none;
         max-width: 100%;
         height: auto;
+        padding-left: 2%;
     }
   
     .projeto-titulo-container h3 {
@@ -71,6 +73,7 @@
         line-height: 2;
         word-spacing: normal;
         width: 100%;
+        margin-left: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
