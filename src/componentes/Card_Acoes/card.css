@@ -36,7 +36,7 @@
     margin: 1%;
     padding-bottom: 5%;
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 1vw;
 
 }
 
@@ -44,8 +44,14 @@
     margin-bottom: 1%;
 }
 
+@media (max-width: 1024px){
+    .paragrafo-card {
+        font-size: 1.6vw;
+    }
+}
 
-@media (max-width: 400px) {
+
+@media (max-width: 700px) {
     .card-container {
       align-items: center;
       width: 95%;
@@ -56,7 +62,7 @@
 
     .paragrafo-card {
         text-align: justify;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
         line-height: 2;
         word-spacing: normal;
     }
@@ -70,6 +76,7 @@
     }
   }
   
+
 
   @media (max-width: 300px) {
     .paragrafo-card {

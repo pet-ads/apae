@@ -9,6 +9,7 @@
   top: 0;
   width: 100%;
   background-color: white;
+  
 }
 
 .list {
@@ -48,12 +49,9 @@
 
 
 
-@media (max-width: 400px) {
-  .component_container{
-    margin-left: -8%;
-  }
+@media (max-width: 700px){
   .img_container {
-    padding-left: 31%;
+    padding-left: 26%;
   }
 
   nav {
@@ -70,5 +68,4 @@
   .img_container {
     margin-left: -8.5%;
   }
-
 }
