@@ -70,3 +70,10 @@
     }
   }
   
+
+  @media (max-width: 300px) {
+    .paragrafo-card {
+        font-size: 5vw;
+    }
+  }
+  

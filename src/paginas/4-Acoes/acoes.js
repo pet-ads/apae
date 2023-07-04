@@ -15,19 +15,19 @@ export default function Acoes() {
                     <Card
                         title='Aulas de Informática'
                         imageUrl={img_aula}
-                        body='&nbsp;&nbsp;&nbsp;No curso de informática, os alunos aprendem desde a fazer tarefas básicas, como ligar o computador, manusear o mouse e escrever com o teclado, até em mexer em softwares específicos, como o browser e aplicativos do LibreOffice.'
+                        body='&nbsp;&nbsp;&nbsp;No curso de informática, os alunos aprendem desde tarefas básicas, como ligar o computador, manusear o mouse e escrever no teclado, até a utilização de softwares específicos, como navegadores e aplicativos do LibreOffice.'
                     />
 
                     <Card
                         title='Visita Técnica'
                         imageUrl={img_visita}
-                        body='&nbsp;&nbsp;&nbsp;Na visita técnica, é marcada uma data para que os alunos bolsistas e voluntários façam uma visita técnica à APAE para conhecer o espaço e o trabalho desenvolvido nesta instituição.'
+                        body='&nbsp;&nbsp;&nbsp;Durante a visita técnica, será agendada uma data para que os alunos bolsistas e voluntários visitem a APAE e tenham a oportunidade de conhecer o espaço e o trabalho desenvolvido por essa instituição.'
                     />
 
                     <Card
                         title='Palestra'
                         imageUrl={img_palestra}
-                        body='&nbsp;&nbsp;&nbsp;Na palestra é convidado um um profissional da APAE para ministrar uma palestra no IFSP sobre as pessoas com deficiência intelectual.'
+                        body='&nbsp;&nbsp;&nbsp;Na palestra, um profissional da APAE é convidado para ministrar uma apresentação no IFSP sobre pessoas com deficiência intelectual.'
                     />
                 </div>
             </div>
