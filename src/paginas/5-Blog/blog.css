@@ -58,11 +58,40 @@ section.blog-container {
     align-items: center;
 }
 
+
+@media (max-width: 1024px){
+    .paragrafo-blog{
+        font-size: 2vw;
+        margin-top: 10%;
+    }
+
+    .imagem-link-blog {
+        max-height: 80px;
+        margin-top: 30%;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .paragrafo-blog{
+        font-size: 2vw;
+    }
+}
+
+
+@media (max-width: 700px){
+    .paragrafo-blog {
+        font-size: 15px;
+        padding-left: 4%;
+        text-align: left;
+      }
+}
+
+
 @media (max-width: 400px) {
     .paragrafo-blog {
       font-size: 14px;
       padding-left: 14%;
-      text-align: left;
     }
 
     .imagem-link-blog {
@@ -79,7 +108,6 @@ section.blog-container {
         max-width: 100%;
         padding-top: 40%;
         padding-left: 18%;
-
     }
 
   }

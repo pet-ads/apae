@@ -69,13 +69,13 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     .textofooter{
         margin-left: -12%;
     }
 
     .navfooter{
-        margin-left: -18%;
+        margin-left: -18.5%;
     }
 }
 

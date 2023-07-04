@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .titulo-container-contato{
@@ -35,9 +36,7 @@
 .mapa-cards-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
-  
+  align-items: center; 
 }
 
 .mapaApae,
@@ -81,7 +80,34 @@
   
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 1024px){
+  .contato-container{
+    margin-bottom: 10%;
+
+  }
+  .titulo-container-contato{
+      font-size: 3vw;
+      margin-bottom: -2%;
+      margin-top: 2%;
+  }
+}
+
+
+@media (max-width: 1000px){
+  .contato-container{
+    margin-bottom: 10%;
+
+  }
+  .titulo-container-contato{
+      font-size: 3vw;
+      margin-top: 10%;
+      margin-bottom: -2%;
+  }
+  
+}
+
+@media (max-width: 700px) {
   .titulo-container-contato{
     padding-top: 15%;
     font-size: 10vw;
