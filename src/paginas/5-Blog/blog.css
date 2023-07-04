@@ -69,3 +69,17 @@ section.blog-container {
         max-height: 90px;
     }
   }
+
+  @media (max-width: 300px){
+    .paragrafo-blog{
+        margin-bottom: -12%;
+        margin-left: -18%;
+    }
+    .blog{
+        max-width: 100%;
+        padding-top: 40%;
+        padding-left: 18%;
+
+    }
+
+  }
