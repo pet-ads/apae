@@ -19,18 +19,20 @@ function MenuNav({ scrollToSection }) {
 
         <ul className={styles.list}>
 
-          <Item section="Home" scrollToSection={scrollToSection}/>
-          <Item section="Projeto" scrollToSection={scrollToSection}/>
-          <Item section="Turmas" scrollToSection={scrollToSection}/>
-          <Item section="Equipe" scrollToSection={scrollToSection}/>
-          <Item section="Ações" scrollToSection={scrollToSection}/>
-          <Item section="Blog" scrollToSection={scrollToSection}/>
-
           <button className={styles.hamburguer_menu} onClick={() => {
           setIsNavExpanded(!isNavExpanded);
-        }}>
+          }}>
             <img src={burguerIcon} alt="Botão de Menu" />
           </button>
+
+          <div className={styles.links}>
+            <Item section="Home" scrollToSection={scrollToSection}/>
+            <Item section="Projeto" scrollToSection={scrollToSection}/>
+            <Item section="Turmas" scrollToSection={scrollToSection}/>
+            <Item section="Equipe" scrollToSection={scrollToSection}/>
+            <Item section="Ações" scrollToSection={scrollToSection}/>
+            <Item section="Blog" scrollToSection={scrollToSection}/>
+          </div>
 
         </ul>
 

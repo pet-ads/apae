@@ -21,6 +21,11 @@
   list-style: none;
 }
 
+.links{
+  display: flex;
+  flex-direction: row;
+}
+
 .logo{
   width: 9em;
   height: 5.5em;
@@ -35,7 +40,7 @@
   
 }
 
-.hamburguer_menu:hover{
+.hamburguer_menu:hover, .hamburguer_menu:focus{
   background-color: #10813c;
   transition: background-color 0.3s ease-in-out;
 }
@@ -54,7 +59,6 @@
   }
   
 }
-
 
 @media (max-width: 300px) {
   .img_container {
