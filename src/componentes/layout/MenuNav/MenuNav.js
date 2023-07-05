@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MenuNav.module.css';
 import logo from './logo_navheader.png';
+import burguerIcon from './burguericon.png';
 
 function MenuNav({ scrollToSection }) {
   return (
@@ -31,6 +32,10 @@ function MenuNav({ scrollToSection }) {
           <li className={styles.item}>
             <button onClick={() => scrollToSection("blog")}>Blog</button>
           </li>
+
+          <button className={styles.hamburguer_menu}>
+            <img src={burguerIcon} alt="Botão de Menu" />
+          </button>
         </ul>
       </nav>
     </div>

@@ -47,20 +47,35 @@
   margin-top: 6px;
 }
 
+.hamburguer_menu {
+  display: none;
+  border: none;
+  background-color: white;
+  
+}
 
+.hamburguer_menu:hover{
+  background-color: #10813c;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hamburguer_menu img{
+  width: 100px;
+  height: 4.2em;
+  padding-bottom: 1.4em;
+  padding-top: 1.4em;
+}
 
 @media (max-width: 700px){
-  .img_container {
-    padding-left: 26%;
-  }
 
-  nav {
+  .item {
     display: none; 
   }
 
-  .list {
-    display: none; 
+  .hamburguer_menu{
+    display: block;
   }
+  
 }
 
 
