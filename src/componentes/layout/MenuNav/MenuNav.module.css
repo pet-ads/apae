@@ -21,25 +21,6 @@
   list-style: none;
 }
 
-.item button {
-  font-family: 'Trebuchet MS', sans-serif;
-  color: black;
-  padding: 2em 1em;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size:larger;
-  width: 100px;
-  text-align: center;
-}
-
-.item button:hover {
-  color: white;
-  background-color: #10813c;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
 .logo{
   width: 9em;
   height: 5.5em;
@@ -67,10 +48,6 @@
 }
 
 @media (max-width: 700px){
-
-  .item {
-    display: none; 
-  }
 
   .hamburguer_menu{
     display: block;
