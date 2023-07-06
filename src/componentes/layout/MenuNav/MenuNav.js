@@ -6,7 +6,16 @@ import Item from './Item/ItemNav';
 
 function MenuNav({ scrollToSection }) {
 
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [listState, setListState] = useState(false);
+  const [linkState, setLinkState] = useState(false);
+
+  function openMenu(){
+    setListState(listState => !listState); 
+    setLinkState(linkState => !linkState);
+  }
+
+  let toggleListExpand = listState ? styles.list_expanded : styles.list;
+  let toggleLinksExpand = linkState ? styles.links_expanded : styles.links;
 
   return (
     <div className={styles.component_container}>
@@ -17,15 +26,13 @@ function MenuNav({ scrollToSection }) {
 
       <nav>
 
-        <ul className={styles.list}>
+        <ul className={toggleListExpand}>
 
-          <button className={styles.hamburguer_menu} onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-          }}>
+          <button className={styles.hamburguer_menu} onClick={openMenu}>
             <img src={burguerIcon} alt="Botão de Menu" />
           </button>
 
-          <div className={styles.links}>
+          <div className={toggleLinksExpand}>
             <Item name="Home" section="home" scrollToSection={scrollToSection}/>
             <Item name="Projeto" section="projeto" scrollToSection={scrollToSection}/>
             <Item name="Turmas" section="turmas" scrollToSection={scrollToSection}/>
