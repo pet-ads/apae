@@ -26,12 +26,12 @@ function MenuNav({ scrollToSection }) {
           </button>
 
           <div className={styles.links}>
-            <Item section="Home" scrollToSection={scrollToSection}/>
-            <Item section="Projeto" scrollToSection={scrollToSection}/>
-            <Item section="Turmas" scrollToSection={scrollToSection}/>
-            <Item section="Equipe" scrollToSection={scrollToSection}/>
-            <Item section="Ações" scrollToSection={scrollToSection}/>
-            <Item section="Blog" scrollToSection={scrollToSection}/>
+            <Item name="Home" section="home" scrollToSection={scrollToSection}/>
+            <Item name="Projeto" section="projeto" scrollToSection={scrollToSection}/>
+            <Item name="Turmas" section="turmas" scrollToSection={scrollToSection}/>
+            <Item name="Equipe" section="equipe" scrollToSection={scrollToSection}/>
+            <Item name="Ações" section="acoes" scrollToSection={scrollToSection}/>
+            <Item name="Blog" section="blog" scrollToSection={scrollToSection}/>
           </div>
 
         </ul>
