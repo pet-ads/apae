@@ -19,8 +19,25 @@
 
 @media (max-width: 700px){
 
-    .item{
-        display: none;
+    .item button {
+        font-family: 'Trebuchet MS', sans-serif;
+        color: #17b755;
+        background-color: #0d612d;
+        padding: 0.5em 0.5em;
+        border: none;
+        cursor: pointer;
+        font-size: larger;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        border-bottom: #2c924c solid 2px;
+    }
+      
+    .item button:hover {
+        color: #10813c;
+        background-color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
     }
     
 }

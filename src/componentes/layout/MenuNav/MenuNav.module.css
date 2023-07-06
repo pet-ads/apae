@@ -41,7 +41,7 @@
 }
 
 .hamburguer_menu:hover, .hamburguer_menu:focus{
-  background-color: #10813c;
+  background-color: #0d612d;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -56,6 +56,28 @@
 
   .hamburguer_menu{
     display: block;
+  }
+
+  .links{
+    display: none;
+  }
+  
+  .links_expanded{
+    position: absolute;
+    display: block;
+    list-style: none;
+
+    top: 7.1em;
+    right: 0;
+
+    width: 100%;
+  }
+
+  .list_expanded{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 20.95em;
   }
   
 }
