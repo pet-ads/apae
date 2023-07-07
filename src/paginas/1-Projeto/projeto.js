@@ -1,5 +1,6 @@
 import "./projeto.css"
-import Imagem from "./informatica.jpg";
+import Imagem1 from "./labapae1.jpeg";
+import Imagem2 from "./labapae2.jpeg";
 
 export default function Projeto(){
     return(
@@ -11,7 +12,8 @@ export default function Projeto(){
 
             <div className="conteudo">
                 <div className="img-container">
-                    <img src={Imagem} alt="Img_Projetos"/>
+                    <img src={Imagem1} alt="Alunos tendo aula de informática."/>
+                    <img src={Imagem2} alt="Alunos tendo aula de informática."/>
                 </div>
                 
                 <div className="descricao-projeto">
@@ -20,7 +22,11 @@ export default function Projeto(){
                     </p>
 
                     <p className="texto-proj">O objetivo geral é proporcionar a pessoas com deficiência intelectual a familiarização e o aprimoramento de conhecimentos em informática,
-                        contribuindo para a sua inclusão digital e, consequentemente, sua inclusão social. Não somente o projeto tem auxiliado na inserção no mercado de trabalho,
+                        contribuindo para a sua inclusão digital e, consequentemente, sua inclusão social. 
+                    </p>
+
+                    <p className="texto-proj">
+                    Não somente o projeto tem auxiliado na inserção no mercado de trabalho,
                         mas também tem melhorado a autoestima dos alunos. O empreedimento em parceria com o IFSP e a APAE tem sido divulgado em diversos congressos e em revistas,
                         como a do Napne.
                     </p>

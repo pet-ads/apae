@@ -1,11 +1,14 @@
 .conteudo{
     display: flex;
     flex-direction: row;
+
+    padding: 0em 3.5em;
 }
 
 .img-container img {
     width: 100%;
     max-width: 40em;
+    width: 28em;
     height: auto;
     border-right: solid green 4px;
     animation: fade-in 1s;
@@ -26,34 +29,36 @@
 
 .descricao-projeto{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     line-height: 1.8vw;
     text-align: left;
     width: 100%;
     max-width: 45em;
     word-spacing: 0.2vw;
     text-align: justify;
-    margin-left: 1em;
-    margin-right: 2em;
 }
-
 
 .texto-proj{
     text-indent: 5%;
 }
 
 
-
 @media (max-width: 1024px){
+
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+    }
+
     .img-container img {
-        margin-top: 6%;
         max-width: 50em;
+        width: 27em;
+        margin-top: 3%;
     }
 
     .descricao-projeto{
         font-size: 1.6vw;
         line-height: 3vw;
-        margin-bottom: 5%;
     }
 
     .projeto-titulo-container h3{
@@ -89,11 +94,19 @@
         flex-direction: column;
     }
 
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .img-container img {
         border-right: none;
         max-width: 100%;
+        width: 40em;
         height: auto;
-        padding-left: 2%;
     }
   
     .projeto-titulo-container h3 {
@@ -111,7 +124,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-      }
+        margin-top: 10%;
+    }
+
+    .descricao-projeto p {
+        margin: 0px;
+        padding: 0px;
+
+        margin-bottom: 4%;
+        text-indent: 0px;
+    }
 
 }
 
