@@ -70,7 +70,7 @@ const TurmasAnteriores = () => {
   const getSlidesToShow = (filteredAlunos, largura) => {
     if (largura < 480) {
       return Math.min(filteredAlunos.length, 1);
-    } else if (largura < 665) {
+    } else if (largura < 690) {
       return Math.min(filteredAlunos.length, 2);
     } else if (largura < 1024) {
       return Math.min(filteredAlunos.length, 3);
