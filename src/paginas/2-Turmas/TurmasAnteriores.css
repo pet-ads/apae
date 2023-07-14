@@ -16,7 +16,7 @@
   max-width: 180px;
   margin: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1vw;
+  font-size: 1.4vw;
 }
 
 .carousel-turmas .aluno img {
@@ -39,7 +39,7 @@
 }
 
 .buttons-turmas {
-  margin-bottom: 3vw;
+  margin-bottom: 30px;
 }
 
 .buttons-turmas * {
@@ -70,8 +70,42 @@
   cursor: default !important;
 }
 
+@media (max-width: 1024px){
+  .carousel-turmas .aluno p{
+    font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 1000px){
+  .carousel-turmas .aluno p{
+    font-size: 1.9vw;
+  }
+}
+
+@media (max-width: 700px){
+  .carousel-turmas .aluno p{
+    font-size: 3.5vw;
+  }
+  .buttons-turmas * {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 12px;
+  }
+}
+
 @media (max-width: 400px){
   .carousel-turmas .aluno p{
     font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 300px){
+  .carousel-turmas .aluno p{
+    font-size: 5vw;
+  }
+  .buttons-turmas * {
+    font-size: 13px;
+    line-height: 25px;
+    padding: 10px 12px;
   }
 }
