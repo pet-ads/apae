@@ -1,64 +1,92 @@
 .CardContato {
-    width: 350px;
-    height: unset;
-    background-color:white;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    color: black;
-    transition: background-color 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    line-height: 1px;
-    border: 2px rgba(0, 128, 0, 0.473) solid;
-  }
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 26.5%;
+  height: unset;
+  background-color:white;
+  border: 2px rgba(0, 128, 0, 0.473) solid;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  line-height: 1px;
+  text-align: center;
+
+
+}
   
-  .CardContato:hover {
-    
-    box-shadow: 0px 0px 15px -5px;
-  }
-  .card-nome {
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    margin-top: 25px;
-  }
+.CardContato:hover {
+  box-shadow: 0px 0px 15px -5px;
+}
+
+.card-nome {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-email,
+.card-telefone {
+  font-size: 1vw;
+  color: black;
+  padding: 4%;
+  text-decoration: none;
   
+}
+.card-descricao{
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+.card-email:hover{
+  color: green;
+}
+
+.card-telefone:hover {
+  color: green; 
+}
+
+@media (max-width:1024px){
+  .CardContato{
+    min-height: 20vh;
+  }
+  .card-email, .card-telefone {
+    font-size: 1.3vw;
+  }
   .card-descricao {
-   
-    text-align: center;
-   
+    font-size: 1.4vw;
+  }
+  .card-nome{
+    font-size: 1.9vw;
+  }
+
+}
+
+@media (max-width:700px){
+  .CardContato{
+    width: 70%;
+  }
+  .card-nome{
+    font-size: 3vw;
+  }
+  .card-email, .card-telefone {
+    font-size: 3.5vw;
+  }
+  .card-descricao {
+    font-size: 3.6vw;
+  }
+}
+@media (min-width:1900px) {
+  .card-nome{
+    font-size: 1.2vw;
+  }
+  .card-email, .card-telefone {
+    font-size: 1.1vw;
+  }
+  .card-descricao {
+    font-size: 1.15vw;
   }
   
-  .card-email,
-  .card-telefone {
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    line-height: 20px;
-    
-    justify-content: center;
-    
-  }
-  .card-telefone {
-    margin-bottom: 25px;
-  }
-  .CardContato .card-email a{
-    text-decoration: none;
-    color:black;
-  }
+}
 
-  .card-email a:hover{
-    color: green;
-  }
-  .CardContato .card-telefone a{
-    text-decoration: none;
-    color: black;
 
-  }
-  .CardContato .card-telefone a:hover {
 
-    color: green; 
-  }
