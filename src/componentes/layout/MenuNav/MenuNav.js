@@ -38,6 +38,7 @@ function MenuNav({ scrollToSection }) {
             <Item name="Turmas" section="turmas" scrollToSection={scrollToSection}/>
             <Item name="Equipe" section="equipe" scrollToSection={scrollToSection}/>
             <Item name="Ações" section="acoes" scrollToSection={scrollToSection}/>
+            <Item name="Contato" section="contato" scrollToSection={scrollToSection}/>
             <Item name="Blog" section="blog" scrollToSection={scrollToSection}/>
           </div>
 

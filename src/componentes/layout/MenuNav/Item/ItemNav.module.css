@@ -1,11 +1,13 @@
 .item button {
+    display: flex;
+    justify-content: center;
     font-family: 'Trebuchet MS', sans-serif;
     color: black;
     padding: 2em 1em;
     background: none;
     border: none;
     cursor: pointer;
-    font-size:larger;
+    font-size: larger;
     width: 100px;
     text-align: center;
 }
