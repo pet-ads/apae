@@ -1,0 +1,59 @@
+.LocalContainer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 26%;
+    height: unset;
+    background-color: white;
+    
+}
+
+
+
+
+iframe{
+    border: 2px solid;
+    border-radius: 20px;
+    border-color:rgb(113, 194, 113);
+    overflow: hidden;
+    width: 80%;
+    height: unset;
+
+    
+    
+}
+@media (max-width:1024px){
+    .LocalContainer{
+      min-height: 18vh;
+    }
+    .informacoes {
+      font-size: 1.3vw;
+    }
+    
+  }
+  @media (max-width:700px){
+    .LocalContainer{
+      width: 70%;
+    }
+    .informacoes{
+      font-size: 3vw;
+    }
+    
+  }
+
+  @media (min-width:1900px) {
+    .informacoes{
+      font-size: 1.2vw;
+    }
+    iframe{
+        width: 60%;
+        height: 100%
+    }
+    
+  }
+  
+  
+  
+  
+
+   

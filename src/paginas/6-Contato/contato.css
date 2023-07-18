@@ -1,84 +1,46 @@
 .contato-container {
   background-color: white;
   min-height: 70vh;
+  max-height: unset;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 5%;
-}
-
-.titulo-container-contato{
-    
-  text-transform: uppercase;
-  font-size: 2.5vw;     
-  padding-bottom: 7%;
-  margin-top: auto;
-  text-align: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-  
-.contato-cards {
-  display: flex;
-  justify-content: center;
-}
-  
-.mapa-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content:center;
-  gap: 5px;
-  column-gap:30px;
-  
-}
-  
-.mapa-cards-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
-
-.mapaApae,
-.mapaIFSP {
-  
-  display: flex; 
-  border: 2px solid;
-  border-radius: 20px;
-  border-color:rgb(151, 214, 151);
-  overflow: hidden;
-  margin-bottom: 5%;
- 
-  
+  justify-content: flex-start;
+  padding: 3%;
   
   
 }
 
 .cards {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  gap: 30px;
+  gap: 6%;
   margin-bottom: 4%;
   
   
 }
-
-.mapaApae {
-  margin-right: 0;
-}
-
-.local h4{
-  margin-bottom: 2%;
-  text-align: center;
-}
-.local p {
-  margin-top: 2%;
-  text-align: center;
-  font-size: 13px;
+.mapas{
   
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+  flex-wrap: wrap;
 }
+
+
+.titulo-container-contato{
+    
+  text-transform: uppercase;
+  font-size: 2.5vw;     
+  margin-top: auto;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
 
 
 @media (max-width: 1024px){
@@ -87,22 +49,28 @@
 
   }
   .titulo-container-contato{
-      font-size: 3vw;
-      margin-bottom: -2%;
-      margin-top: 2%;
+    font-size: 3vw;
+    margin-bottom: -2%;
+    margin-top: 2%;
   }
 }
 
-
+@media (max-width: 1024px){
+  .titulo-container-contato{
+    font-size: 3vw;
+    margin-bottom: 2.5%;
+    margin-top: -3.5%;
+  }
+}
 @media (max-width: 1000px){
   .contato-container{
     margin-bottom: 10%;
 
   }
   .titulo-container-contato{
-      font-size: 3vw;
-      margin-top: 10%;
-      margin-bottom: -2%;
+    font-size: 3vw;
+    margin-top: 10%;
+      
   }
   
 }
@@ -120,4 +88,16 @@
 
 }
 
+@media (max-width: 700px){
+  .titulo-container-contato{
+    padding-bottom: 15%;
+  }
+  .cards{
+    gap: 20px;
+  }
+  
+}
+
+
+  
 
