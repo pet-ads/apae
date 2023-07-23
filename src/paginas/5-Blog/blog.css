@@ -90,7 +90,7 @@ section.blog-container {
 
 @media (max-width: 400px) {
     .paragrafo-blog {
-      font-size: 14px;
+      font-size: 4.5vw;
       padding-left: 14%;
     }
 
@@ -99,6 +99,7 @@ section.blog-container {
     }
   }
 
+  
   @media (max-width: 300px){
     .paragrafo-blog{
         margin-bottom: -12%;

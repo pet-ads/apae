@@ -27,7 +27,7 @@ iframe{
       min-height: 18vh;
     }
     .informacoes {
-      font-size: 1.3vw;
+      font-size: 2vw;
     }
     
   }
@@ -50,6 +50,13 @@ iframe{
         height: 100%
     }
     
+  }
+
+  @media (max-width:400px){
+    .informacoes {
+      font-size: 3.5vw;
+    }
+
   }
   
   

@@ -82,9 +82,16 @@
   
 
 
-  @media (max-width: 300px) {
+  @media (max-width: 500px) {
     .paragrafo-card {
+        font-size: 4.5vw;
+    }
+
+    .card-title {
         font-size: 5vw;
     }
-  }
-  
+
+    .card-container {
+        width: 100%;
+      }
+}

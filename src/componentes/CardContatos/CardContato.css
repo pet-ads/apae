@@ -90,3 +90,15 @@
 
 
 
+@media (max-width: 500px){
+  .card-nome{
+    font-size: 4.5vw;
+  }
+  .card-descricao {
+    font-size: 3.7vw;
+  }
+
+  .card-email, .card-telefone {
+    font-size: 3.6vw;
+  }
+}
