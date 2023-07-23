@@ -69,10 +69,8 @@
     position: absolute;
     display: block;
     list-style: none;
-
     top: 7.1em;
     right: 0;
-
     width: 100%;
   }
 
@@ -84,9 +82,6 @@
   }
   
 }
-
-
-
 
 @media (max-width: 300px) {
   .img_container {

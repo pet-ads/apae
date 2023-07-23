@@ -81,7 +81,7 @@ section.blog-container {
 
 @media (max-width: 700px){
     .paragrafo-blog {
-        font-size: 15px;
+        font-size: 18px;
         padding-left: 4%;
         text-align: left;
       }
