@@ -44,7 +44,7 @@
     margin-bottom: 1%;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     .paragrafo-card {
         font-size: 1.6vw;
     }
@@ -92,6 +92,6 @@
     }
 
     .card-container {
-        width: 100%;
+        width: 90%;
       }
 }

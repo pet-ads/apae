@@ -2,15 +2,17 @@
     display: flex;
     flex-direction: row;
     padding: 0em 1.5em;
+    align-items: center;
 }
 
 .img-container img {
     width: 100%;
     max-width: 40em;
-    width: 28em;
+    width: 30em;
     height: auto;
     border-right: solid green 4px;
     animation: fade-in 1s;
+    padding-left: 10%;
 }
 
 
@@ -30,7 +32,6 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.4vw;
     line-height: 1.8vw;
-    text-align: left;
     width: 100%;
     max-width: 45em;
     word-spacing: 0.2vw;
@@ -42,10 +43,10 @@
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1300px){
     .img-container img {
         max-width: 50em;
-        width: 27em;
+        width: 22em;
         margin-top: 3%;
     }
 
@@ -67,16 +68,29 @@
         font-size: 1.9vw;
         line-height: 4.2vw;
     }
+
+    .img-container img{
+        padding-left: 0%;
+    }
 }
 
-@media (max-width: 900px){
-    .conteudo{
-        margin: 0% 0% 0% 2%;
+@media (max-width: 912px){
+    .descricao-projeto{
+        font-size: 1.6vw;
+        line-height: 3vw;
+        padding-left: 1%;
     }
-    
+
+    .conteudo{
+        padding-right: 11%;
+    }
 }
 
 @media (max-width: 700px) {
+    .conteudo{
+        padding-right: 0%;
+    }
+
     .projeto-container{
         margin-left: 1%;
         margin-right: 5%;
@@ -123,7 +137,6 @@
     .descricao-projeto p {
         margin: 0px;
         padding: 0px;
-
         margin-bottom: 4%;
         text-indent: 0px;
     }
@@ -150,10 +163,7 @@
   
     .descricao-projeto {
         font-size: 4.5vw;
-    }
-
-     
-
+    }  
 }
 
 @media (max-width: 300px){

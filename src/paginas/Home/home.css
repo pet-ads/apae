@@ -1,6 +1,6 @@
 .img-home img {
-    width: 100%;
-    max-width: 40em;
+    width: 28em;
+    height: 28em;
     height: auto;
     animation: fade-in 2s;
 }
@@ -73,7 +73,11 @@
 
 @media (max-width: 1024px) {
     .home-container{
-        padding: 20% 6% 25% 10%;
+        padding: 15% 9% 25% 10%;
+    }
+    .img-home img {
+        width: 22em;
+        height: 22em;
     }
 }
 
@@ -114,15 +118,13 @@
     .img-home img {
         margin-top: 0%;
         margin-bottom: -15%;
-        margin-left: -10%;
-        width: 90%;
-        height: 90%;
+        margin-left: 0%;
+        width: 70%;
+        height: 70%;
     }
     
     .home-container {
-        width: 100%;
-        padding: 8% 5% 12% 5%;
-        height: auto;
+        padding: 8% 0% 12% 0%;
         text-align: center;
         display: block;
         flex-direction: row-reverse;
@@ -133,48 +135,29 @@
     }
 
     .home-titulo {
-        font-size: 8vw;
-        line-height: 13vw;
+        padding: 0% 5% 0% 8%;
+        font-size: 6vw;
+        line-height: 12vw;
         text-align: center; 
-        padding: 0 10%; 
-        margin-right: 10%;
     }
     
     .button-home {
         font-size: 15px;
-        line-height: 25px;
-        padding: 10px 12px;
+        line-height: 30px;
+        padding: 14px 18px;
     }
+    
     .titulo-button {
-        margin-right: 31%;
+        margin-right: 18%;
         margin-top: -4%;
     }
 }
 
 
 @media (max-width: 300px) {
-    .img-home img{
-        padding-top: 40%;
-        width: 95%;
-        margin-left: -2.5%;
-    }
-
-    .home-titulo {
-        margin-top: 15%;
-        font-size: 9.5vw;
-        line-height: 15vw;
-        margin-right: 12%;
+    .button-home {
+        font-size: 12px;
+        line-height: 22px;
     }
     
-    .button-home {
-        font-size: 13px;
-        line-height: 25px;
-        padding: 10px 12px;
-    }
-    .titulo-button {
-        margin-right: 31%;
-        margin-top: 3%;
-    }
-
-
 }
