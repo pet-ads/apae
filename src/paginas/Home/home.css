@@ -31,6 +31,7 @@
     background-color: #ffffff;
     padding: 10% 15% 12% 15%;
     z-index: 20;
+    
 }
 
 .home-titulo {
@@ -101,18 +102,21 @@
     
 }
 
-@media (max-width: 900px){
+@media (max-width: 912px){
     .home-container{
-        padding: 10% 6% 25% 14%;
+        padding: 0% 12% 0% 12%;
     }
+    
 }
 
 
 @media (max-width: 700px) {
     .img-home img {
-        margin-top: 25%;
+        margin-top: 0%;
         margin-bottom: -15%;
         margin-left: -10%;
+        width: 90%;
+        height: 90%;
     }
     
     .home-container {

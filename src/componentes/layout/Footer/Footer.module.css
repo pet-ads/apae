@@ -79,12 +79,15 @@
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     .navfooter{
         display: none;
     }
-    .paragrafo{
-        font-size: 11.6px;
-        margin-left: -1%;
+    .footer{
+        position:relative;
     }
+    .textofooter{
+        margin-left: 0%;
+    }
+    
 }

@@ -1,8 +1,7 @@
 .conteudo{
     display: flex;
     flex-direction: row;
-
-    padding: 0em 3.5em;
+    padding: 0em 1.5em;
 }
 
 .img-container img {
@@ -44,12 +43,6 @@
 
 
 @media (max-width: 1024px){
-
-    .conteudo{
-        display: flex;
-        flex-direction: row;
-    }
-
     .img-container img {
         max-width: 50em;
         width: 27em;
@@ -137,7 +130,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .projeto-container{
         margin-left: 1%;
         margin-right: 5%;
@@ -155,22 +148,12 @@
         padding-left: 2%;
     }
   
-    .projeto-titulo-container h3 {
-      font-size: 10vw;
-      padding-left: 4%;
-      padding-top: 4%;
-    }
-
     .descricao-projeto {
         font-size: 4.5vw;
-        line-height: 2;
-        word-spacing: normal;
-        width: 100%;
-        margin-left: 2%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+    }
+
+     
+
 }
 
 @media (max-width: 300px){
