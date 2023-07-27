@@ -2,6 +2,8 @@
     background-color: white;
     min-height: 75.6vh;
     width: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 .titulo-turmas {
