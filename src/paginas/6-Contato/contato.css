@@ -5,9 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 3%;
-  
-  
+  padding-top: 45px;
+  padding-bottom: 60px;
 }
 
 .cards {
@@ -18,11 +17,8 @@
   align-content: center;
   gap: 6%;
   margin-bottom: 4%;
-  
-  
 }
 .mapas{
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,9 +35,6 @@
   text-align: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
-
 
 @media (max-width: 1024px){
   .contato-container{
