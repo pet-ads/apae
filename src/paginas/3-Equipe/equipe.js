@@ -39,8 +39,9 @@ const Equipe = () => {
         updatedEquipeData = equipe.filter(item => item.funcao === 'professor');
       } else if (selectedButton === 2) {
         updatedEquipeData = equipe.filter(item => item.funcao === 'monitor');
+      } else if (selectedButton === 3) {
+        updatedEquipeData = equipe.filter(item => item.funcao === 'ex-monitor');
       }
-      
       updatedEquipeData.sort((a, b) => a.name.localeCompare(b.name));
       
       setEquipeData(updatedEquipeData);
@@ -106,6 +107,11 @@ const Equipe = () => {
           className={selectedButton === 2 ? "selected" : ""}
           onClick={() => setSelectedButton(2)}>
           Monitores
+        </button>
+        <button
+          className={selectedButton === 3 ? "selected" : ""}
+          onClick={() => setSelectedButton(3)}>
+          Ex-Monitores
         </button>
       </div>
 
