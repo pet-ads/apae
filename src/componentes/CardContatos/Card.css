@@ -1,88 +1,120 @@
-.CardContato {
+.Card {
   display:flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 26.5%;
+  width: 25%;
   height: unset;
   background-color:white;
   border: 2px rgba(0, 128, 0, 0.473) solid;
-  border-radius: 20px;
+  overflow: hidden;
+  border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: black;
-  line-height: 1px;
   text-align: center;
+  padding: 1%;
+  line-height: 2px;
 
 
 }
-  
-.CardContato:hover {
+
+.CardDestaque {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  height: unset;
+  background-color:white;
+  border: 2.5px rgba(0, 128, 0, 0.473) solid;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  padding: 1%;
+  line-height: 2px;
+  flex-grow: 0.4;
+
+}
+.CardDestaque:hover{
   box-shadow: 0px 0px 15px -5px;
 }
 
-.card-nome {
-  text-align: center;
-  text-transform: uppercase;
+.Card:hover {
+  box-shadow: 0px 0px 15px -5px;
 }
 
-.card-email,
-.card-telefone {
+
+.nome {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0%;
+}
+
+.email {
   font-size: 1vw;
   color: black;
-  padding: 4%;
   text-decoration: none;
+  margin-bottom: 3%;
+ 
   
 }
-.card-descricao{
+.descricao{
   font-weight: bold;
   font-size: 1.2vw;
+  line-height: 24px;
 }
-.card-email:hover{
+.email:hover{
   color: green;
 }
 
-.card-telefone:hover {
-  color: green; 
-}
+
+
 
 @media (max-width:1024px){
-  .CardContato{
+  .Card, .CardDestaque{
     min-height: 20vh;
   }
-  .card-email, .card-telefone {
+  .email {
     font-size: 1.3vw;
   }
-  .card-descricao {
+  .descricao {
     font-size: 1.4vw;
   }
-  .card-nome{
+  .nome{
     font-size: 1.9vw;
   }
 
 }
 
 @media (max-width:700px){
-  .CardContato{
+  .Card, .CardDestaque{
     width: 70%;
   }
-  .card-nome{
+  .CardDestaque{
+    order: 0;
+    flex-grow: 0;
+  }
+  .Card{
+    order: 1;
+  }
+  .nome{
     font-size: 3vw;
   }
-  .card-email, .card-telefone {
+  .email{
     font-size: 3.5vw;
   }
-  .card-descricao {
+  .descricao {
     font-size: 3.6vw;
   }
 }
 @media (min-width:1900px) {
-  .card-nome{
+  .nome{
     font-size: 1.2vw;
   }
-  .card-email, .card-telefone {
+  .email {
     font-size: 1.1vw;
   }
-  .card-descricao {
+  .descricao {
     font-size: 1.15vw;
   }
   
@@ -91,14 +123,14 @@
 
 
 @media (max-width: 500px){
-  .card-nome{
+  .nome{
     font-size: 4.5vw;
   }
-  .card-descricao {
+  .descricao {
     font-size: 3.7vw;
   }
 
-  .card-email, .card-telefone {
+  .email {
     font-size: 3.6vw;
   }
 }

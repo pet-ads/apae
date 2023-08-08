@@ -1,7 +1,8 @@
 import React from "react"
 import "./contato.css"
-import CardContato from "../../componentes/CardContatos/CardContato"
+import Card from "../../componentes/CardContatos/Card"
 import Local from "../../componentes/Mapas/Local"
+
 
 export default function Contato(){
     return(
@@ -10,8 +11,7 @@ export default function Contato(){
             <h3 className="titulo-container-contato">Contato</h3>
             <div className="container">
                 <div className= "cards">
-
-                    <CardContato 
+                    <Card
                         nome = 'Mariana Schiabel'
                         descricao = 'Coordenadora de Projetos da APAE'
                         email = 'coordenacao@apaesaocarlossp.org.br'
@@ -19,18 +19,21 @@ export default function Contato(){
                         
                         
                     />
-                    <CardContato 
+
+                    <Card destaque={true}
+                        nome = 'Célia Kawabata'
+                        descricao = 'Docente IFSP e Coordenadora do Projeto'
+                        email= 'celiak@ifsp.edu.br'
+                    />
+
+                    <Card 
                         nome = 'Gisele Dovigo'
                         descricao = 'Docente APAE'
                         email = 'giselelabor@yahoo.com.br'
                         telefone= '(16)99117-3816'
                     
                     />
-                    <CardContato 
-                        nome = 'Célia Kawabata'
-                        descricao = 'Docente IFSP'
-                        email = 'celiak@ifsp.edu.br'
-                    />
+                    
                 </div>
                 <div className="mapas">
                    <Local
