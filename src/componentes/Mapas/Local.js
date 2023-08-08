@@ -9,10 +9,8 @@ function Local({nome, descricao, src}){
                 <p className="descricao-local">{descricao}</p>
             </div>
             <div className="mapa">
-                <iframe src={src}></iframe>
+                <iframe title='mapa' src={src}></iframe>
             </div>
-            
-            
         </div>
     )
 }
