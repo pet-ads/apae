@@ -1,5 +1,33 @@
 [
     {
+        "id": "prof1",
+        "funcao": "professor",
+        "name": "Célia Kawabata",
+        "image": "ProfessoresFotos/Célia Kawabata.jpg"
+    },
+    {
+        "id": "prof2",
+        "funcao": "professor",
+        "name": "Danilo Moschetto",
+        "image": "ProfessoresFotos/Danilo Moschetto.jpg"
+    },
+    {
+        "id": "prof3",
+        "funcao": "professor",
+        "name": "Fernando Salina",
+        "image": "ProfessoresFotos/Fernando Salina.jpg"
+    },
+    {
+        "id": "prof4",
+        "funcao": "professor",
+        "name": "Jorge Francisco Cutigi",
+        "image": "ProfessoresFotos/Jorge Francisco Cutigi.jpeg"
+    },
+
+
+
+
+    {
         "id": "monit1",
         "funcao": "monitor",
         "name": "Ana Clara Colognezi",
@@ -66,27 +94,159 @@
         "image": "MonitoresFotos/Felipe Eduardo de Souza.jpeg"
     },
     {
-        "id": "prof1",
-        "funcao": "professor",
-        "name": "Célia Kawabata",
-        "image": "ProfessoresFotos/Célia Kawabata.jpg"
+        "id": "monit12",
+        "funcao": "ex-monitor",
+        "name": "Rafael de Campos Brito (2017)",
+        "image": "MonitoresFotos/Rafael de Campos Brito.jpeg"
     },
     {
-        "id": "prof2",
-        "funcao": "professor",
-        "name": "Danilo Moschetto",
-        "image": "ProfessoresFotos/Danilo Moschetto.jpg"
+        "id": "monit13",
+        "funcao": "ex-monitor",
+        "name": "Lílian Raquel Alves de Souza (2017)",
+        "image": "MonitoresFotos/Lílian Raquel Alves de Souza.jpeg"
     },
     {
-        "id": "prof3",
-        "funcao": "professor",
-        "name": "Fernando Salina",
-        "image": "ProfessoresFotos/Fernando Salina.jpg"
+        "id": "monit14",
+        "funcao": "ex-monitor",
+        "name": "Joyce Mirella dos Anjos Viana (2017 á 2020)",
+        "image": "MonitoresFotos/Joyce Mirella dos Anjos Viana.jpg"
     },
     {
-        "id": "prof4",
-        "funcao": "professor",
-        "name": "Jorge Francisco Cutigi",
-        "image": "ProfessoresFotos/Jorge Francisco Cutigi.jpeg"
+        "id": "monit15",
+        "funcao": "ex-monitor",
+        "name": "Joel Rodrigues Ruivo (2017)",
+        "image": "MonitoresFotos/Joel Rodrigues Ruivo.jpeg"
+    },
+    {
+        "id": "monit16",
+        "funcao": "ex-monitor",
+        "name": "Gabriel Norde Santos (2017 á 2018)",
+        "image": "MonitoresFotos/Gabriel Norde Santos.jpeg"
+    },
+    {
+        "id": "monit17",
+        "funcao": "ex-monitor",
+        "name": "Amanda Cristina Ferreira Nalesso (2017 á 2018)",
+        "image": "MonitoresFotos/Amanda Cristina Ferreira Nalesso.jpeg"
+    },
+    {
+        "id": "monit18",
+        "funcao": "ex-monitor",
+        "name": "Larissa Costa de Castro (2018)",
+        "image": "MonitoresFotos/Larissa Costa de Castro.jpeg"
+    },
+    {
+        "id": "monit19",
+        "funcao": "ex-monitor",
+        "name": "Kaoru Hachiman (2018)",
+        "image": "MonitoresFotos/Kaoru Hachiman.jpeg"
+    },
+    {
+        "id": "monit20",
+        "funcao": "ex-monitor",
+        "name": "André Zucolotto (2018 á 2019)",
+        "image": "MonitoresFotos/André Zucolotto.jpeg"
+    },
+    {
+        "id": "monit21",
+        "funcao": "ex-monitor",
+        "name": "Willian Rodrigues Ferreira (2019)",
+        "image": "MonitoresFotos/Willian Rodrigues Ferreira.jpg"
+    },
+    {
+        "id": "monit22",
+        "funcao": "ex-monitor",
+        "name": "Raiane Almeida Nepomuceno (2019)",
+        "image": "MonitoresFotos/Raiane Almeida Nepomuceno.jpg"
+    },
+    {
+        "id": "monit23",
+        "funcao": "ex-monitor",
+        "name": "Paulo Henrique Fios (2019)",
+        "image": "MonitoresFotos/Paulo Henrique Fios.jpg"
+    },
+    {
+        "id": "monit24",
+        "funcao": "ex-monitor",
+        "name": "Matheus Rosales da Silva (2019)",
+        "image": "MonitoresFotos/Matheus Rosales da Silva.jpg"
+    },
+    {
+        "id": "monit25",
+        "funcao": "ex-monitor",
+        "name": "Lucas Guedes Brazelino (2019)",
+        "image": "MonitoresFotos/Lucas Guedes Brazelino.jpg"
+    },
+    {
+        "id": "monit26",
+        "funcao": "ex-monitor",
+        "name": "Kevin (2019)",
+        "image": "MonitoresFotos/Kevin.jpg"
+    },
+    {
+        "id": "monit27",
+        "funcao": "ex-monitor",
+        "name": "Jhuliane Beatriz Spineli (2019)",
+        "image": "MonitoresFotos/Jhuliane Beatriz Spineli.jpg"
+    },
+    {
+        "id": "monit28",
+        "funcao": "ex-monitor",
+        "name": "Felipe (2019)",
+        "image": "MonitoresFotos/Felipe.jpg"
+    },
+    {
+        "id": "monit29",
+        "funcao": "ex-monitor",
+        "name": "Erika Raissa Bueno da Silva (2019)",
+        "image": "MonitoresFotos/Erika Raissa Bueno da Silva.jpg"
+    },
+    {
+        "id": "monit30",
+        "funcao": "ex-monitor",
+        "name": "Duda (2019)",
+        "image": "MonitoresFotos/Duda.jpg"
+    },
+    {
+        "id": "monit31",
+        "funcao": "ex-monitor",
+        "name": "Vitória Camilo Mendes (2022)",
+        "image": "MonitoresFotos/Vitória Camilo Mendes.jpg"
+    },
+    {
+        "id": "monit32",
+        "funcao": "ex-monitor",
+        "name": "Thomas Caio Santos (2022)",
+        "image": "MonitoresFotos/Thomas Caio Santos.jpg"
+    },
+    {
+        "id": "monit33",
+        "funcao": "ex-monitor",
+        "name": "Rogerio Faria Galeote (2022)",
+        "image": "MonitoresFotos/Rogerio Faria Galeote.jpg"
+    },
+    {
+        "id": "monit34",
+        "funcao": "ex-monitor",
+        "name": "Mikaelle Santos Mendes Brito (2022)",
+        "image": "MonitoresFotos/Mikaelle Santos Mendes Brito.jpg"
+    },
+    {
+        "id": "monit35",
+        "funcao": "ex-monitor",
+        "name": "Lorena Orlandi (2022)",
+        "image": "MonitoresFotos/Lorena Orlandi.jpg"
+    },
+    {
+        "id": "monit36",
+        "funcao": "ex-monitor",
+        "name": "Kerolyn Cristina dos Santos (2022)",
+        "image": "MonitoresFotos/Kerolyn Cristina dos Santos.jpg"
+    },
+    {
+        "id": "monit37",
+        "funcao": "ex-monitor",
+        "name": "Isadora Caetano (2022)",
+        "image": "MonitoresFotos/Isadora Caetano.jpg"
     }
 ]
