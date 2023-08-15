@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Slider from '../Slider/slider.js';
 import './modal.css';
 
 
@@ -24,9 +25,8 @@ function CustomModal(){
                 overlayClassName ="modal-overlay"
                 className="conteudo-modal"
             >
-                <h2>Hello - I am a modal!</h2>
-                <p>DSANFJANJRBGKRBSKGf kfdjs fisj</p>
-
+                <h2 className="titulo-modal">Galeria de fotos</h2>
+                <Slider></Slider>
                 <button className = "button-modal" onClick={closeModal}>Close</button>
 
             </Modal>

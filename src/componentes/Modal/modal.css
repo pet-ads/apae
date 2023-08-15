@@ -4,27 +4,29 @@
     align-items: center;
 }
 
-.modal-overlay{
-    background-color: rgb(177, 80, 80);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+.modal-overlay {
+  background-color: rgb(252, 254, 255);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
-    width: 800px;
-    height: 700px;
-    margin: auto;
+  width: 800px;
+  height: 700px;
+  margin: auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
+
 
 .conteudo-modal{
     width: 90%;
-    max-width: 500px;
-    background-color: rgb(190, 186, 180);
+    max-width: 700px;
+    background-color: rgb(161, 204, 160);
     padding: 10px;
     border-radius: 5px;
 }
@@ -36,3 +38,6 @@
     cursor: pointer;
 }
 
+.titulo-modal{
+    color: rgb(28, 54, 7);
+}
