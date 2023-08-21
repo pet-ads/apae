@@ -9,7 +9,7 @@
         "id": "prof2",
         "funcao": "professor",
         "name": "Danilo Moschetto",
-        "image": "ProfessoresFotos/Danilo Moschetto.jpg"
+        "image": "ProfessoresFotos/Danilo.jpg"
     },
     {
         "id": "prof3",
@@ -25,49 +25,48 @@
     },
 
 
-
-
+    
     {
         "id": "monit1",
         "funcao": "monitor",
         "name": "Ana Clara Colognezi",
-        "image": "MonitoresFotos/Ana Clara Colognezi.jpeg"
+        "image": "MonitoresFotos/Ana Clara Colognezi.jpg"
     },
     {
         "id": "monit2",
         "funcao": "monitor",
         "name": "Ana Lívia Hernandes da Motta",
-        "image": "MonitoresFotos/Ana Lívia Hernandes da Motta.jpeg"
+        "image": "MonitoresFotos/Ana Lívia Hernandes da Motta.jpg"
     },
     {
         "id": "monit3",
         "funcao": "monitor",
         "name": "Heloisa Alves da Silva",
-        "image": "MonitoresFotos/Heloisa Alves da Silva.jpeg"
+        "image": "MonitoresFotos/Heloisa Alves da Silva.jpg"
     },
     {
         "id": "monit4",
         "funcao": "monitor",
         "name": "Isabelly de Cassia Benedito",
-        "image": "MonitoresFotos/Isabelly de Cassia Benedito.jpeg"
+        "image": "MonitoresFotos/Isabelly de Cassia Benedito.jpg"
     },
     {
         "id": "monit5",
         "funcao": "monitor",
         "name": "Kamila Aleixo Hungaro",
-        "image": "MonitoresFotos/Kamila Aleixo Hungaro.jpeg"
+        "image": "MonitoresFotos/Kamila Aleixo Hungaro.jpg"
     },
     {
         "id": "monit6",
         "funcao": "monitor",
         "name": "Letícia Kaori Yabuuti",
-        "image": "MonitoresFotos/Letícia Kaori Yabuuti.jpeg"
+        "image": "MonitoresFotos/Letícia Kaori Yabuuti.jpg"
     },
     {
         "id": "monit7",
         "funcao": "monitor",
         "name": "Valentine Lorena Ferrarini do Amaral",
-        "image": "MonitoresFotos/Valentine Lorena Ferrarini do Amaral.jpeg"
+        "image": "MonitoresFotos/Valentine Lorena Ferrarini do Amaral.jpg"
     },
     {
         "id": "monit8",
@@ -91,7 +90,7 @@
         "id": "monit11",
         "funcao": "monitor",
         "name": "Felipe Eduardo de Souza",
-        "image": "MonitoresFotos/Felipe Eduardo de Souza.jpeg"
+        "image": "MonitoresFotos/Felipe Eduardo de Souza.jpg"
     },
     {
         "id": "monit12",
