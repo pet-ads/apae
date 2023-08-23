@@ -33,21 +33,19 @@ const Equipe = () => {
   const [equipeData, setEquipeData] = useState([]);
 
   useEffect(() => {
-    const delay = setTimeout(() => {
-      let updatedEquipeData = [];
-      if (selectedButton === 1) {
-        updatedEquipeData = equipe.filter(item => item.funcao === 'professor');
-      } else if (selectedButton === 2) {
-        updatedEquipeData = equipe.filter(item => item.funcao === 'monitor');
-      } else if (selectedButton === 3) {
-        updatedEquipeData = equipe.filter(item => item.funcao === 'ex-monitor');
-      }
-      updatedEquipeData.sort((a, b) => a.name.localeCompare(b.name));
-      
-      setEquipeData(updatedEquipeData);
-    }, 10);
 
-    return () => clearTimeout(delay);
+    let updatedEquipeData = [];
+    if (selectedButton === 1) {
+      updatedEquipeData = equipe.filter(item => item.funcao === 'professor');
+    } else if (selectedButton === 2) {
+      updatedEquipeData = equipe.filter(item => item.funcao === 'monitor');
+    } else if (selectedButton === 3) {
+      updatedEquipeData = equipe.filter(item => item.funcao === 'ex-monitor');
+    }
+    updatedEquipeData.sort((a, b) => a.name.localeCompare(b.name));
+
+    setEquipeData(updatedEquipeData);
+
   }, [selectedButton]);
 
   const [largura, setLargura] = useState(window.innerWidth);
@@ -71,7 +69,7 @@ const Equipe = () => {
       return Math.min(equipeData.length, 2);
     } else if (largura < 1024) {
       return Math.min(equipeData.length, 3);
-    } else if (largura < 1150){
+    } else if (largura < 1150) {
       return Math.min(equipeData.length, 4);
     } else {
       return Math.min(equipeData.length, 5);
@@ -80,13 +78,65 @@ const Equipe = () => {
 
   const slidesToShow = getSlidesToShow(equipeData, largura);
 
+  const getDotsToShow = (largura) => {
+    if (largura < 700) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  const dotsToShow = getDotsToShow(largura);
+
+  const options = ['Professores', 'Monitores', 'Ex-Monitores'];
+
+  const handleButtonClick = (value) => {
+    setSelectedButton(value);
+  };
+
+  const renderButtons = () => {
+    if (largura < 700) {
+      return (
+        <select className="select-equipe"
+          value={selectedButton}
+          onChange={(e) => handleButtonClick(parseInt(e.target.value))}
+        >
+          {options.map((type, index) => (
+            <option value={index + 1} key={type}>
+              {type}
+            </option>
+          ))}
+        </select>
+      );
+    } else {
+      return (
+        <div className="buttons-equipe">
+          <button
+            className={selectedButton === 1 ? "selected" : ""}
+            onClick={() => setSelectedButton(1)}>
+            Professores
+          </button>
+          <button
+            className={selectedButton === 2 ? "selected" : ""}
+            onClick={() => setSelectedButton(2)}>
+            Monitores
+          </button>
+          <button
+            className={selectedButton === 3 ? "selected" : ""}
+            onClick={() => setSelectedButton(3)}>
+            Ex-Monitores
+          </button>
+        </div>
+      );
+    }
+  };
+
   const settings = {
-    dots: true,
+    dots: dotsToShow,
     infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToShow,
     autoplay: true,
-    speed: 5000,
     autoplaySpeed: 10000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -97,23 +147,8 @@ const Equipe = () => {
   return (
     <section className="equipe-container">
       <p className="titulo-equipe">Equipe</p>
-      <div className="buttons-equipe">
-        <button
-          className={selectedButton === 1 ? "selected" : ""}
-          onClick={() => setSelectedButton(1)}>
-          Professores
-        </button>
-        <button
-          className={selectedButton === 2 ? "selected" : ""}
-          onClick={() => setSelectedButton(2)}>
-          Monitores
-        </button>
-        <button
-          className={selectedButton === 3 ? "selected" : ""}
-          onClick={() => setSelectedButton(3)}>
-          Ex-Monitores
-        </button>
-      </div>
+
+      {renderButtons()}
 
       <Slider {...settings}>
         {equipeData.map((item) => (
