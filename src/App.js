@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react'; 
 import { BrowserRouter as Router } from 'react-router-dom';
 import Footer from './componentes/layout/Footer/Footer.js';
 import MenuNav from './componentes/layout/MenuNav/MenuNav.js';
@@ -12,22 +12,24 @@ import Home from './paginas/Home/home';
 import './App.css';
 
 function App() {
+  const menuNavRef = useRef(null);
+
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    let ordinate = element.offsetTop-106;
-    window.scroll({ top: ordinate, behavior: 'smooth' });
+      const element = document.getElementById(sectionId);
+      let ordinate = element.offsetTop - menuNavRef.current.clientHeight;
+      window.scroll({ top: ordinate, behavior: 'smooth' });
   };
 
   return (
     <div>
       <div>
-        <MenuNav scrollToSection={scrollToSection} />
+        <MenuNav scrollToSection={scrollToSection} menuNavRef={menuNavRef} />
       </div>
 
       <Router>
         <div id="ancoras">
           <section id="home">
-            <Home scrollToSection={scrollToSection}/>
+            <Home scrollToSection={scrollToSection} menuNavRef={menuNavRef} />
           </section>
 
           <section id="projeto">
@@ -54,12 +56,13 @@ function App() {
             <Blog />
           </section>
 
+          <section id="footer">
+            <Footer />
+          </section>
+
         </div>
       </Router>
 
-      <div>
-        <Footer scrollToSection={scrollToSection} />
-      </div>
     </div>
   );
 }

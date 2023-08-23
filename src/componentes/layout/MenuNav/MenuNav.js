@@ -4,10 +4,10 @@ import logo from './logo_navheader.png';
 import burguerIcon from './burguericon.png';
 import Item from './Item/ItemNav';
 
-function MenuNav({ scrollToSection }) {
-
+function MenuNav({ scrollToSection, menuNavRef }) {
   const [listState, setListState] = useState(false);
   const [linkState, setLinkState] = useState(false);
+
 
   function openMenu(){
     setListState(listState => !listState); 
@@ -18,7 +18,7 @@ function MenuNav({ scrollToSection }) {
   let toggleLinksExpand = linkState ? styles.links_expanded : styles.links;
 
   return (
-    <div className={styles.component_container}>
+    <div ref={menuNavRef} className={styles.component_container}>
 
       <div className={styles.img_container}>
         <img src={logo} alt="Logo do IFSP e APAE" className={styles.logo} />
@@ -52,6 +52,8 @@ function MenuNav({ scrollToSection }) {
 }
 
 export default MenuNav;
+
+
 
 
 
