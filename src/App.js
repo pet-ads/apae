@@ -14,11 +14,18 @@ import './App.css';
 function App() {
   const menuNavRef = useRef(null);
 
-  const scrollToSection = (sectionId) => {
-      const element = document.getElementById(sectionId);
-      let ordinate = element.offsetTop - menuNavRef.current.clientHeight;
-      window.scroll({ top: ordinate, behavior: 'smooth' });
+  const scrollToSection = (sectionId, closedMenuHeight) => {
+    let element = document.getElementById(sectionId); 
+
+    const windowHeight = window.innerHeight;
+    const menuHeight = closedMenuHeight;
+    const elementHeight = element.clientHeight;
+
+    let yAdjust = - (windowHeight/2) - (menuHeight) + (elementHeight/2);
+    let ySet = element.offsetTop + yAdjust;
+    window.scroll({ top: ySet, behavior: 'smooth' });
   };
+  
 
   return (
     <div>
@@ -29,7 +36,7 @@ function App() {
       <Router>
         <div id="ancoras">
           <section id="home">
-            <Home scrollToSection={scrollToSection} menuNavRef={menuNavRef} />
+            <Home scrollToSection={scrollToSection} menuNavRef={menuNavRef}/>
           </section>
 
           <section id="projeto">
@@ -56,11 +63,12 @@ function App() {
             <Blog />
           </section>
 
-          <section id="footer">
-            <Footer />
-          </section>
-
         </div>
+
+        <div id="footer">
+            <Footer scrollToSection={scrollToSection} menuNavRef={menuNavRef} />
+        </div>
+   
       </Router>
 
     </div>

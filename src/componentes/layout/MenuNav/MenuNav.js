@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './MenuNav.module.css';
 import logo from './logo_navheader.png';
 import burguerIcon from './burguericon.png';
@@ -7,20 +7,26 @@ import Item from './Item/ItemNav';
 function MenuNav({ scrollToSection, menuNavRef }) {
   const [listState, setListState] = useState(false);
   const [linkState, setLinkState] = useState(false);
+  const [closedMenuHeight, setClosedMenuHeight] = useState(0);
 
+  useEffect(() => {
+    if (!listState) {
+      setClosedMenuHeight(menuNavRef.current.clientHeight);
+    }
+  }, [listState, menuNavRef]);
 
-  function openMenu(){
-    setListState(listState => !listState); 
-    setLinkState(linkState => !linkState);
-  }
+  const toggleListExpand = listState ? styles.list_expanded : styles.list;
+  const toggleLinksExpand = linkState ? styles.links_expanded : styles.links;
 
-  let toggleListExpand = listState ? styles.list_expanded : styles.list;
-  let toggleLinksExpand = linkState ? styles.links_expanded : styles.links;
+  const openMenu = () => {
+    setListState(prevListState => !prevListState);
+    setLinkState(prevLinkState => !prevLinkState);
+  };
 
   return (
-    <div ref={menuNavRef} className={styles.component_container}>
+    <div className={styles.component_container}>
 
-      <div className={styles.img_container}>
+      <div ref={menuNavRef} className={styles.img_container}>
         <img src={logo} alt="Logo do IFSP e APAE" className={styles.logo} />
       </div>
 
@@ -33,13 +39,14 @@ function MenuNav({ scrollToSection, menuNavRef }) {
           </button>
 
           <div className={toggleLinksExpand}>
-            <Item name="Home" section="home" scrollToSection={scrollToSection}/>
-            <Item name="Projeto" section="projeto" scrollToSection={scrollToSection}/>
-            <Item name="Turmas" section="turmas" scrollToSection={scrollToSection}/>
-            <Item name="Equipe" section="equipe" scrollToSection={scrollToSection}/>
-            <Item name="Ações" section="acoes" scrollToSection={scrollToSection}/>
-            <Item name="Contato" section="contato" scrollToSection={scrollToSection}/>
-            <Item name="Blog" section="blog" scrollToSection={scrollToSection}/>
+            <Item name="Home" section="home" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+            <Item name="Projeto" section="projeto" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+            <Item name="Turmas" section="turmas" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+            <Item name="Equipe" section="equipe" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+            <Item name="Ações" section="acoes" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+            <Item name="Contato" section="contato" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+            <Item name="Blog" section="blog" scrollToSection={sectionId => scrollToSection(sectionId, closedMenuHeight)}/>
+
           </div>
 
         </ul>
