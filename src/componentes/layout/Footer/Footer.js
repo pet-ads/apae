@@ -1,31 +1,32 @@
 import React from 'react';
 import styles from "./Footer.module.css"
 
-function Footer({ scrollToSection }) {
+function Footer({ scrollToSection, closedMenuHeight }) {
+  
   return (
     <div className={styles.footer}>
       <nav className={styles.navfooter}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("home")}>Home</button>
+            <button onClick={() =>  scrollToSection("home", closedMenuHeight)}>Home</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("projeto")}>Projeto</button>
+            <button onClick={() =>  scrollToSection("projeto", closedMenuHeight)}>Projeto</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("turmas")}>Turmas</button>
+            <button onClick={() =>  scrollToSection("turmas", closedMenuHeight)}>Turmas</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("equipe")}>Equipe</button>
+            <button onClick={() => scrollToSection("equipe", closedMenuHeight)}>Equipe</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("acoes")}>Ações</button>
+            <button onClick={() => scrollToSection("acoes", closedMenuHeight)}>Ações</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("contato")}>Contato</button>
+            <button onClick={() => scrollToSection("contato", closedMenuHeight)}>Contato</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() => scrollToSection("blog")}>Blog</button>
+            <button onClick={() => scrollToSection("blog", closedMenuHeight)}>Blog</button>
           </li>
         </ul>
       </nav>
