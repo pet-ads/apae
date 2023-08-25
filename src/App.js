@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Footer from './componentes/layout/Footer/Footer.js';
 import MenuNav from './componentes/layout/MenuNav/MenuNav.js';
@@ -12,22 +12,44 @@ import Home from './paginas/Home/home';
 import './App.css';
 
 function App() {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    let ordinate = element.offsetTop-106;
-    window.scroll({ top: ordinate, behavior: 'smooth' });
+  const menuNavRef = useRef(null);
+  const [closedMenuHeight, setClosedMenuHeight] = useState(0);
+  const [listState] = useState(false);
+
+  useEffect(() => {
+    if (!listState) {
+      setClosedMenuHeight(menuNavRef.current.clientHeight);
+    }
+  }, [listState, menuNavRef]);
+
+  const scrollToSection = (sectionId, closedMenuHeight) => {
+    let element = document.getElementById(sectionId);
+
+    const windowHeight = window.innerHeight;
+    const menuHeight = closedMenuHeight;
+    const elementHeight = element.clientHeight;
+
+    let yAdjust = - (windowHeight / 2) - menuHeight + (elementHeight / 2);
+    //console.log("Alturas:\n Janela:",windowHeight,"Menu:",menuHeight,"Elemento:",elementHeight);
+    let ySet = element.offsetTop + yAdjust;
+    window.scroll({ top: ySet, behavior: 'smooth' });
   };
 
   return (
     <div>
       <div>
-        <MenuNav scrollToSection={scrollToSection} />
+        <MenuNav
+          scrollToSection={scrollToSection}
+          menuNavRef={menuNavRef}
+          closedMenuHeight={closedMenuHeight}
+          listState={listState}
+        />
       </div>
 
       <Router>
         <div id="ancoras">
           <section id="home">
-            <Home scrollToSection={scrollToSection}/>
+            <Home scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight}/>
           </section>
 
           <section id="projeto">
@@ -55,11 +77,13 @@ function App() {
           </section>
 
         </div>
+
+        <div id="footer">
+            <Footer scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight} />
+        </div>
+   
       </Router>
 
-      <div>
-        <Footer scrollToSection={scrollToSection} />
-      </div>
     </div>
   );
 }

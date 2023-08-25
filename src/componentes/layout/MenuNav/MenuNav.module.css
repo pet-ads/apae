@@ -54,7 +54,7 @@
 
 @media (max-width: 900px){
   .component_container {
-    position: relative;
+    position: fixed;
   }
 
   .hamburguer_menu{
