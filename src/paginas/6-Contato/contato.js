@@ -8,7 +8,7 @@ export default function Contato(){
     return(
         
         <div className="contato-container">
-            <h3 className="titulo-container-contato">Contato</h3>
+            <div className="titulo-container-contato">Contato</div>
             <div className="container">
                 <div className= "cards">
                     <Card
