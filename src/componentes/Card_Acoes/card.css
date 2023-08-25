@@ -37,14 +37,20 @@
     padding-bottom: 5%;
     text-align: justify;
     font-size: 1vw;
-
 }
 
 .card-title {
     margin-bottom: 1%;
 }
 
-@media (max-width: 1200px){
+
+@media (max-width: 1500px){
+    .paragrafo-card {
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width: 1300px){
     .paragrafo-card {
         font-size: 1.6vw;
     }
