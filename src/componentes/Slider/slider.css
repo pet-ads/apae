@@ -1,56 +1,56 @@
-.container-slider{
-    max-width: 800px;
-    max-height: 600px;
-    position: relative;
+.swiper-container {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 20px; /* Espaçamento entre o carrossel principal e as miniaturas */
 }
 
+/* Estilize as imagens dos slides no carrossel principal */
+.img-slider {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.swiper-container {
-    width: 100%;
-    height: 70vh; 
-    margin-bottom: 20px; /* Espaçamento entre o carrossel principal e as miniaturas */
-  }
-  
-  /* Estilize as imagens dos slides no carrossel principal */
-  .img-slider {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Estilize o carrossel de miniaturas */
-  .thumbs-slider {
-    width: 100%;
-    padding: 15px 0; /* Espaçamento interno superior e inferior */
-  }
-  
-  /* Estilize as miniaturas */
-  .thumb {
-    width: 100px; /* Largura das miniaturas */
-    height: 60px; /* Altura das miniaturas */
-    object-fit: cover;
-    cursor: pointer;
-    opacity: 0.7; /* Opacidade padrão das miniaturas */
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Estilize a miniatura ativa */
-  .thumb.swiper-slide-thumb-active {
-    opacity: 1; /* Opacidade da miniatura ativa */
-  }
+/* Carrossel de Miniaturas */
+.thumbs-slider {
+  width: 100%;
+  padding: 15px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilize as miniaturas */
+.thumb {
+  width: 100px; /* Largura das miniaturas */
+  height: 60px; /* Altura das miniaturas */
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7; /* Opacidade padrão das miniaturas */
+  transition: opacity 0.3s ease;
+}
+
+/* Estilize a miniatura ativa */
+.thumb.swiper-slide-thumb-active {
+  opacity: 1; /* Opacidade da miniatura ativa */
+}
 
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: rgb(248, 248, 248); /* Defina a cor desejada */
+  color: #ffffff; 
+  font-size: 24px; 
 }
 
 
 .swiper-pagination-bullet {
-    background-color: rgb(25, 107, 76); 
-  }
-  
+  background-color: #19704c; /* Cor dos indicadores de página */
+  width: 10px; 
+  height: 10px; 
+  margin: 0 auto 10px; /* Espaçamento entre os indicadores de página (horizontal) */
+  z-index: 2; /* Aumente o z-index para garantir que estejam acima do plano de fundo */
+}
 
+
+/* Estilize o indicador de página ativo */
 .swiper-pagination-bullet-active {
-    background-color: rgb(105, 116, 6); 
+  background-color: #697406; /* Cor do indicador de página ativo */
+  z-index: 1; /* Reduza o z-index para colocá-lo atrás das imagens */
 }

@@ -25,7 +25,6 @@ function Slider() {
         ))}
       </Swiper>
 
-      {/* Miniaturas */}
       <Swiper
         onSwiper={(swiper) => (window.thumbsSwiper = swiper)}
         spaceBetween={15} 
