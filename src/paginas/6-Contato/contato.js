@@ -14,10 +14,7 @@ export default function Contato(){
                     <Card
                         nome = 'Mariana Schiabel'
                         descricao = 'Coordenadora de Projetos da APAE'
-                        email = 'coordenacao@apaesaocarlossp.org.br'
-                        telefone = '(16)98166-9175'
-                        
-                        
+                        email = 'coordenacao@apaesaocarlossp.org.br'  
                     />
 
                     <Card destaque={true}
@@ -30,8 +27,6 @@ export default function Contato(){
                         nome = 'Gisele Dovigo'
                         descricao = 'Docente APAE'
                         email = 'giselelabor@yahoo.com.br'
-                        telefone= '(16)99117-3816'
-                    
                     />
                     
                 </div>

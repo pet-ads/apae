@@ -30,13 +30,19 @@
 .button-modal {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #2d6136; 
+  /*background-color: #2d6136; */
+  background-color: #10813c;
   color: white; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
+.button-modal:hover {
+  background-color: #0f3100;
+}
 
 .titulo-modal {
-  color: #333; 
+  /*color: #333;*/
+  text-transform: uppercase;
+  color: black;
 }
