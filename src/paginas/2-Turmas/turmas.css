@@ -104,11 +104,10 @@
     cursor: default !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     .carousel-turmas .aluno p {
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
-
     .titulo-turmas {
         font-size: 3vw;
     }
@@ -117,6 +116,18 @@
 @media (max-width: 1000px) {
     .carousel-turmas .aluno p {
         font-size: 1.9vw;
+    }
+    .turmas-container{
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel-turmas .aluno p {
+        font-size: 1.9vw;
+    }
+    .turmas-container{
+        min-height: 60vh;
     }
 }
 
@@ -134,15 +145,18 @@
     .titulo-turmas {
         font-size: 10vw;
     }
+    .turmas-container {
+        min-height: 70vh;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .carousel-turmas .aluno p {
-        font-size: 4.5vw;
+        font-size: 4.2vw;
     }
 
     .turmas-container {
-        min-height: 100vh;
+        min-height: 70vh;
     }
 }
 

@@ -6,7 +6,7 @@
     margin: auto;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 .titulo-equipe {
@@ -100,18 +100,30 @@
     cursor: default !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     .titulo-equipe{
         font-size: 3vw;
     }
     .equipe-container .card-equipe p{
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 }
 
 @media (max-width: 1000px) {
     .equipe-container .card-equipe p{
         font-size: 1.9vw;
+    }
+    .equipe-container{
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 900) {
+    .equipe-container .card-equipe p{
+        font-size: 1.9vw;
+    }
+    .equipe-container{
+        min-height: 50vh;
     }
 }
 
@@ -129,12 +141,15 @@
       }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .titulo-equipe{
         font-size: 10vw; 
-      }
+    }
+    .equipe-container{
+        min-height: 50vh;
+    }
     .equipe-container .card-equipe p{
-        font-size: 4.5vw;
+        font-size: 4.2vw;
     }
 }
 
