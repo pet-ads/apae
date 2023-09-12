@@ -14,8 +14,6 @@
 
 .image-container {
     display: flex;
-
-    grid-area: img;
 }
 
 .imgcard {
@@ -103,4 +101,29 @@
     .card-container {
         width: 90%;
       }
+}
+
+@media (max-width: 360px) {
+    .card-container {
+        height: 37em;
+    
+    }
+
+    .card-modal {
+        position: absolute;
+        bottom: 1em;
+        left: 30%;
+    }
+}
+
+@media (max-width: 421px) {
+    .card-container {
+        height: 41em;
+    }
+
+    .card-modal {
+        position: absolute;
+        bottom: 1em;
+        left: 32%;
+    }
 }
