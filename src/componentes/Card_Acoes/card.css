@@ -1,16 +1,21 @@
 .card-container {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     background-color: white;
     width: 25%;
-    height: 100%;
+    height: 34em;
     overflow: hidden;
     border: 2px rgba(0, 128, 0, 0.473) solid;
     border-radius: 5%;
+
+    position: relative;
 }
 
 .image-container {
     display: flex;
+
+    grid-area: img;
 }
 
 .imgcard {
@@ -22,25 +27,23 @@
 }
 
 .card-content {
-    margin-top: 1%;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-bottom: 0.5em;
 }
 
-.titulo-card {
+.card-content .card-title {
     text-align: center;
     font-weight: bold;
 }
 
 .paragrafo-card {
-    margin: 1%;
-    padding-bottom: 5%;
-    text-align: justify;
     font-size: 1vw;
+    padding: 0em 1.5em;
 }
 
-.card-title {
-    margin-bottom: 1%;
+.card-modal {
+    position: absolute;
+    bottom: 1em;
+    left: 38%;
 }
 
 

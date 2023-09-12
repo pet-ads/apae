@@ -27,7 +27,7 @@ export default function Acoes() {
                     <Card
                         title='Palestra'
                         imageUrl={img_palestra}
-                        body='&nbsp;&nbsp;&nbsp;Na palestra, um profissional da APAE é convidado para ministrar uma apresentação no IFSP sobre pessoas com deficiência intelectual.'
+                        body='&nbsp;&nbsp;&nbsp;Na palestra, um profissional da APAE é convidado para ministrar uma apresentação no IFSP sobre pessoas com deficiência intelectual e os desafios enfrentados ordienalmente pelas mesmas.'
                     />
                 </div>
             </div>
