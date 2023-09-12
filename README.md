@@ -15,4 +15,4 @@ Criação de um site para o projeto de extensão **IFSP/SCL** e **APAE São Carl
 - *NaN*
 
 ## Conheça o PET!
-[ insira links legais aki quando eles estiverem up]
+http://petads.paginas.scl.ifsp.edu.br/
