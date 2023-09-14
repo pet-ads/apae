@@ -20,6 +20,7 @@
 .conteudo-modal {
   width: 90%;
   max-width: 700px;
+  margin-top: 7%;
   background-color: white; 
   padding: 20px; 
   border-radius: 10px; 
@@ -29,6 +30,8 @@
 
 .button-modal {
   padding: 10px 20px;
+  margin-top: 5%;
+  margin-bottom: 1%;
   font-size: 16px;
   /*background-color: #2d6136; */
   background-color: #10813c;
