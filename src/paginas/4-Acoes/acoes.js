@@ -29,7 +29,6 @@ export default function Acoes() {
                         cardId="informatica"
                         handleOpenModal={handleOpenModal}
                     />
-
                     <Card
                         title='Visita Técnica'
                         imageUrl={img_visita}
@@ -37,7 +36,6 @@ export default function Acoes() {
                         cardId="visita"
                         handleOpenModal={handleOpenModal}
                     />
-
                     <Card
                         title='Palestra'
                         imageUrl={img_palestra}

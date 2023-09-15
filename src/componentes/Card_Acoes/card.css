@@ -1,6 +1,7 @@
 .card-container {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     background-color: white;
     width: 25%;
     height: 100%;
@@ -8,8 +9,9 @@
     border: 2px rgba(0, 128, 0, 0.473) solid;
     border-radius: 5%;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 
 .image-container {
     display: flex;
@@ -48,9 +50,10 @@
 .card-button {
     display: flex;
     justify-content: center;
-    align-items: flex-end; 
-    margin-bottom: 5%; 
+    align-items: flex-end;
+    margin-bottom: 5%;
 }
+
 
 .card-button * {
     display: inline-block;
@@ -90,6 +93,7 @@
 .card-button .selected {
     background-color: #0f3100;
 }
+
 
 
 @media (max-width: 1500px){

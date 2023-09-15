@@ -5,7 +5,7 @@ function Card({ title, imageUrl, body, handleOpenModal, cardId }) {
     return (
         <div className="card-container">
             <div className="image-container">
-                <img className="imgcard" src={imageUrl} alt='imgg'/>
+                <img className="imgcard" src={imageUrl} alt='img'/>
             </div>
             <div className="card-content">
                 <div className="card-title">
