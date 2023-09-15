@@ -1,37 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-modal";
 import Slider from '../Slider/slider.js';
 import './modal.css';
+import sliderData from '../Slider/sliderData.json';
 
-
-function CustomModal(){
-    const [modalIsOpen, setIsOpen] = useState(false);
-
-    function openModal(){
-        setIsOpen(true);
-    }
-
-    function closeModal(){
-        setIsOpen(false);
-    }
-
-    return(
+function CustomModal({ cardId, closeModal }) {
+    return (
         <div className="container-modal">
-            <button className = "button-modal" onClick={openModal}>Saiba mais</button>
             <Modal
-                isOpen={modalIsOpen}
+                isOpen={!!cardId}
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
-                overlayClassName ="modal-overlay"
+                overlayClassName="modal-overlay"
                 className="conteudo-modal"
+                appElement={document.getElementById('root')}
             >
-                <h2 className="titulo-modal">Galeria de fotos</h2>
-                <Slider></Slider>
-                <button className = "button-modal" onClick={closeModal}>Close</button>
-
+                {cardId && (
+                    <>
+                        <h2 className="titulo-modal">Galeria de fotos</h2>
+                        <Slider slides={sliderData.sets.find(set => set.id === cardId)} />
+                        <button className="button-modal" onClick={closeModal}>Close</button>
+                    </>
+                )}
             </Modal>
         </div>
     );
 }
 
 export default CustomModal;
+
