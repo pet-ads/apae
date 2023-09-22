@@ -15,9 +15,14 @@ function MenuNav({ scrollToSection, menuNavRef, closedMenuHeight, listState }) {
     setLinkState(prevLinkState => !prevLinkState);
   };
 
+  const handleMenuItemClick = (sectionId) => {
+    setLinkState(false);
+    scrollToSection(sectionId, closedMenuHeight);
+  };
+
   return (
-    <div className={styles.component_container}>
-      <div ref={menuNavRef} className={styles.img_container}>
+    <div ref={menuNavRef} className={styles.component_container}>
+      <div className={styles.img_container}>
         <img src={logo} alt="Logo do IFSP e APAE" className={styles.logo} />
       </div>
 
@@ -28,13 +33,13 @@ function MenuNav({ scrollToSection, menuNavRef, closedMenuHeight, listState }) {
           </button>
 
           <div className={toggleLinksExpand}>
-            <Item name="Home" section="home" scrollToSection={() => scrollToSection("home", closedMenuHeight)} />
-            <Item name="Projeto" section="projeto" scrollToSection={() => scrollToSection("projeto", closedMenuHeight)} />
-            <Item name="Turmas" section="turmas" scrollToSection={() => scrollToSection("turmas", closedMenuHeight)} />
-            <Item name="Equipe" section="equipe" scrollToSection={() => scrollToSection("equipe", closedMenuHeight)} />
-            <Item name="Ações" section="acoes" scrollToSection={() => scrollToSection("acoes", closedMenuHeight)} />
-            <Item name="Contato" section="contato" scrollToSection={() => scrollToSection("contato", closedMenuHeight)} />
-            <Item name="Blog" section="blog" scrollToSection={() => scrollToSection("blog", closedMenuHeight)} />
+            <Item name="Home" section="home" scrollToSection={() => handleMenuItemClick("home")} />
+            <Item name="Projeto" section="projeto" scrollToSection={() => handleMenuItemClick("projeto")} />
+            <Item name="Turmas" section="turmas" scrollToSection={() => handleMenuItemClick("turmas")} />
+            <Item name="Equipe" section="equipe" scrollToSection={() => handleMenuItemClick("equipe")} />
+            <Item name="Ações" section="acoes" scrollToSection={() => handleMenuItemClick("acoes")} />
+            <Item name="Contato" section="contato" scrollToSection={() => handleMenuItemClick("contato")} />
+            <Item name="Blog" section="blog" scrollToSection={() => handleMenuItemClick("blog")} />
           </div>
         </ul>
       </nav>
@@ -43,7 +48,6 @@ function MenuNav({ scrollToSection, menuNavRef, closedMenuHeight, listState }) {
 }
 
 export default MenuNav;
-
 
 
 
