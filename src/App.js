@@ -22,11 +22,17 @@ function App() {
     }
   }, [listState, menuNavRef]);
 
-  const scrollToSection = (sectionId) => {
+
+  const scrollToSection = (sectionId, closedMenuHeight) => {
     let element = document.getElementById(sectionId);
+
+    const windowHeight = window.innerHeight;
     const menuHeight = closedMenuHeight;
-    console.log("Altura Menu:", menuHeight);
-    let ySet = element.offsetTop - menuHeight;
+    const elementHeight = element.clientHeight;
+
+    let yAdjust = - (windowHeight / 2) - menuHeight + (elementHeight / 2);
+    //console.log("Alturas:\n Janela:",windowHeight,"Menu:",menuHeight,"Elemento:",elementHeight);
+    let ySet = element.offsetTop + yAdjust;
     window.scroll({ top: ySet, behavior: 'smooth' });
   };
 
@@ -44,7 +50,7 @@ function App() {
       <Router>
         <div id="ancoras">
           <section id="home">
-            <Home scrollToSection={scrollToSection} />
+          <Home scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight}/>
           </section>
 
           <section id="projeto">
@@ -74,7 +80,7 @@ function App() {
         </div>
 
         <div id="footer">
-          <Footer scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight} />
+        <Footer scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight} />
         </div>
 
       </Router>
