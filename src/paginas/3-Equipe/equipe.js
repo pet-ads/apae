@@ -33,7 +33,6 @@ const Equipe = () => {
   const [equipeData, setEquipeData] = useState([]);
 
   useEffect(() => {
-
     let updatedEquipeData = [];
     if (selectedButton === 1) {
       updatedEquipeData = equipe.filter(item => item.funcao === 'professor');
@@ -45,7 +44,6 @@ const Equipe = () => {
     updatedEquipeData.sort((a, b) => a.name.localeCompare(b.name));
 
     setEquipeData(updatedEquipeData);
-
   }, [selectedButton]);
 
   const [largura, setLargura] = useState(window.innerWidth);
@@ -80,9 +78,9 @@ const Equipe = () => {
 
   const getDotsToShow = (largura) => {
     if (largura < 700) {
-      return false
+      return false;
     } else {
-      return true
+      return true;
     }
   }
 
@@ -167,4 +165,3 @@ const Equipe = () => {
 };
 
 export default Equipe;
-

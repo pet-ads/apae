@@ -22,6 +22,7 @@ function App() {
     }
   }, [listState, menuNavRef]);
 
+
   const scrollToSection = (sectionId, closedMenuHeight) => {
     let element = document.getElementById(sectionId);
 
@@ -49,7 +50,7 @@ function App() {
       <Router>
         <div id="ancoras">
           <section id="home">
-            <Home scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight}/>
+          <Home scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight}/>
           </section>
 
           <section id="projeto">
@@ -79,11 +80,10 @@ function App() {
         </div>
 
         <div id="footer">
-            <Footer scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight} />
+        <Footer scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight} />
         </div>
-   
-      </Router>
 
+      </Router>
     </div>
   );
 }
