@@ -111,6 +111,10 @@
     .titulo-turmas {
         font-size: 3vw;
     }
+    .carousel-turmas .aluno img {
+        width: 200px;
+    }
+
 }
 
 @media (max-width: 1000px) {

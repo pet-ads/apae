@@ -79,7 +79,17 @@
         margin-left: 0%;
     }
     .paragrafo{
-        font-size: 1em;
+        font-size: 1.1em;
+    }
+    .linkifsp{
+        font-size: 0.85em;
     }
     
+
+    
+}
+@media (max-width: 400px){
+    .paragrafo{
+        font-size: 0.85em;
+    }
 }
