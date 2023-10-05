@@ -1,6 +1,6 @@
 import "./home.css";
 import React from 'react';
-import Banner from './bannner.png';
+import Banner from './banner.png';
 
 export default function Home({scrollToSection, closedMenuHeight}) {
     return (

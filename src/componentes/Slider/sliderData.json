@@ -32,7 +32,14 @@
     },
     {
       "id": "palestra",
-      "slides": ["AcoesFotosPalestra/palestra1-ano-desconhecido.jpeg"]
+      "slides": ["AcoesFotosPalestra/palestra1-ano-desconhecido.jpeg",
+      "AcoesFotosPalestra/palestra2-2023.jpg",
+      "AcoesFotosPalestra/palestra3-2023.jpg",
+      "AcoesFotosPalestra/palestra4-2023.jpg",
+      "AcoesFotosPalestra/palestra5-2023.jpg",
+      "AcoesFotosPalestra/palestra6-2023.jpg",
+      "AcoesFotosPalestra/palestra7-2023.jpg"
+      ]
     },
     {
       "id": "visita",
@@ -50,7 +57,6 @@
       "AcoesFotosVisita/fotoalunosmonitoreseprofessores2023.jpg",
       "AcoesFotosVisita/segundavisita-do-IFSPnaAPAE-2017 (1).png",
       "AcoesFotosVisita/segundavisita-do-IFSPnaAPAE-2017 (2).png"]
-
     }
   ]
 }
