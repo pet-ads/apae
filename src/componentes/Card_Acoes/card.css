@@ -109,6 +109,22 @@
     }
 }
 
+@media (max-width: 900px){
+    .card-container{
+        width: 70%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 800px){
+    .paragrafo-card{
+        font-size: 1.9vw;
+    }
+    .card-container{
+        width: 29%;
+    }
+}
+
 
 @media (max-width: 700px) {
     .card-container {
