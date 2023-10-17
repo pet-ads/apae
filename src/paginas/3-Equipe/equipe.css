@@ -212,8 +212,15 @@
     
 }
 
-/*trecho de código a ser retirado futuramente*/
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1201px) {
     .equipe-container {
         background-color: #fff;
         min-height: 76vh;
@@ -315,8 +322,10 @@
     .slider-default {
         cursor: default !important;
     }
-    
+
 }
+
+
 /*código antigo
 .equipe-container {
     background-color: #fff;

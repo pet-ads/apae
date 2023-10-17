@@ -61,13 +61,13 @@ const Equipe = () => {
   }, []);
 
   const getSlidesToShow = (equipeData, largura) => {
-    if (largura < 480) {
+    if (largura < 621) {
       return Math.min(equipeData.length, 1);
-    } else if (largura < 665) {
+    } else if (largura < 769) {
       return Math.min(equipeData.length, 2);
-    } else if (largura < 1024) {
+    } else if (largura < 1025) {
       return Math.min(equipeData.length, 3);
-    } else if (largura < 1150) {
+    } else if (largura < 1271) {
       return Math.min(equipeData.length, 4);
     } else {
       return Math.min(equipeData.length, 5);
