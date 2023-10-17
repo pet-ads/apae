@@ -81,12 +81,12 @@
     .select-turmas {
         display: inline-block;
         margin: 0 3vw;
-        padding: 4.2vw 8.4vw;
+        padding: 3vw 6vw;
         background-color: #10813c;
         color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
         text-decoration: none;
         text-align: center;
@@ -195,12 +195,12 @@
     .select-turmas {
         display: inline-block;
         margin: 0 3vw;
-        padding: 3vw 6vw;
+        padding: 2.5vw 4.5vw;
         background-color: #10813c;
         color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 25px;
+        font-size: 19px;
         font-weight: bold;
         text-decoration: none;
         text-align: center;
@@ -304,12 +304,12 @@
     .select-turmas {
         display: inline-block;
         margin: 0 3vw;
-        padding: 4.2vw 8.4vw;
+        padding: 3vw 6vw;
         background-color: #10813c;
         color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
         text-decoration: none;
         text-align: center;
@@ -373,8 +373,8 @@
     
     .carousel-turmas .aluno img {
         padding: 10px;
-        height: 300px;
-        width: 220px;
+        height: 340px;
+        width: 270px;
         margin: auto;
         border-radius: 30px;
     }

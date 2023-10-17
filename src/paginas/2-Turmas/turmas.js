@@ -72,7 +72,7 @@ const Turmas = () => {
             return Math.min(filteredAlunos.length, 1);
         } else if (largura < 769) {
             return Math.min(filteredAlunos.length, 2);
-        } else if (largura < 1025) {
+        } else if (largura < 1250) {
             return Math.min(filteredAlunos.length, 3);
         } else if (largura < 1550) {
             return Math.min(filteredAlunos.length, 4);
