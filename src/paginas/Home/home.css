@@ -1,4 +1,341 @@
-.img-home img {
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .img-home img {
+        margin-top: 0%;
+        margin-bottom: -15%;
+        margin-left: 0%;
+        width: 70%;
+        height: 70%;
+        height: auto;
+        animation: fade-in 2s;
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .titulo-button-banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titulo-button {
+        width: 100%;
+        padding-left: 20%;
+        margin-right: 18%;
+        margin-top: -4%;
+    }
+
+    .home-container {
+        display: flex;
+        text-align: center;
+        display: block;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 35% 0% 5% 0%;
+        
+        z-index: 20;
+        
+    }
+
+    .home-titulo {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 100;
+        word-spacing: 0vw;
+        padding-left: 20%;
+        padding: 0% 5% 0% 8%;
+        font-size: 6vw;
+        line-height: 10vw;
+        text-align: center; 
+    }
+
+    .button-home {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        word-spacing: 0px;
+        background-color: #10813c;
+        color: #fff;
+        background-position: 0% 0%;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 30px;
+        padding: 14px 18px;
+    }
+
+    .button-home:hover {
+        background-color: #0f3100;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .img-home img {
+        margin-top: -2%;
+        margin-bottom: -10%;
+        margin-left: 0%;
+        width: 70%;
+        height: 70%;
+        height: auto;
+        animation: fade-in 2s;
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .titulo-button-banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titulo-button {
+        width: 100%;
+        padding-left: 20%;
+        margin-right: 18%;
+        
+    }
+
+    .home-container {
+        display: flex;
+        text-align: center;
+        display: block;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 30% 0% 12% 0%;
+        z-index: 20;
+        
+    }
+
+    .home-titulo {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 100;
+        word-spacing: 0vw;
+        padding: 0% 5% 1% 6%;
+        font-size: 6vw;
+        line-height: 9vw;
+        text-align: center; 
+    }
+
+    .button-home {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        word-spacing: 0px;
+        background-color: #10813c;
+        color: #fff;
+        background-position: 0% 0%;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 21px;
+        line-height: 30px;
+        padding: 14px 18px;
+    
+        
+    }
+
+    .button-home:hover {
+        background-color: #0f3100;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .img-home img {
+        margin-top: -2%;
+        margin-bottom: -10%;
+        margin-left: 0%;
+        width: 70%;
+        height: 70%;
+        height: auto;
+        animation: fade-in 2s;
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .titulo-button-banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titulo-button {
+        width: 100%;
+        padding-left: 20%;
+        margin-right: 18%;
+        
+    }
+
+    .home-container {
+        display: flex;
+        text-align: center;
+        display: block;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 30% 0% 12% 0%;
+        z-index: 20;
+        
+    }
+
+    .home-titulo {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 100;
+        word-spacing: 0vw;
+        padding: 0% 5% 1% 6%;
+        font-size: 6vw;
+        line-height: 9vw;
+        text-align: center; 
+    }
+
+    .button-home {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        word-spacing: 0px;
+        background-color: #10813c;
+        color: #fff;
+        background-position: 0% 0%;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 21px;
+        line-height: 30px;
+        padding: 14px 18px;
+    
+        
+    }
+
+    .button-home:hover {
+        background-color: #0f3100;
+    }
+    
+    
+}
+
+/*trecho de código a ser retirado futuramente*/
+@media only screen and (min-width: 1025px){
+    .img-home img {
+        width: 34em;
+        height: 34em;
+        height: auto;
+        animation: fade-in 2s;
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .titulo-button-banner {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .titulo-button {
+        width: 100%;
+        padding-left: 30%;
+    }
+    
+    .home-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 10% 15% 12% 15%;
+        z-index: 20;
+        
+    }
+    
+    .home-titulo {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2.8vw;
+        font-weight: 100;
+        line-height: 5vw;
+        text-align: left;
+        word-spacing: 0vw;
+        padding-left: 30%;
+    }
+    
+    .button-home {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        line-height: 2.2vw;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        word-spacing: 0px;
+        background-color: #10813c;
+        color: #fff;
+        background-position: 0% 0%;
+        padding: 1% 2% 1% 2%;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .button-home:hover {
+        background-color: #0f3100;
+    }
+    
+    
+    
+    
+}
+
+/*Código antigo:*/
+/*.img-home img {
     width: 34em;
     height: 34em;
     height: auto;
@@ -164,4 +501,4 @@
         line-height: 22px;
     }
     
-}
+}*/

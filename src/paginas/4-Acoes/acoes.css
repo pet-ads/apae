@@ -1,3 +1,126 @@
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .acoes-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    padding-bottom: 40px;
+  }
+  
+  .cards-container-geral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .titulo-acoes {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    margin-right: 15%;
+    font-size: 10vw;
+    margin: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    
+  }
+   
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 12%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  .acoes-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    padding-bottom: 40px;
+    padding-left: 12%;
+
+    
+  }
+  
+  .cards-container-geral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .titulo-acoes {
+    margin: 0;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    margin-right: 15%;
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+/*código a ser retirado futuramente*/
+@media only screen and (min-width: 769px){
+  .acoes-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    padding-bottom: 40px;
+  }
+  
+  .cards-container-geral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .titulo-acoes {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    padding-bottom: 3%;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  
+}
+
+/*codigo antes da padronização
 .acoes-container {
   display: flex;
   flex-direction: column;
@@ -85,4 +208,6 @@
     flex-direction: column;
     align-items: center;
   }
-}
+}*/
+
+

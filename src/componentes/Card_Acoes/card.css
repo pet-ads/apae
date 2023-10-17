@@ -1,4 +1,320 @@
-.card-container {
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        background-color: white;
+        width: 25%;
+        overflow: hidden;
+        border: 2px rgba(0, 128, 0, 0.473) solid;
+        border-radius: 5%;
+        justify-content: space-between;
+        width: 90%;
+        align-items: center;
+        height: auto;
+        margin-bottom: 28px;
+        margin-left: -13%;
+    }
+    
+    
+    .image-container {
+        display: flex;
+    }
+    
+    .imgcard {
+        width: 90%;
+        height: 90%;
+        border-radius: 5%;
+        align-items: center;
+        margin: 5%;
+
+    }
+    
+    .card-content {
+        margin-top: 1%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .titulo-card {
+        text-align: center;
+        font-weight: bold;
+        font-size: 5vw;
+    }
+    
+    .paragrafo-card {
+        margin: 1%;
+        padding-bottom: 2%;
+        text-align: justify;
+        font-size: 5vw;
+        word-spacing: normal;
+    }
+    
+    .card-title {
+        margin-bottom: 2%;
+    }
+    
+    .card-button {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        line-height: 25px;
+        padding: 10px 12px;
+        margin-bottom: 2%;
+    }
+    
+    
+    .card-button * {
+        background-color: #10813c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 12px;
+    }
+    
+    .selectcard-button {
+        display: inline-block;
+        margin: 0 3vw;
+        padding: 4.2vw 8.4vw;
+        background-color: #10813c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .card-button *:hover {
+        background-color: #0f3100;
+    }
+    
+    .card-button .selected {
+        background-color: #0f3100;
+    }
+
+      
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        background-color: white;
+        
+        overflow: hidden;
+        border: 2px rgba(0, 128, 0, 0.473) solid;
+        border-radius: 5%;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin-bottom: 28px;
+        margin-left: -13%;
+    }
+    
+    
+    .image-container {
+        display: flex;
+    }
+    
+    .imgcard {
+        width: 90%;
+        height: 90%;
+        border-radius: 5%;
+        align-items: center;
+        margin: 5%;
+
+    }
+    
+    .card-content {
+        margin-top: 1%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .titulo-card {
+        text-align: center;
+        font-weight: bold;
+        font-size: 3.8vw;
+    }
+    
+    .paragrafo-card {
+        margin: 1%;
+        padding-bottom: 2%;
+        text-align: justify;
+        font-size: 3.2vw;
+        word-spacing: normal;
+    }
+    
+    .card-title {
+        margin-bottom: 2%;
+    }
+    
+    .card-button {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        line-height: 25px;
+        padding: 10px 12px;
+        margin-bottom: 2%;
+    }
+    
+    
+    .card-button * {
+        background-color: #10813c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 12px;
+    }
+    
+    .selectcard-button {
+        display: inline-block;
+        margin: 0 3vw;
+        padding: 4.2vw 8.4vw;
+        background-color: #10813c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .card-button *:hover {
+        background-color: #0f3100;
+    }
+    
+    .card-button .selected {
+        background-color: #0f3100;
+    }
+
+
+}
+/*trecho de código a ser retirado futuramente*/
+@media only screen and (min-width: 769px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        background-color: white;
+        width: 25%;
+        height: 100%;
+        overflow: hidden;
+        border: 2px rgba(0, 128, 0, 0.473) solid;
+        border-radius: 5%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .image-container {
+        display: flex;
+    }
+    
+    .imgcard {
+        width: 90%;
+        height: 90%;
+        border-radius: 5%;
+        align-items: center;
+        margin: 5%;
+    }
+    
+    .card-content {
+        margin-top: 1%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .titulo-card {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .paragrafo-card {
+        margin: 1%;
+        padding-bottom: 2%;
+        text-align: justify;
+        font-size: 1vw;
+    }
+    
+    .card-title {
+        margin-bottom: 2%;
+    }
+    
+    .card-button {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 5%;
+    }
+    
+    
+    .card-button * {
+        display: inline-block;
+        margin: 0 3vw;
+        padding: 1.2vw 2.4vw;
+        background-color: #10813c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .selectcard-button {
+        display: inline-block;
+        margin: 0 3vw;
+        padding: 4.2vw 8.4vw;
+        background-color: #10813c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .card-button *:hover {
+        background-color: #0f3100;
+    }
+    
+    .card-button .selected {
+        background-color: #0f3100;
+    }
+    
+    
+}
+/*.card-container {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -183,3 +499,5 @@
     }
   }
 }
+*/
+
