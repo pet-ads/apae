@@ -65,9 +65,9 @@ const Equipe = () => {
       return Math.min(equipeData.length, 1);
     } else if (largura < 769) {
       return Math.min(equipeData.length, 2);
-    } else if (largura < 1025) {
+    } else if (largura < 1242) {
       return Math.min(equipeData.length, 3);
-    } else if (largura < 1271) {
+    } else if (largura < 1552) {
       return Math.min(equipeData.length, 4);
     } else {
       return Math.min(equipeData.length, 5);
@@ -155,7 +155,7 @@ const Equipe = () => {
               <img src={item.image} alt={item.name} />
             </div>
             <div className="nome">
-              <p>{item.name}</p>
+              <b><p>{item.name}</p></b>
             </div>
           </div>
         ))}

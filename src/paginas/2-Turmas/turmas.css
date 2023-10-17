@@ -478,13 +478,12 @@
         margin: auto;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 1.1vw;
-
     }
     
     .carousel-turmas .aluno img {
         padding: 10px;
-        height: 300px;
-        width: 220px;
+        height: 340px;
+        width: 270px;
         margin: auto;
         border-radius: 30px;
     }
