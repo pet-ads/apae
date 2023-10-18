@@ -20,7 +20,9 @@ export default function Acoes() {
     return (
         <div className="acoes-container">
             <p className="titulo-acoes">Ações</p>
+
             <div className="cards-container-geral">
+
                 <div className="cards-container">
                     <Card
                         title='Aulas de Informática'
@@ -39,12 +41,15 @@ export default function Acoes() {
                     <Card
                         title='Palestra'
                         imageUrl={img_palestra}
-                        body='&nbsp;&nbsp;&nbsp;Na palestra, um profissional da APAE é convidado para ministrar uma apresentação no IFSP sobre pessoas com deficiência intelectual.'
+                        body='&nbsp;&nbsp;&nbsp;Na palestra, um profissional da APAE é convidado para ministrar uma apresentação no IFSP sobre pessoas com deficiência intelectual, visando promover maior compreensão e conscientização sobre o tema.'
                         cardId="palestra"
                         handleOpenModal={handleOpenModal}
                     />
+
                 </div>
+
             </div>
+
             <Modal cardId={selectedCardId} closeModal={closeModal} />
         </div>
     );

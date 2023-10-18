@@ -68,13 +68,13 @@ const Turmas = () => {
     }, []);
 
     const getSlidesToShow = (filteredAlunos, largura) => {
-        if (largura < 480) {
+        if (largura < 622) {
             return Math.min(filteredAlunos.length, 1);
-        } else if (largura < 690) {
+        } else if (largura < 769) {
             return Math.min(filteredAlunos.length, 2);
-        } else if (largura < 1024) {
+        } else if (largura < 1250) {
             return Math.min(filteredAlunos.length, 3);
-        } else if (largura < 1150) {
+        } else if (largura < 1550) {
             return Math.min(filteredAlunos.length, 4);
         } else {
             return Math.min(filteredAlunos.length, 5);
@@ -151,7 +151,7 @@ const Turmas = () => {
                                 <img src={item.image} alt={item.name} />
                             </div>
                             <div className="nome">
-                                <p>{item.name}</p>
+                                <b><p>{item.name}</p></b>
                             </div>
                         </div>
                     ))}

@@ -6,7 +6,7 @@ export default function Blog(){
         <section className="blog-container">
 
             <div className="paragrafos-geral">
-                <p className="paragrafo-blog">As atividades dos alunos são realizadas semanalmente. <br />Acesse nosso blog para saber mais:</p>
+                <p className="paragrafo-blog">As atividades dos alunos são realizadas semanalmente. <br />Acesse nosso <b>blog</b> para saber mais:</p>
             </div>
 
             <div className="imagem-blog">
