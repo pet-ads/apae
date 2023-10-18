@@ -123,9 +123,6 @@
     
   }
 
-
-
-
   iframe{
     border: 2px solid;
     border-radius: 25px;
@@ -151,8 +148,63 @@
 
 }
 
-/*trecho de código a ser retirado futuramente*/
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .LocalContainer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: unset;
+    background-color: white;
+}
+
+iframe{
+    border: 2px solid;
+    border-radius: 25px;
+    border-color:rgb(113, 194, 113);
+    overflow: hidden;
+    width: 80%;
+    height: unset;
+  }
+
+  .informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .informacoes p{
+    margin-top: 0px;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .LocalContainer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35%;
+    height: unset;
+    background-color: white;
+}
+
+iframe{
+    border: 2px solid;
+    border-radius: 25px;
+    border-color:rgb(113, 194, 113);
+    overflow: hidden;
+    width: 80%;
+    height: unset;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
   .LocalContainer{
     display:flex;
     flex-direction: column;
@@ -163,9 +215,6 @@
     
 }
 
-
-
-
 iframe{
     border: 2px solid;
     border-radius: 25px;
@@ -173,11 +222,13 @@ iframe{
     overflow: hidden;
     width: 80%;
     height: unset;
+  }
 
-    
-    
+  .descricao-local {
+    white-space: nowrap;
+  }
 }
-}
+
 /*
 .LocalContainer{
     display:flex;

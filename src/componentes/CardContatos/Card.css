@@ -457,8 +457,8 @@
     box-shadow: 0px 0px 15px -5px;
   }
   
-  
   .nome {
+    font-size: 1.1vw;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0%;
@@ -469,9 +469,8 @@
     color: black;
     text-decoration: none;
     margin-bottom: 3%;
-   
-    
   }
+
   .descricao{
     font-weight: bold;
     font-size: 1.2vw;
