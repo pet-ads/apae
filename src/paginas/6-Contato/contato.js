@@ -8,8 +8,11 @@ export default function Contato(){
     return(
         
         <div className="contato-container">
+
             <div className="titulo-container-contato">Contato</div>
+
             <div className="container">
+
                 <div className= "cards">
                     <Card
                         nome = 'Mariana Schiabel'
@@ -30,6 +33,7 @@ export default function Contato(){
                     />
                     
                 </div>
+
                 <div className="mapas">
                    <Local
                         nome='APAE'
@@ -44,7 +48,9 @@ export default function Contato(){
                     />  
             
                 </div>
+
             </div>
+            
         </div>
         
     )
