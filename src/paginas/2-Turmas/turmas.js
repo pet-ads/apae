@@ -138,7 +138,7 @@ const Turmas = () => {
     const sliderClassName = slidesToShow <= 4 ? "slider-default" : "";
 
     return (
-        <section className="turmas-container">
+        <section className="container">
             <p className="titulo">Turmas</p>
             <div className="carousel-turmas">
 

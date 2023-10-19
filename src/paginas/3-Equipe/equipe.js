@@ -143,23 +143,25 @@ const Equipe = () => {
   const sliderClassName = slidesToShow <= 4 ? "slider-default" : "";
 
   return (
-    <section className="equipe-container">
+    <section className="container">
       <p className="titulo">Equipe</p>
+      <div className="carousel-equipe">
+        
+        {renderButtons()}
 
-      {renderButtons()}
-
-      <Slider {...settings}>
-        {equipeData.map((item) => (
-          <div className={`card-equipe ${sliderClassName}`} key={item.id}>
-            <div className="foto">
-              <img src={item.image} alt={item.name} />
+        <Slider {...settings}>
+          {equipeData.map((item) => (
+            <div className={`card-equipe ${sliderClassName}`} key={item.id}>
+              <div className="foto">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="nome">
+                <b><p>{item.name}</p></b>
+              </div>
             </div>
-            <div className="nome">
-              <b><p>{item.name}</p></b>
-            </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

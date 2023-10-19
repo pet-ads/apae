@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from "./Footer.module.css"
 
-function Footer({ scrollToSection, closedMenuHeight }) {
+function Footer() {
   
   return (
     <div className={styles.footer}>
-      <nav className={styles.navfooter}>
+      {/*<nav className={styles.navfooter}>
         <ul className={styles.list}>
-          {/*<li className={styles.item}>
+          <li className={styles.item}>
             <button onClick={() =>  scrollToSection("home", closedMenuHeight)}>Home</button>
           </li>
           <li className={styles.item}>
@@ -27,9 +27,9 @@ function Footer({ scrollToSection, closedMenuHeight }) {
           </li>
           <li className={styles.item}>
             <button onClick={() => scrollToSection("blog", closedMenuHeight)}>Blog</button>
-          </li> */}
+          </li> 
         </ul>
-      </nav>
+      </nav> */}
       <div className={styles.textofooter}>
         <p className={styles.paragrafo}>Desenvolvido com ♥ por PET/ADS @ </p>
         <a className={styles.linkifsp} href='https://portais.ifsp.edu.br/scl/'>IFSP São Carlos</a>

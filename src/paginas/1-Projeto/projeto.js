@@ -4,7 +4,7 @@ import Imagem2 from "./labapae2.jpeg";
 
 export default function Projeto(){
     return(
-        <section className="projeto">
+        <section className="container">
 
             <div className="projeto__titulo">
                 <p className="titulo">Sobre nós</p>
