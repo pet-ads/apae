@@ -7,14 +7,14 @@ function Footer({ scrollToSection, closedMenuHeight }) {
     <div className={styles.footer}>
       <nav className={styles.navfooter}>
         <ul className={styles.list}>
-          <li className={styles.item}>
+          {/*<li className={styles.item}>
             <button onClick={() =>  scrollToSection("home", closedMenuHeight)}>Home</button>
           </li>
           <li className={styles.item}>
             <button onClick={() =>  scrollToSection("projeto", closedMenuHeight)}>Projeto</button>
           </li>
           <li className={styles.item}>
-            <button onClick={() =>  scrollToSection("turmas", closedMenuHeight)}>Turmas</button>
+            <button onClick(() =>  scrollToSection("turmas", closedMenuHeight)}>Turmas</button>
           </li>
           <li className={styles.item}>
             <button onClick={() => scrollToSection("equipe", closedMenuHeight)}>Equipe</button>
@@ -27,7 +27,7 @@ function Footer({ scrollToSection, closedMenuHeight }) {
           </li>
           <li className={styles.item}>
             <button onClick={() => scrollToSection("blog", closedMenuHeight)}>Blog</button>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div className={styles.textofooter}>
@@ -38,4 +38,4 @@ function Footer({ scrollToSection, closedMenuHeight }) {
   );
 }
 
-export default Footer
+export default Footer;

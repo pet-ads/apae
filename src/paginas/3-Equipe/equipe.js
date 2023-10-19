@@ -144,7 +144,7 @@ const Equipe = () => {
 
   return (
     <section className="equipe-container">
-      <p className="titulo-equipe">Equipe</p>
+      <p className="titulo">Equipe</p>
 
       {renderButtons()}
 

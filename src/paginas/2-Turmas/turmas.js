@@ -139,7 +139,7 @@ const Turmas = () => {
 
     return (
         <section className="turmas-container">
-            <p className="titulo-turmas">Turmas</p>
+            <p className="titulo">Turmas</p>
             <div className="carousel-turmas">
 
                 {renderButtons()}

@@ -8,7 +8,7 @@
         flex-direction: column;
     }
 
-    .projeto__titulo h3{
+    /*.projeto__titulo h3{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
         font-size: 7.5vw;
@@ -16,7 +16,7 @@
         text-align: center;
         color: black;
         font-weight: lighter;
-    }
+    }*/
 
     .projeto__conteudo {
         display: flex;
@@ -67,7 +67,7 @@
         flex-direction: column;
     }
 
-    .projeto__titulo h3{
+    /*.projeto__titulo h3{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
         font-size: 5vw;
@@ -75,7 +75,7 @@
         text-align: center;
         color: black;
         font-weight: lighter;
-    }
+    }*/
 
     .projeto__conteudo {
         display: flex;
@@ -119,7 +119,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .projeto__titulo h3{
+    /*.projeto__titulo h3{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
         font-size: 3vw;
@@ -127,7 +127,7 @@
         text-align: center;
         color: black;
         font-weight: lighter;
-    }
+    }*/
 
     .projeto__conteudo {
         display: flex;
@@ -170,7 +170,7 @@
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .projeto__titulo h3{
+    /*.projeto__titulo h3{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
         font-size: 2.5vw;
@@ -178,7 +178,7 @@
         text-align: center;
         color: black;
         font-weight: lighter;
-    }
+    }*/
 
     .projeto__conteudo {
         display: flex;
@@ -221,7 +221,7 @@
 
 @media only screen and (min-width: 1201px) {
 
-    .projeto__titulo h3{
+    /*.projeto__titulo h3{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
         font-size: 2.5vw;
@@ -229,7 +229,7 @@
         text-align: center;
         color: black;
         font-weight: lighter;
-    }
+    }*/
 
     .projeto__conteudo {
         display: flex;

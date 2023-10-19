@@ -7,7 +7,7 @@ export default function Projeto(){
         <section className="projeto">
 
             <div className="projeto__titulo">
-                <h3>Sobre nós</h3>
+                <p className="titulo">Sobre nós</p>
             </div>
 
             <div className="projeto__conteudo">

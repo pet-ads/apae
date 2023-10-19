@@ -19,7 +19,7 @@ export default function Acoes() {
 
     return (
         <div className="acoes-container">
-            <p className="titulo-acoes">Ações</p>
+            <p className="titulo">Ações</p>
 
             <div className="cards-container-geral">
 

@@ -9,7 +9,7 @@ export default function Contato(){
         
         <div className="contato-container">
 
-            <div className="titulo-container-contato">Contato</div>
+            <p className="titulo">Contato</p>
 
             <div className="container">
 
