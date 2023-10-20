@@ -18,7 +18,7 @@ export default function Acoes() {
     }
 
     return (
-        <div className="acoes-container">
+        <section className="container">
             <p className="titulo">Ações</p>
 
             <div className="cards-container-geral">
@@ -51,7 +51,7 @@ export default function Acoes() {
             </div>
 
             <Modal cardId={selectedCardId} closeModal={closeModal} />
-        </div>
+        </section>
     );
 }
     

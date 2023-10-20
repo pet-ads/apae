@@ -42,6 +42,17 @@
   margin-bottom: 71px;
 }
 
+.container {
+  background-color: #fff;
+  /*min-height: 50vh;*/
+  width: auto;
+  width: 90%;
+  margin: auto;
+  /*text-align: center;*/
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px){
   .titulo {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -53,6 +64,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
   }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {

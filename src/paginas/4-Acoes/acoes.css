@@ -1,12 +1,12 @@
 @media only screen and (min-width: 320px) and (max-width: 480px){
-  .acoes-container {
+  /*.acoes-container {
     display: flex;
     flex-direction: column;
     width: auto;
     background-color: white;
     padding-bottom: 40px;
-    align-items: center;
-  }
+  }*/
+
   
   .cards-container-geral {
     display: flex;
@@ -30,8 +30,10 @@
    
   .cards-container {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: space-evenly;
+    align-items: center;
+    /*padding-left: 12%;*/
     align-items: flex-start;
     flex-direction: column;
     align-items: center;
@@ -43,14 +45,17 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
-  .acoes-container {
+  /*.acoes-container {
     display: flex;
     flex-direction: column;
     width: auto;
     background-color: white;
     padding-bottom: 40px;
-  }
-  
+
+    /*padding-left: 12%;
+  }*/
+
+
   .cards-container-geral {
     display: flex;
     flex-direction: row;
@@ -83,13 +88,13 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .acoes-container {
+  /*.acoes-container {
     display: flex;
     flex-direction: column;
     width: auto;
     background-color: white;
     padding-bottom: 40px;
-  }
+  }*/
   
   .cards-container-geral {
     display: flex;
@@ -119,13 +124,13 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .acoes-container {
+  /*.acoes-container {
     display: flex;
     flex-direction: column;
     width: auto;
     background-color: white;
     padding-bottom: 40px;
-  }
+  }*/
   
   .cards-container-geral {
     display: flex;
@@ -154,13 +159,13 @@
 }
 
 @media only screen and (min-width: 1201px) {
-  .acoes-container {
+  /*.acoes-container {
     display: flex;
     flex-direction: column;
     width: auto;
     background-color: white;
     padding-bottom: 40px;
-  }
+  }*/
   
   .cards-container-geral {
     display: flex;

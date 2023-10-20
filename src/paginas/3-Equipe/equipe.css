@@ -1,14 +1,14 @@
 @media only screen and (min-width: 320px) and (max-width: 480px){
-    .equipe-container {
+    /*.equipe-container {
         background-color: #fff;
-        /*min-height: 50vh;*/
+        min-height: 50vh;
         width: auto;
         width: 90%;
         margin: auto;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 70px;
-    }
+    }*/
     
     /*.titulo-equipe {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,15 +19,21 @@
         color: black;
         padding-bottom: 5px;
     }*/
+
+    .carousel-equipe {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
     
-    .equipe-container .card-equipe {
+    .carousel-equipe .card-equipe {
         cursor: grab;
         height: 380px;
         color: black;
         box-sizing: border-box;
     }
     
-    .equipe-container .card-equipe p {
+    .carousel-equipe .card-equipe p {
         text-align: center !important;
         max-width: 180px;
         margin: auto;
@@ -35,7 +41,7 @@
         font-size: 4vw;
     }
     
-    .equipe-container .card-equipe img {
+    .carousel-equipe .card-equipe img {
         padding: 10px;
         height: 340px;
         width: 270px;
@@ -105,17 +111,17 @@
     
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    .equipe-container {
+    /*.equipe-container {
         background-color: #fff;
-        /*min-height: 50vh;*/
+        /*min-height: 50vh;
         width: auto;
         width: 90%;
         margin: auto;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 70px;
-    }
-    
+    }*/
+
     /*.titulo-equipe {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
@@ -126,14 +132,20 @@
         padding-bottom: 5px;
     }*/
     
-    .equipe-container .card-equipe {
+    .carousel-equipe {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .carousel-equipe.card-equipe {
         cursor: grab;
         height: 380px;
         color: black;
         box-sizing: border-box;
     }
     
-    .equipe-container .card-equipe p {
+    .carousel-equipe.card-equipe p {
         text-align: center !important;
         max-width: 180px;
         margin: auto;
@@ -141,7 +153,7 @@
         font-size: 3vw;
     }
     
-    .equipe-container .card-equipe img {
+    .carousel-equipe .card-equipe img {
         padding: 10px;
         height: 340px;
         width: 270px;
@@ -179,7 +191,7 @@
     .select-equipe {
         display: inline-block;
         margin: 0 3vw;
-        padding: 2.5vw 4.5vw;
+        padding: 3vw 6vw;
         background-color: #10813c;
         color: #fff;
         border: none;
@@ -213,16 +225,16 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .equipe-container {
+    /*.equipe-container {
         background-color: #fff;
-        /*min-height: 76vh;*/
+        /*min-height: 76vh;
         width: auto;
         width: 90%;
         margin: auto;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 70px;
-    }
+    }*/
     
     /*.titulo-equipe {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -233,15 +245,21 @@
         color: black;
         padding-bottom: 5px;
     }*/
+
+    .carousel-equipe {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
     
-    .equipe-container .card-equipe {
+    .carousel-equipe .card-equipe {
         cursor: grab;
         height: 380px;
         color: black;
         box-sizing: border-box;
     }
     
-    .equipe-container .card-equipe p {
+    .carousel-equipe .card-equipe p {
         text-align: center !important;
         max-width: 180px;
         margin: auto;
@@ -249,7 +267,7 @@
         font-size: 2vw;
     }
     
-    .equipe-container .card-equipe img {
+    .carousel-equipe .card-equipe img {
         padding: 10px;
         height: 300px;
         width: 220px;
@@ -317,16 +335,16 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .equipe-container {
+    /*.equipe-container {
         background-color: #fff;
-        /*min-height: 76vh;*/
+        /*min-height: 76vh;
         width: auto;
         width: 90%;
         margin: auto;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 70px;
-    }
+    }*/
     
     /*.titulo-equipe {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -338,14 +356,20 @@
         padding-bottom: 5px;
     }*/
     
-    .equipe-container .card-equipe {
+    .carousel-equipe {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .carousel-equipe .card-equipe {
         cursor: grab;
         height: 380px;
         color: black;
         box-sizing: border-box;
     }
     
-    .equipe-container .card-equipe p {
+    .carousel-equipe .card-equipe p {
         text-align: center !important;
         max-width: 180px;
         margin: auto;
@@ -353,7 +377,7 @@
         font-size: 1.8vw;
     }
     
-    .equipe-container .card-equipe img {
+    .carousel-equipe .card-equipe img {
         padding: 10px;
         height: 340px;
         width: 270px;
@@ -388,12 +412,12 @@
     .select-equipe {
         display: inline-block;
         margin: 0 3vw;
-        padding: 4.2vw 8.4vw;
+        padding: 3vw 6vw;
         background-color: #10813c;
         color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
         text-decoration: none;
         text-align: center;
@@ -421,16 +445,16 @@
 }
 
 @media only screen and (min-width: 1201px) {
-    .equipe-container {
+    /*.equipe-container {
         background-color: #fff;
-        /*min-height: 76vh;*/
+        /*min-height: 76vh;
         width: auto;
         width: 90%;
         margin: auto;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 70px;
-    }
+    }*/
     
     /*.titulo-equipe {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -441,15 +465,21 @@
         color: black;
         padding-bottom: 5px;
     }*/
+
+    .carousel-equipe {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
     
-    .equipe-container .card-equipe {
+    .carousel-equipe .card-equipe {
         cursor: grab;
         height: 380px;
         color: black;
         box-sizing: border-box;
     }
     
-    .equipe-container .card-equipe p {
+    .carousel-equipe .card-equipe p {
         text-align: center !important;
         max-width: 180px;
         margin: auto;
@@ -457,7 +487,7 @@
         font-size: 1.3vw;
     }
     
-    .equipe-container .card-equipe img {
+    .carousel-equipe .card-equipe img {
         padding: 10px;
         height: 340px;
         width: 270px;
@@ -492,12 +522,12 @@
     .select-equipe {
         display: inline-block;
         margin: 0 3vw;
-        padding: 4.2vw 8.4vw;
+        padding: 3vw 6vw;
         background-color: #10813c;
         color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
         text-decoration: none;
         text-align: center;
@@ -529,7 +559,7 @@
 /*código antigo
 .equipe-container {
     background-color: #fff;
-    min-height: 76vh;
+    8555555555555555555555555555555ight: 76vh;
     width: auto;
     width: 90%;
     margin: auto;
