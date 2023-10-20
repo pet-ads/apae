@@ -10,8 +10,6 @@
         align-items: center;
         height: auto;
         margin-bottom: 28px;
-
-        /*margin-left: -13%;*/
     }
     
     .imgcard {
@@ -109,7 +107,6 @@
         width: 82%;
         height: auto;
         margin-bottom: 28px;
-        /*margin-left: -13%;*/
     }
     
     
@@ -134,14 +131,14 @@
     .titulo-card {
         text-align: center;
         font-weight: bold;
-        font-size: 4vw;
+        font-size: 3vw;
     }
     
     .paragrafo-card {
         margin: 1%;
         padding-bottom: 2%;
         text-align: justify;
-        font-size: 4vw;
+        font-size: 3vw;
         word-spacing: normal;
     }
     
@@ -340,12 +337,12 @@
         margin: 1%;
         padding-bottom: 2%;
         text-align: justify;
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
     
     .card-title {
         margin-bottom: 2%;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
     
     .card-button {
@@ -353,6 +350,7 @@
         justify-content: center;
         align-items: flex-end;
         margin-bottom: 5%;
+        height: 100%;
     }
     
     
@@ -423,10 +421,8 @@
     }
     
     .card-content {
-        margin-top: 1%;
         margin-left: 6%;
         margin-right: 6%;
-        margin-bottom: 10%;
     }
     
     .titulo-card {
@@ -438,12 +434,12 @@
         margin: 1%;
         padding-bottom: 2%;
         text-align: justify;
-        font-size: 1.6vw;
+        font-size: 1.2vw;
     }
     
     .card-title {
         margin-bottom: 2%;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
     
     .card-button {
@@ -495,191 +491,4 @@
     }
 }
 
-
-/*.card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    background-color: white;
-    width: 25%;
-    height: 100%;
-    overflow: hidden;
-    border: 2px rgba(0, 128, 0, 0.473) solid;
-    border-radius: 5%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.image-container {
-    display: flex;
-}
-
-.imgcard {
-    width: 90%;
-    height: 90%;
-    border-radius: 5%;
-    align-items: center;
-    margin: 5%;
-}
-
-.card-content {
-    margin-top: 1%;
-    margin-left: 6%;
-    margin-right: 6%;
-}
-
-.titulo-card {
-    text-align: center;
-    font-weight: bold;
-}
-
-.paragrafo-card {
-    margin: 1%;
-    padding-bottom: 2%;
-    text-align: justify;
-    font-size: 1vw;
-}
-
-.card-title {
-    margin-bottom: 2%;
-}
-
-.card-button {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 5%;
-}
-
-
-.card-button * {
-    display: inline-block;
-    margin: 0 3vw;
-    padding: 1.2vw 2.4vw;
-    background-color: #10813c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.selectcard-button {
-    display: inline-block;
-    margin: 0 3vw;
-    padding: 4.2vw 8.4vw;
-    background-color: #10813c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card-button *:hover {
-    background-color: #0f3100;
-}
-
-.card-button .selected {
-    background-color: #0f3100;
-}
-
-
-
-@media (max-width: 1500px){
-    .paragrafo-card {
-        font-size: 1.1vw;
-    }
-}
-
-
-@media (max-width: 1300px){
-    .paragrafo-card {
-        font-size: 1.6vw;
-    }
-}
-
-@media (max-width: 900px){
-    .card-container{
-        width: 70%;
-        margin: 2%;
-    }
-}
-
-@media (max-width: 800px){
-    .paragrafo-card{
-        font-size: 1.9vw;
-    }
-    .card-container{
-        width: 29%;
-    }
-}
-
-
-@media (max-width: 700px) {
-    .card-container {
-      align-items: center;
-      width: 70%;
-      height: auto;
-      margin-bottom: 28px;
-      margin-left: -13%;
-    }
-
-    .card-title {
-        font-size: 3vw;
-    }
-
-    .paragrafo-card {
-        text-align: justify;
-        font-size: 3vw;
-        line-height: 2;
-        word-spacing: normal;
-    }
-    
-    .imgcard {
-        width: 90%;
-        height: 90%;
-        border-radius: 5%;
-        align-items: center;
-        margin: 5%;
-    }
-    .card-button * {
-        font-size: 15px;
-        line-height: 25px;
-        padding: 10px 12px;
-    }
-  }
-  
-
-
-  @media (max-width: 500px) {
-    .paragrafo-card {
-        font-size: 4.5vw;
-    }
-
-    .card-title {
-        font-size: 5vw;
-    }
-
-    .card-container {
-        width: 90%;
-      }
-
-  @media (max-width: 300px) {
-    .card-button * {
-        font-size: 13px;
-        line-height: 25px;
-        padding: 10px 12px;
-    }
-  }
-}
-*/
 
