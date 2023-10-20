@@ -15,6 +15,8 @@
     padding: 1%;
     line-height: 2px;
     order: 1;
+    align-items: center;
+    margin-bottom: 20px;
   }
   
   .CardDestaque {
@@ -32,9 +34,10 @@
     text-align: center;
     padding: 1%;
     line-height: 2px;
-    
+    align-items: center;
     order: 0;
     flex-grow: 0;
+    margin-bottom: 20px;
     
     
   }
@@ -71,25 +74,40 @@
   .Card:hover {
     box-shadow: 0px 0px 15px -5px;
   }
+
+
+  .email {
+    font-size: 1.2vw;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    background-color: #10813c;
+    color: white;
+    border: 'none';
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 2.1vh 1.2vh;
+    margin-bottom: 1%;
+    
+  }
   
   
   .nome {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0%;
-    font-size: 4.67vw;
+    font-size: 5vw;
   }
   
-  .email {
-    font-size: 4vw;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 3%;
-  }
-
+ 
   .descricao{
-    font-weight: bold;
-    font-size: 4.85vw;
+    font-size: 4.5vw; 
     line-height: 24px;
   }
   .email:hover{
@@ -102,7 +120,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 82%;
     height: unset;
     background-color:white;
     border: 2px rgba(0, 128, 0, 0.473) solid;
@@ -111,9 +129,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: black;
     text-align: center;
-    padding: 1%;
     line-height: 2px;
     order: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1%;
 
   }
   
@@ -121,18 +141,20 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 82%;
     height: unset;
     background-color:white;
-    border: 2.5px rgba(0, 128, 0, 0.473) solid;
+    border: 2px rgba(0, 128, 0, 0.473) solid;
     border-radius: 30px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9),rgba(0, 128, 0, 0.027));
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: black;
     text-align: center;
-    padding: 1%;
     line-height: 2px;
     order: 0;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1%;
     
   }
    
@@ -174,33 +196,40 @@
   }
   
   .email {
+    
     color: black;
     text-decoration: none;
-    margin-bottom: 3%;
-   
+    display: inline-block;
+    justify-content: center;
+    background-color: #10813c;
+    color: white;
+    border: 'none';
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 1.3vh 1.2vh;
+    margin-bottom: 2%; 
+    
     
   }
   .descricao{
-    font-weight: bold;
     line-height: 24px;
   }
   .email:hover{
     color: green;
   }
-  .Card, .CardDestaque{
-    width: 83%;
-    margin: 2%;
-    padding: 2%;
-  }
+ 
   .nome{
-    font-size: 3.2vw;
+    font-size: 3vw;
   }
   .descricao{
-    font-size: 3.4vw;
+    font-size: 3vw;
   }
-  .email{
-    font-size: 3.2vw;
-  }
+ 
   
 }
 
@@ -209,7 +238,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 70%;
     background-color:white;
     border: 2px rgba(0, 128, 0, 0.473) solid;
     overflow: hidden;
@@ -217,15 +246,19 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: black;
     text-align: center;
-    padding: 1%;
     line-height: 2px;
+    align-items: center;
+    order: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1%;
   }
   
   .CardDestaque {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 70%;
     background-color:white;
     border: 2.5px rgba(0, 128, 0, 0.473) solid;
     border-radius: 30px;
@@ -233,9 +266,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: black;
     text-align: center;
-    padding: 1%;
     line-height: 2px;
-    margin: 0vw 0.7vh
+    align-items: center;
+    order: 0;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1%;
   }
    
   
@@ -271,6 +307,7 @@
   
   .nome {
     text-align: center;
+    font-size: 2vw;
     text-transform: uppercase;
     margin-bottom: 0%;
   }
@@ -279,12 +316,25 @@
     font-size: 1.2vw;
     color: black;
     text-decoration: none;
-    margin-bottom: 5%;
+    display: inline-block;
+    justify-content: center;
+    background-color: #10813c;
+    color: white;
+    border: 'none';
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    margin-bottom: 2%; 
+    
   }
 
   .descricao{
-    font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 2vw;
     line-height: 24px;
     
   }
@@ -300,7 +350,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 28%;
     height: unset;
     background-color:white;
     border: 2px rgba(0, 128, 0, 0.473) solid;
@@ -319,7 +369,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 28%;
     height: unset;
     background-color:white;
     border: 2.5px rgba(0, 128, 0, 0.473) solid;
@@ -365,6 +415,7 @@
   
   
   .nome {
+    font-size: 2vw;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0%;
@@ -372,15 +423,26 @@
   
   .email {
     font-size: 1vw;
-    color: black;
+    display: inline-block;
+    justify-content: center;
+    background-color: #10813c;
+    color: white;
+    border: 'none';
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    margin-bottom: 3%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 0 4vw;
+    padding: 0.5vw;
    
     
   }
   .descricao{
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 2vw;
     line-height: 24px;
   }
   .email:hover{
@@ -458,22 +520,32 @@
   }
   
   .nome {
-    font-size: 1.1vw;
+    font-size: 1.6vw;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0%;
   }
   
   .email {
-    font-size: 1vw;
-    color: black;
+    display: inline-block;
+    justify-content: center;
+    background-color: #10813c;
+    color: white;
+    border: 'none';
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    margin-bottom: 3%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 0 4vw;
+    padding: 0.5vw;
   }
 
   .descricao{
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     line-height: 24px;
   }
   .email:hover{
