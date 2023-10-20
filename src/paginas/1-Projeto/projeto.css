@@ -85,7 +85,6 @@
     .projeto__descricao{
         font-size: 3vw;
         line-height: 5vw;
-/*        font-weight: 550;*/
         text-align: left;
         width: 100%;
         text-align: justify;
@@ -188,17 +187,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        
+        align-items: center;
     }
 
     .projeto__descricao{
         margin-left: 3%;
         margin-right: 3%;
-        font-size: 2vw;
-        line-height: 2.5vw;
- /*       font-weight: 600;*/
-        text-align: justify;  
+        font-size: 1.5vw;
+        line-height: 2.3vw;
+        text-align: justify;
     }
 
     .projeto__texto {
@@ -246,7 +243,7 @@
     .projeto__descricao{
         margin-left: 3%;
         margin-right: 3%;
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         line-height: 2.3vw;
         text-align: justify;
     }
