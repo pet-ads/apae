@@ -3,13 +3,10 @@
   margin-bottom: 20px;
 }
 
-/* Ajuste de altura diretamente no componente Swiper */
 .swiper {
   height: 45vh;
 }
 
-
-/* Estilize as imagens dos slides no carrossel principal */
 .img-slider {
   width: 100%;
   height: 100%;
