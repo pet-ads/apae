@@ -1,4 +1,170 @@
-@media only screen and (min-width: 320px) and (max-width: 480px){
+/*css geral (telas acima de 1201)*/
+.Card {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  line-height: 2px;
+  width: 25%;
+  overflow: hidden;
+  background-color:white;
+  border: 2px rgba(0, 128, 0, 0.473) solid;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.CardDestaque {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  line-height: 2px;
+  width: 25%;
+  overflow: hidden;
+  background-color:white;
+  border: 2px rgba(0, 128, 0, 0.473) solid;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+@keyframes efeitoPulsar{
+  0% {
+    box-shadow: 0 0 0 0.2vw rgba(0, 128, 0, 0.473);
+  }
+  50% {
+    box-shadow: 0 0 0 0.2vw rgba(0, 128, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 25px rgba(0, 128, 0, 0.473);
+  }
+} 
+
+.CardDestaque:hover{
+  box-shadow: 0px 0px 15px -5px;
+}
+
+.Card:hover {
+  box-shadow: 0px 0px 15px -5px;
+}
+
+.CardDestaque {
+  animation: efeitoPulsar 5s infinite 3ms;
+}
+
+
+
+
+.nome {
+  font-size: 1.6vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.email {
+  display: inline-block;
+  justify-content: flex-end;
+  background-color: #10813c;
+  color: white;
+  border: 'none';
+  border-radius: 5px;
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin: 0 4vw;
+  padding: 0.5vw;
+  margin-top: auto;
+}
+
+.descricao{
+  font-weight: bold;
+  font-size: 1.6vw;
+  line-height: 2vw;
+}
+.email:hover{
+  background-color: #0f3100;
+}
+
+/*@media (max-width: 1200px){
+
+}
+*/
+
+
+@media(max-width:1024px){
+  .Card {
+    width: 90%;
+    order: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1%;
+  }
+  
+  .CardDestaque {
+    width: 90%;
+    order: 0;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1%;
+  }
+   
+  
+  
+  
+  
+  .nome {
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+  }
+  
+  .email {
+    font-size: 2vw;
+    padding: 10px 12px;
+  }
+
+  .descricao{
+    font-size: 2vw;
+    line-height: 24px;
+    
+  }
+
+  
+}
+@media(max-width: 768px){
+  .nome{
+    font-size: 2.5vw;
+  }
+  .descricao{
+    font-size: 2.5vw;
+  }
+  .email{
+    font-size: 2vw;
+  }
+}
+@media(max-width: 480px){
+  .nome{
+    font-size: 3.5vw;
+  }
+  .descricao{
+    font-size: 3.5vw;
+  }
+  .email{
+    font-size: 3vw;
+    padding: 3vw 6vw;
+  }
+}
+
+
+
+/*@media only screen and (min-width: 320px) and (max-width: 480px){
   .Card {
     display:flex;
     flex-direction: column;
@@ -344,7 +510,7 @@
   }
 }
 
-/* Large devices (laptops/desktops) */
+/* Large devices (laptops/desktops) 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .Card {
     display:flex;
@@ -450,7 +616,7 @@
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1201px) {
   .Card {
     display:flex;
@@ -549,7 +715,7 @@
     line-height: 24px;
   }
   .email:hover{
-    color: green;
+    background-color: #0f3100;
   }
 }
 

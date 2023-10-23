@@ -1,339 +1,147 @@
-@media only screen and (min-width: 320px) and (max-width: 480px){
-    .turmas-container {
-        background-color: white;
-        /*min-height: 70vh;*/
-        width: auto;
-        padding-top: 10px;
-        padding-bottom: 70px;
-    }
-    
-    /*.titulo-turmas {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 7.5vw;
-        display: block;
-        text-align: center;
-        color: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }*/
-    
-    .carousel-turmas {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .carousel-turmas .aluno {
-        cursor: grab;
-        height: 380px;
-        color: black;
-        box-sizing: border-box;
-    }
-    
-    .carousel-turmas .aluno p {
-        text-align: center !important;
-        max-width: 180px;
-        margin: auto;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 4vw;
-    }
-    
-    .carousel-turmas .aluno img {
-        padding: 10px;
-        height: 340px;
-        width: 270px;
-        margin: auto;
-        border-radius: 30px;
-    }
-    
-    .slick-dots li button:before {
-        font-size: 20px;
-        color: #10813c;
-        padding-top: 30px;
-        cursor: pointer;
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #10813c;
-    }
-    
-    .buttons-turmas {
-        margin-bottom: 30px;
-    }
-    
-    .buttons-turmas * {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 1.2vw 2.4vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-    }
-    
-    .select-turmas {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 3vw 6vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .buttons-turmas *:hover {
-        background-color: #0f3100;
-    }
-    
-    .buttons-turmas .selected {
-        background-color: #0f3100;
-    }
-    
-    .slider-default {
-        cursor: default !important;
-    }
-   
-    
-    
+.turmas-container {
+    background-color: white;
+    min-height: 75.6vh;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 70px;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .turmas-container {
-        background-color: white;
-        /*min-height: 50vh;*/
-        width: auto;
-        padding-top: 10px;
-        padding-bottom: 70px;
-    }
-    
-    /*.titulo-turmas {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 5vw;
-        display: block;
-        text-align: center;
-        color: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }*/
-    
-    .carousel-turmas {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .carousel-turmas .aluno {
-        cursor: grab;
-        height: 380px;
-        color: black;
-        box-sizing: border-box;
-    }
-    
-    .carousel-turmas .aluno p {
-        text-align: center !important;
-        max-width: 180px;
-        margin: auto;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 3vw;
-    }
-    
-    .carousel-turmas .aluno img {
-        padding: 10px;
-        height: 340px;
-        width: 270px;
-        margin: auto;
-        border-radius: 30px;
-    }
-    
-    .slick-dots li button:before {
-        font-size: 20px;
-        color: #10813c;
-        padding-top: 30px;
-        cursor: pointer;
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #10813c;
-    }
-    
-    .buttons-turmas {
-        margin-bottom: 30px;
-        font-size: 15px;
-        line-height: 25px;
-        padding: 10px 12px;
-    }
-    
-    .buttons-turmas * {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 1.2vw 2.4vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-    }
-    
-    .select-turmas {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 2.5vw 4.5vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 19px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .buttons-turmas *:hover {
-        background-color: #0f3100;
-    }
-    
-    .buttons-turmas .selected {
-        background-color: #0f3100;
-    }
-    
-    .slider-default {
-        cursor: default !important;
-    }
-    
+.carousel-turmas {
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .turmas-container {
-        background-color: white;
-        /*min-height: 75.6vh;*/
-        width: auto;
-        padding-top: 10px;
-        padding-bottom: 70px;
-    }
-    
-    /*.titulo-turmas {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 3vw;
-        display: block;
-        text-align: center;
-        color: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }*/
-    
-    .carousel-turmas {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .carousel-turmas .aluno {
-        cursor: grab;
-        height: 380px;
-        color: black;
-        box-sizing: border-box;
-    }
-    
+.carousel-turmas .aluno {
+    cursor: grab;
+    height: 380px;
+    color: black;
+    box-sizing: border-box;
+}
+
+.carousel-turmas .aluno p {
+    text-align: center !important;
+    max-width: 180px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3vw;
+}
+
+.carousel-turmas .aluno img {
+    padding: 10px;
+    height: 340px;
+    width: 270px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.slick-dots li button:before { 
+    font-size: 20px;
+    color: #10813c;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #10813c;
+}
+
+.buttons-turmas {
+    margin-bottom: 30px;
+}
+
+.buttons-turmas * {
+    display: inline-block;
+    margin: 0 3vw;
+    padding: 1.2vw 2.4vw;
+    background-color: #10813c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.select-turmas {
+    display: inline-block;
+    margin: 0 3vw;
+    padding: 4.2vw 8.4vw;
+    background-color: #10813c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons-turmas *:hover {
+    background-color: #0f3100;
+}
+
+.buttons-turmas .selected {
+    background-color: #0f3100;
+}
+
+.slider-default {
+    cursor: default !important;
+}
+
+/*@media (max-width: 1200px){
+
+}
+*/
+
+
+@media(max-width:1024px){
     .carousel-turmas .aluno p {
-        text-align: center !important;
-        max-width: 180px;
-        margin: auto;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
-    
     .carousel-turmas .aluno img {
-        padding: 10px;
         height: 300px;
         width: 220px;
-        margin: auto;
-        border-radius: 30px;
     }
-    
-    .slick-dots li button:before {
-        font-size: 20px;
-        color: #10813c;
-        padding-top: 30px;
-        cursor: pointer;
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #10813c;
-    }
-    
-    .buttons-turmas {
-        margin-bottom: 30px;
-    }
-    
     .buttons-turmas * {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 1.2vw 2.4vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
+        font-size: 2vw;
     }
-    
     .select-turmas {
-        display: inline-block;
-        margin: 0 3vw;
         padding: 3vw 6vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-bottom: 20px;
+        font-size: 2vw;
     }
-    
-    .buttons-turmas *:hover {
-        background-color: #0f3100;
+
+}
+@media(max-width: 768px){
+    .carousel-turmas .aluno p {
+        font-size: 2vw;
     }
-    
-    .buttons-turmas .selected {
-        background-color: #0f3100;
+}
+@media(max-width: 480px){
+    .carousel-turmas .aluno p {
+        font-size: 4vw;
     }
-    
-    .slider-default {
-        cursor: default !important;
+
+    .buttons-turmas * {
+        font-size: 3vw;
+    }
+
+    .select-turmas {
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
     }
 }
 
-/* Large devices (laptops/desktops) */
+
+/* Large devices (laptops/desktops) 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .turmas-container {
         background-color: white;
-        /*min-height: 75.6vh;*/
+        /*min-height: 75.6vh;
         width: auto;
         padding-top: 10px;
         padding-bottom: 70px;
@@ -348,7 +156,7 @@
         color: black;
         padding-top: 5px;
         padding-bottom: 5px;
-    }*/
+    }
     
     .carousel-turmas {
         width: 90%;
@@ -438,292 +246,4 @@
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1201px) {
-    .turmas-container {
-        background-color: white;
-        /*min-height: 75.6vh;*/
-        width: auto;
-        padding-top: 10px;
-        padding-bottom: 70px;
-    }
-    
-    /*.titulo-turmas {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 2.5vw;
-        display: block;
-        text-align: center;
-        color: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }*/
-    
-    .carousel-turmas {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .carousel-turmas .aluno {
-        cursor: grab;
-        height: 380px;
-        color: black;
-        box-sizing: border-box;
-    }
-    
-    .carousel-turmas .aluno p {
-        text-align: center !important;
-        max-width: 180px;
-        margin: auto;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.3vw;
-    }
-    
-    .carousel-turmas .aluno img {
-        padding: 10px;
-        height: 340px;
-        width: 270px;
-        margin: auto;
-        border-radius: 30px;
-    }
-    
-    .slick-dots li button:before { 
-        font-size: 20px;
-        color: #10813c;
-        padding-top: 30px;
-        cursor: pointer;
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #10813c;
-    }
-    
-    .buttons-turmas {
-        margin-bottom: 30px;
-    }
-    
-    .buttons-turmas * {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 1.2vw 2.4vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-    }
-    
-    .select-turmas {
-        display: inline-block;
-        margin: 0 3vw;
-        padding: 4.2vw 8.4vw;
-        background-color: #10813c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .buttons-turmas *:hover {
-        background-color: #0f3100;
-    }
-    
-    .buttons-turmas .selected {
-        background-color: #0f3100;
-    }
-    
-    .slider-default {
-        cursor: default !important;
-    }
-    
-}
-
-/*código antigo
-.turmas-container {
-    background-color: white;
-    min-height: 75.6vh;
-    width: auto;
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-
-.titulo-turmas {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5vw;
-    display: block;
-    text-align: center;
-    color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.carousel-turmas {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-.carousel-turmas .aluno {
-    cursor: grab;
-    height: 380px;
-    color: black;
-    box-sizing: border-box;
-}
-
-.carousel-turmas .aluno p {
-    text-align: center !important;
-    max-width: 180px;
-    margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.1vw;
-}
-
-.carousel-turmas .aluno img {
-    padding: 10px;
-    height: 300px;
-    width: 220px;
-    margin: auto;
-    border-radius: 30px;
-}
-
-.slick-dots li button:before {
-    font-size: 20px;
-    color: #10813c;
-    padding-top: 30px;
-    cursor: pointer;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #10813c;
-}
-
-.buttons-turmas {
-    margin-bottom: 30px;
-}
-
-.buttons-turmas * {
-    display: inline-block;
-    margin: 0 3vw;
-    padding: 1.2vw 2.4vw;
-    background-color: #10813c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.select-turmas {
-    display: inline-block;
-    margin: 0 3vw;
-    padding: 4.2vw 8.4vw;
-    background-color: #10813c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.buttons-turmas *:hover {
-    background-color: #0f3100;
-}
-
-.buttons-turmas .selected {
-    background-color: #0f3100;
-}
-
-.slider-default {
-    cursor: default !important;
-}
-
-@media (max-width: 1300px) {
-    .carousel-turmas .aluno p {
-        font-size: 1.4vw;
-    }
-    .titulo-turmas {
-        font-size: 3vw;
-    }
-    .carousel-turmas .aluno img {
-        width: 200px;
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .carousel-turmas .aluno p {
-        font-size: 1.9vw;
-    }
-    .turmas-container{
-        min-height: 50vh;
-    }
-}
-
-@media (max-width: 900px) {
-    .carousel-turmas .aluno p {
-        font-size: 1.9vw;
-    }
-    .turmas-container{
-        min-height: 60vh;
-    }
-}
-
-@media (max-width: 700px) {
-    .carousel-turmas .aluno p {
-        font-size: 3.5vw;
-    }
-
-    .buttons-turmas * {
-        font-size: 15px;
-        line-height: 25px;
-        padding: 10px 12px;
-    }
-
-    .titulo-turmas {
-        font-size: 10vw;
-    }
-    .turmas-container {
-        min-height: 70vh;
-    }
-}
-
-@media (max-width: 500px) {
-    .carousel-turmas .aluno p {
-        font-size: 4.2vw;
-    }
-
-    .turmas-container {
-        min-height: 70vh;
-    }
-}
-
-@media (max-width: 300px) {
-    .carousel-turmas .aluno p {
-        font-size: 5vw;
-    }
-
-    .buttons-turmas * {
-        font-size: 13px;
-        line-height: 25px;
-        padding: 10px 12px;
-    }
-}
 */
