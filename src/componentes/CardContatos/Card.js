@@ -7,7 +7,9 @@ function Card({nome, descricao, email, destaque}) {
     <div className={cardClasses}> 
       <h3 className="nome">{nome}</h3>
       <p className="descricao">{descricao}</p>
-      <button className="email" onClick={() => window.location.href = `mailto:${email}`} id="email">Enviar E-mail</button>
+      <div className="div-button">
+        <button onClick={() => window.location.href = `mailto:${email}`} id="email">Enviar E-mail</button>
+      </div>
     </div>
   );
 }

@@ -95,7 +95,7 @@ const Equipe = () => {
   const renderButtons = () => {
     if (largura < 700) {
       return (
-        <select className="select-equipe"
+        <select className="select-button"
           value={selectedButton}
           onChange={(e) => handleButtonClick(parseInt(e.target.value))}
         >
@@ -108,7 +108,7 @@ const Equipe = () => {
       );
     } else {
       return (
-        <div className="buttons-equipe">
+        <div className="div-button">
           <button
             className={selectedButton === 1 ? "selected" : ""}
             onClick={() => setSelectedButton(1)}>

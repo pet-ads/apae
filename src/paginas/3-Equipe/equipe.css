@@ -1,4 +1,4 @@
-.equipe-container {
+/*.equipe-container {
     background-color: #fff;
     min-height: 76vh;
     width: auto;
@@ -7,7 +7,7 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 70px;
-}
+}*/
 
 .carousel-equipe {
     width: 90%;
@@ -38,7 +38,7 @@
     border-radius: 30px;
 }
 
-.buttons-equipe {
+/*.buttons-equipe {
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -90,7 +90,7 @@
     color: #10813c;
     padding-top: 30px;
     cursor: pointer;
-}
+}*/
 
 .slider-default {
     cursor: default !important;
@@ -111,14 +111,14 @@
         height: 300px;
         width: 220px;
     } 
-    .buttons-equipe * {
+    /*.buttons-equipe * {
         font-size: 2vw;
     }
     
     .select-equipe {
         padding: 3vw 6vw;
         font-size: 2vw;
-    }
+    }*/
     
 }
 @media(max-width: 768px){
@@ -132,24 +132,15 @@
         font-size: 4vw;
     }
     
-    .buttons-equipe * {
+    /*.buttons-equipe * {
         font-size: 3vw;
     }
     
     .select-equipe {
         padding: 3vw 6vw;
         font-size: 3.5vw;
-    }
+    }*/
 }
-
-
-
-
-
-
-
-
-
 
 /*@media only screen and (min-width: 1025px) and (max-width: 1200px) {
     /*.equipe-container {

@@ -64,7 +64,7 @@
   text-transform: uppercase;
 }
 
-.email {
+/*.email {
   display: inline-block;
   justify-content: flex-end;
   background-color: #10813c;
@@ -80,16 +80,17 @@
   margin: 0 4vw;
   padding: 0.5vw;
   margin-top: auto;
-}
+}*/
 
 .descricao{
   font-weight: bold;
   font-size: 1.6vw;
   line-height: 2vw;
 }
-.email:hover{
+
+/*.email:hover{
   background-color: #0f3100;
-}
+}*/
 
 /*@media (max-width: 1200px){
 
@@ -125,10 +126,10 @@
     margin-bottom: 0%;
   }
   
-  .email {
+  /*.email {
     font-size: 2vw;
     padding: 10px 12px;
-  }
+  }*/
 
   .descricao{
     font-size: 2vw;
@@ -145,9 +146,9 @@
   .descricao{
     font-size: 2.5vw;
   }
-  .email{
+  /*.email{
     font-size: 2vw;
-  }
+  }*/
 }
 @media(max-width: 480px){
   .nome{
@@ -156,10 +157,10 @@
   .descricao{
     font-size: 3.5vw;
   }
-  .email{
+  /*.email{
     font-size: 3vw;
     padding: 3vw 6vw;
-  }
+  }*/
 }
 
 
