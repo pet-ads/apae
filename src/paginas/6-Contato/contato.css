@@ -1,4 +1,95 @@
-@media only screen and (min-width: 320px) and (max-width: 480px){
+.contato-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 4%;
+}
+
+.mapas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+
+
+/*@media (max-width: 1200px){
+
+}
+*/
+
+
+@media(max-width:1024px){
+  .contato-container {
+    background-color: white;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin: 3%;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 4%;
+  }
+  
+  .mapas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  
+  
+
+
+}
+@media(max-width: 768px){
+
+}
+@media(max-width: 480px){
+    
+}
+
+
+/*.titulo-container-contato{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    padding-bottom: 3%;
+}
+}
+
+
+
+
+/*@media only screen and (min-width: 320px) and (max-width: 480px){
   .contato-container {
     background-color: white;
     min-height: 70vh;
@@ -37,7 +128,7 @@
       text-transform: uppercase;
       font-size: 7.5vw;
       padding-bottom: 8%;
-  }*/
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -78,7 +169,7 @@
       text-transform: uppercase;
       font-size: 5vw;
       padding-bottom: 3%;
-  }*/
+  }
   
 }
 
@@ -119,10 +210,10 @@
       text-transform: uppercase;
       font-size: 3vw;
       padding-bottom: 3%;
-  }*/
+  }
 }
 
-/* Large devices (laptops/desktops) */
+/* Large devices (laptops/desktops) 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .contato-container {
     background-color: white;
@@ -150,7 +241,7 @@
     justify-content: center;
     gap: 2%;
     flex-wrap: wrap;
-  }
+  }*/
   
   
   /*.titulo-container-contato{
@@ -161,10 +252,10 @@
       text-transform: uppercase;
       font-size: 2.5vw;
       padding-bottom: 3%;
-  }*/
+  }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) 
 @media only screen and (min-width: 1201px) {
   .contato-container {
     background-color: white;
@@ -203,7 +294,7 @@
       text-transform: uppercase;
       font-size: 2.5vw;
       padding-bottom: 3%;
-  }*/
+  }
 }
 
 /*antes da padronização
