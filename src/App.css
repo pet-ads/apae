@@ -85,6 +85,13 @@ button:hover {
   background-color: var(--verde-escuro);
 }
 
+.descricao{
+  font-size: 1.6vw;
+  line-height: 2.3vw;
+  text-align: justify;
+  text-indent: 20px;
+}
+
 .div-button {
   display: flex;
   justify-content: center;
@@ -171,7 +178,17 @@ button:hover {
     font-size: 2vw;
 }
   /*------------------------------------------------------*/
+  .descricao{
+    font-size: 2vw;
+    line-height: 3vw;
+    align-items: center;
+    max-width: 90vw; 
+    text-indent: 20px;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+  }
 }
+
 @media(max-width: 768px){
   .titulo{
     font-size: 5vw;
@@ -181,6 +198,9 @@ button:hover {
     font-size: 2vw;
   }
   /*------------------------------------------------------*/
+  .descricao{
+    font-size: 2.5vw;
+}
 }
 @media(max-width: 480px){
   .titulo{
@@ -194,6 +214,10 @@ button:hover {
   .select-button {
     padding: 3vw 3vw;
     font-size: 3.5vw;
-}
+  }
   /*------------------------------------------------------*/
+  .descricao{
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
 }
