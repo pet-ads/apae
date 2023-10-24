@@ -94,7 +94,7 @@ const Turmas = () => {
     const renderButtons = () => {
         if (largura < 700) {
             return (
-                <select className="select-turmas"
+                <select className="select-button"
                     value={selectedButton}
                     onChange={(e) => handleButtonClick(parseInt(e.target.value))}
                 >
@@ -107,7 +107,7 @@ const Turmas = () => {
             );
         } else {
             return (
-                <div className="buttons-turmas">
+                <div className="div-button">
                     {distinctYears.map((year) => (
                         <button
                             className={selectedButton === year ? 'selected' : ''}

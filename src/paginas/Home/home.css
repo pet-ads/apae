@@ -15,7 +15,7 @@
     }
 }
 
-.titulo-button-banner {
+/*.titulo-button-banner {
     display: flex;
     flex-direction: row;
     
@@ -24,7 +24,7 @@
 .titulo-button {
     width: 100%;
     padding-left: 30%;
-}
+}*/
 
 .home-container {
     display: flex;
@@ -41,12 +41,14 @@
     font-size: 2.8vw;
     font-weight: 100;
     line-height: 5vw;
-    text-align: left;
+    text-align: center;
     word-spacing: 0vw;
-    padding-left: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.button-home {
+
+/*.button-home {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1vw;
     font-weight: bold;
@@ -68,7 +70,7 @@
 
 .button-home:hover {
     background-color: #0f3100;
-}
+}*/
 
 /*@media (max-width: 1200px){
 
@@ -87,11 +89,11 @@
         flex-direction: column;
     }
 
-    .titulo-button-banner{
+    /*.titulo-button-banner{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }*/
 
     .home-container {
         display: block;
@@ -114,7 +116,7 @@
         max-width: 55vw;
     }
 
-    .button-home {
+    /*.button-home {
         font-size: 2vw;
         line-height: 30px;
         padding: 14px 18px;
@@ -122,7 +124,7 @@
 
     .titulo-button{
         padding-left: 0%;
-    }
+    }*/
     
 }
 
@@ -140,9 +142,9 @@
         max-width: 70vw;
     }
 
-    .button-home {
+    /*.button-home {
         font-size: 2.5vw;  
-    }
+    }*/
 }
 
 @media(max-width: 480px){
@@ -160,12 +162,12 @@
         line-height: 10vw;
     }
 
-    .button-home {
+    /*.button-home {
         font-size: 4vw;
         line-height: 30px;
         padding: 10px;
         margin-bottom: 10px;
-    }
+    }*/
 }
 
 

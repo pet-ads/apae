@@ -1,10 +1,10 @@
-.turmas-container {
+/*.turmas-container {
     background-color: white;
     min-height: 75.6vh;
     width: auto;
     padding-top: 10px;
     padding-bottom: 70px;
-}
+}*/
 
 .carousel-turmas {
     width: 90%;
@@ -46,7 +46,7 @@
     color: #10813c;
 }
 
-.buttons-turmas {
+/*.buttons-turmas {
     margin-bottom: 30px;
 }
 
@@ -64,9 +64,9 @@
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
-}
+}*/
 
-.select-turmas {
+/*.select-turmas {
     display: inline-block;
     margin: 0 3vw;
     padding: 4.2vw 8.4vw;
@@ -79,15 +79,15 @@
     text-decoration: none;
     text-align: center;
     margin-bottom: 20px;
-}
+}*/
 
-.buttons-turmas *:hover {
+/*.buttons-turmas *:hover {
     background-color: #0f3100;
 }
 
 .buttons-turmas .selected {
     background-color: #0f3100;
-}
+}*/
 
 .slider-default {
     cursor: default !important;
@@ -107,13 +107,13 @@
         height: 300px;
         width: 220px;
     }
-    .buttons-turmas * {
+    /*.buttons-turmas * {
         font-size: 2vw;
     }
     .select-turmas {
         padding: 3vw 6vw;
         font-size: 2vw;
-    }
+    }*/
 
 }
 @media(max-width: 768px){
@@ -126,14 +126,14 @@
         font-size: 4vw;
     }
 
-    .buttons-turmas * {
+    /*.buttons-turmas * {
         font-size: 3vw;
     }
 
     .select-turmas {
         padding: 3vw 6vw;
         font-size: 3.5vw;
-    }
+    }*/
 }
 
 
