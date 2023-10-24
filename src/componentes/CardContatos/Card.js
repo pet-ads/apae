@@ -6,7 +6,7 @@ function Card({nome, descricao, email, destaque}) {
   return (
     <div className={cardClasses}> 
       <h3 className="nome">{nome}</h3>
-      <p className="descricao">{descricao}</p>
+      <p className="descricao-card">{descricao}</p>
       <div className="div-button">
         <button onClick={() => window.location.href = `mailto:${email}`} id="email">Enviar E-mail</button>
       </div>
