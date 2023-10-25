@@ -1,3 +1,75 @@
+
+/*SELECT*/
+/*select-turmas -----> select-button*/
+/*buttons-turmas -----> div-button*/
+/*turmas.css -----> app.css*/
+
+/*------------------------------------------------------*/
+/*.select-turmas {
+    display: inline-block;
+    margin: 0 3vw;
+    padding: 4.2vw 8.4vw;
+    background-color: #10813c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+
+/*.buttons-turmas .selected {
+    background-color: #0f3100;
+}*/
+
+/*BUTTONS*/
+
+/*------------------------------------------------------*/
+/*.buttons-turmas {
+    margin-bottom: 30px;
+}*/
+
+/*.buttons-turmas * {
+    display: inline-block;
+    margin: 0 3vw;
+    padding: 1.2vw 2.4vw;
+    background-color: #10813c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}*/
+
+/*.select-turmas {
+    display: inline-block;
+    margin: 0 3vw;
+    padding: 4.2vw 8.4vw;
+    background-color: #10813c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+
+/*.buttons-turmas *:hover {
+    background-color: #0f3100;
+}*/
+
+
+/*------------------------------------------------------*/
+/*FIM*/
+
 .carousel-turmas {
     width: 90%;
     margin: auto;
@@ -43,7 +115,6 @@
     cursor: default !important;
 }
 
-
 @media(max-width:1024px){
     .carousel-turmas .aluno p {
         font-size: 1.8vw;
@@ -52,6 +123,18 @@
         height: 80%;
         width: 80%;
     }
+    /*IINICIO*/
+    /*------------------------------------------------------*/
+    /*.buttons-turmas * {
+        font-size: 2vw;
+    }*/
+
+    /*.select-turmas {
+        padding: 3vw 6vw;
+        font-size: 2vw;
+    }*/
+    /*------------------------------------------------------*/
+    /*FIM*/
 }
 @media(max-width: 768px){
     .carousel-turmas .aluno p {
@@ -62,4 +145,16 @@
     .carousel-turmas .aluno p {
         font-size: 4vw;
     }
+    /*INICIO*/
+    /*------------------------------------------------------*/
+    /*.buttons-turmas * {
+        font-size: 3vw;
+    }*/
+
+    /*.select-turmas {
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+    }*/
+    /*------------------------------------------------------*/
+    /*FIM*/
 }

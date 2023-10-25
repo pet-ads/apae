@@ -1,42 +1,3 @@
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
-
 .titulo {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
@@ -56,7 +17,7 @@
 .container {
   background-color: #fff;
   /*min-height: 50vh;*/
-  /*width: auto;*/
+  width: auto;
   width: 90%;
   margin: auto;
   /*text-align: center;*/
@@ -69,7 +30,13 @@
   --verde-escuro: #0f3100;
   --branco: #fff;
   --preto: black;
+
+/*TENTANDO ALTERAR AS VARIÁVEIS DE CSS */
+/*--swiper-theme-color: #0f3100;
+  --swiper-navigation-size: 100px;*/
   }
+
+/*BUTTON*/
 /*------------------------------------------------------*/
 
 button {
@@ -118,6 +85,8 @@ button:hover {
   cursor: pointer;
 }
 
+/*SELECT*/
+/*------------------------------------------------------*/
 .select-button {
   display: block;
   margin: 0 auto;
@@ -153,10 +122,6 @@ button:hover {
 /*.div-button *:hover {
   background-color: #0f3100;
 }
-
-.div-button .selected {
-  background-color: #0f3100;
-}*/
 
 /*------------------------------------------------------*/
 
