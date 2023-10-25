@@ -15,7 +15,7 @@ function Card({ title, imageUrl, body, handleOpenModal, cardId }) {
                 </div>
                 
                 <div className="card-body">
-                    <p className="descricao">{body}</p>
+                    <p className="paragrafo-card">{body}</p>
                 </div>
             </div>
 
