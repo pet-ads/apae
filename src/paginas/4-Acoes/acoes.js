@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Card from '../../componentes/Card_Acoes/card';
-import img_aula from '../../componentes/Card_Acoes/aula_informatica.jpg';
-import img_palestra from '../../componentes/Card_Acoes/palestra.jpg';
-import img_visita from '../../componentes/Card_Acoes/visita_tecnica.jpg';
-import "./acoes.css";
+import Card from '../../componentes/Cards/Card_Acoes/card-acoes.js';
+import img_aula from '../../componentes/Cards/Card_Acoes/aula_informatica.jpg';
+import img_palestra from '../../componentes/Cards/Card_Acoes/palestra.jpg';
+import img_visita from '../../componentes/Cards/Card_Acoes/visita_tecnica.jpg';
+import "../div-cards.css";
 import Modal from '../../componentes/Modal/modal.js';
 
 export default function Acoes() {
@@ -21,9 +21,9 @@ export default function Acoes() {
         <section className="container">
             <p className="titulo">Ações</p>
 
-            <div className="cards-container-geral">
+            <div className="cards-container">
 
-                <div className="cards-container">
+                <div className="cards">
                     <Card
                         title='Aulas de Informática'
                         imageUrl={img_aula}

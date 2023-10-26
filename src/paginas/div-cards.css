@@ -1,0 +1,48 @@
+/*contato*/
+/*cards-->cards*/
+/*contato-container-->cards-container*/
+/*acoes*/
+/*cards-container-geral----->cards-container*/
+/*cards-container----->cards*/
+
+.cards-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 4%;
+  }
+  
+  @media(max-width:1024px){
+    .cards-container {
+      background-color: white;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      margin: 3%;
+    }
+    
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;;
+      flex-wrap: wrap;
+      align-content: center;
+      margin-bottom: 4%;
+    }
+
+}

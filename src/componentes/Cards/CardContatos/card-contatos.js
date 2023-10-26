@@ -1,5 +1,6 @@
 import React from "react";
-import "./Card.css";
+import "./card-contatos.css";
+import '../card_geral .css';
 
 function Card({nome, descricao, email, destaque}) {
   const cardClasses = destaque ? "CardDestaque" : "Card";

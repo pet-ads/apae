@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
-import Slider from '../Slider/slider.js';
+import Slider from '../../componentes/Slider/modal/slider.js';
 import './modal.css';
-import sliderData from '../Slider/sliderData.json';
+import sliderData from '../../componentes/Slider/modal/sliderData.json';
 
 function CustomModal({ cardId, closeModal }) {
     return (

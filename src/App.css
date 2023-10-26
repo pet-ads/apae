@@ -1,5 +1,22 @@
+:root{
+  --verde: #10813c; 
+  --verde-escuro: #0f3100;
+  --branco: #fff;
+  --preto: black;
+  --fonte: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --tam-descricao-geral: 1.2vw;
+  --tam-subtitulo-geral: 1.3vw;
+  --tam-descricao-max1024: 2.2vw;
+  --tam-subtitulo-max1024: 2.3vw;
+  --tam-descricao-max768: 2.5vw;
+  --tam-subtitulo-max768: 2.6vw;
+  --tam-descricao-max480: 3.5vw;
+  --tam-subtitulo-max480: 3.6vw;
+
+  }
+
 .titulo {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--fonte);
   text-transform: uppercase;
   font-size: 2.5vw;
   display: block;
@@ -9,15 +26,10 @@
   padding-bottom: 5px;
 }
 
-.ancoras{
-  margin-top: 106px;
-  margin-bottom: 71px;
-}
-
 .container {
-  background-color: #fff;
+  background-color: var(--branco);
   /*min-height: 50vh;*/
-  width: auto;
+  /*width: auto;*/
   width: 90%;
   margin: auto;
   /*text-align: center;*/
@@ -25,22 +37,12 @@
   padding-bottom: 70px;
 }
 
-:root{
-  --verde: #10813c; 
-  --verde-escuro: #0f3100;
-  --branco: #fff;
-  --preto: black;
-
-/*TENTANDO ALTERAR AS VARIÁVEIS DE CSS */
-/*--swiper-theme-color: #0f3100;
-  --swiper-navigation-size: 100px;*/
-  }
 
 /*BUTTON*/
 /*------------------------------------------------------*/
 
 button {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--fonte);
   /*line-height: 2.2vw;*/
   text-transform: uppercase;
   white-space: nowrap;
@@ -52,32 +54,26 @@ button:hover {
   background-color: var(--verde-escuro);
 }
 
-.descricao{
-  font-size: 1.6vw;
-  line-height: 2.3vw;
-  text-align: justify;
-  text-indent: 20px;
-}
+/*DIV-BUTTON*/
 
 .div-button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   flex-direction: row;
   width: 100%;
 }
 
-
 .div-button * {
   display: inline-block;
-  margin: 0 3vw;
-  padding: 1vw 1.2vw;
+  margin: 3vw;
+  padding: 1vw 1vw;
   background-color: var(--verde);
   color: var(--branco);
   border: none;
   border-radius: 5px;
-  font-size: 1vw;
+  font-size: 1vw; /* evrificar*/
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -85,74 +81,19 @@ button:hover {
   cursor: pointer;
 }
 
-/*SELECT*/
-/*------------------------------------------------------*/
-.select-button {
-  display: block;
-  margin: 0 auto;
-  /*padding: 1.2vw 1.2vw;*/
-  background-color: var(--verde);
-  color: var(--branco);
-  border: none;
-  border-radius: 5px;
-  /*font-size: 1vw;*/
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-/*.selectdiv-button {
-  display: inline-block;
-  
-  margin: 0 3vw;
-  padding: 4.2vw 8.4vw;
-  background-color: #10813c;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1vw;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 20px;
-}*/
-
-/*.div-button *:hover {
-  background-color: #0f3100;
-}
-
-/*------------------------------------------------------*/
 
 @media(max-width:1024px){
   .titulo{
     font-size: 4vw;
   }
-  /*------------------------------------------------------*/
   .div-button * {
     font-size: 2vw;
     line-height: 25px;
-    padding: 12px 12px;
+    padding: 1.2vw 1.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .select-button {
-    padding: 3vw 3vw;
-    font-size: 2vw;
-}
-  /*------------------------------------------------------*/
-  .descricao{
-    font-size: 2vw;
-    line-height: 3vw;
-    align-items: center;
-    max-width: 90vw; 
-    text-indent: 20px;
-    /*margin-left: 10%;
-    margin-right: 10%;*/
-  }
-
   
 }
 
@@ -160,31 +101,15 @@ button:hover {
   .titulo{
     font-size: 5vw;
   }
-  /*------------------------------------------------------*/
   .div-button *{
     font-size: 2vw;
   }
-  /*------------------------------------------------------*/
-  .descricao{
-    font-size: 2.5vw;
-}
 }
 @media(max-width: 480px){
   .titulo{
     font-size: 7.5vw;
   }
-  /*------------------------------------------------------*/
   .div-button *{
-    padding: 6vw 6vw;
     font-size: 3vw;
-  }
-  .select-button {
-    padding: 3vw 3vw;
-    font-size: 3.5vw;
-  }
-  /*------------------------------------------------------*/
-  .descricao{
-    font-size: 3.5vw;
-    line-height: 4vw;
   }
 }
