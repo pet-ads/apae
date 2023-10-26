@@ -4,19 +4,11 @@
     justify-content: flex-end;
 }
 
-/*.paragrafos-geral {
-    margin-left: 20px;
-    margin-top: 5px;
-}*/
-
 .paragrafo-blog {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     word-spacing: 0.2vw;
-    color: black;
     text-align: right; 
-    font-size: 2vw;
-    line-height: 3vw;
-    max-width: 90vw; 
+    font-size: 1.2vw;
 }
 
 @keyframes pulando {
@@ -46,15 +38,9 @@
 }
 
 
-/*@media (max-width: 1200px){
-
-}
-*/
-
-
 @media(max-width:1024px){
     .paragrafo-blog{
-        font-size: 2vw;
+        font-size: 2.2vw;
     }
 }
 @media(max-width: 768px){
