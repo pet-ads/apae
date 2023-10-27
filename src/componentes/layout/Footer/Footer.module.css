@@ -2,39 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*border-top: rgba(0, 128, 0, 0.473) solid 5px;*/
     border-bottom:green solid 5px;
     bottom: 0;
     width: 100%;
     background-color: white;
   }
 
-/*.list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: small;
-    font-family: Arial;
-    list-style: none;
-}*/
-
-/*.item button{
-    font-family: 'Trebuchet MS', sans-serif;
-    background-color: transparent; 
-    border: none; 
-    text-decoration: none;
-    color: gray;
-}
-
-.item button:hover{
-    font-weight: bold;
-}*/
-
 .paragrafo {
     font-family: 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: flex-end;
-    font-size: small;
+    font-size: 0.8vw;
     text-align: center;
     margin-block-start: auto;
     font-family: Arial;
@@ -44,7 +22,6 @@
 .textofooter{
     display: flex;
     flex-direction: row;
-   /* align-items: center;*/
     height: 5px;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -52,7 +29,7 @@
 
 .linkifsp{
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: small;
+    font-size: 0.8vw;
     text-decoration: none;
     color: gray;
 }
@@ -61,35 +38,31 @@
     font-weight: bold;
 }
 
-/*.navfooter{
-    display: flex;
-    align-items: center;
-    margin-left: -2.5%;
-}*/
 
-
-@media (max-width: 500px) {
-    /*.navfooter{
-        display: none;
-    }*/
-    .footer{
-        position:relative;
-    }
-    .textofooter{
-        margin-left: 0%;
-    }
-    .paragrafo{
-        font-size: 1.1em;
+@media(max-width:1024px){
+    .paragrafo {
+        font-size: 1.4vw;
     }
     .linkifsp{
-        font-size: 0.85em;
+        font-size: 1.4vw;
     }
-    
-
-    
 }
-@media (max-width: 400px){
-    .paragrafo{
-        font-size: 0.85em;
+
+
+@media(max-width: 768px){
+    .paragrafo {
+        font-size: 2vw;
+    }
+    .linkifsp{
+        font-size: 2vw;;
+    }
+}
+
+@media(max-width: 480px){
+    .paragrafo {
+        font-size: 2.4vw;
+    }
+    .linkifsp{
+        font-size: 2.4vw;;
     }
 }

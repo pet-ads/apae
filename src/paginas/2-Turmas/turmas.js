@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "./turmas.css"
-
-import alunos from './Alunos.json';
+import "../../componentes/Slider/pag_principal/slider_pag_principal.css"
+import alunos from '../../componentes/Slider/pag_principal/Alunos.json';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -94,7 +93,7 @@ const Turmas = () => {
     const renderButtons = () => {
         if (largura < 700) {
             return (
-                <select className="select-button"
+                <select className="select"
                     value={selectedButton}
                     onChange={(e) => handleButtonClick(parseInt(e.target.value))}
                 >
@@ -140,13 +139,13 @@ const Turmas = () => {
     return (
         <section className="container">
             <p className="titulo">Turmas</p>
-            <div className="carousel-turmas">
+            <div className="carousel">
 
                 {renderButtons()}
 
                 <Slider {...settings}>
                     {filteredAlunos.map((item) => (
-                        <div className={`aluno ${sliderClassName}`} key={item.id}>
+                        <div className={`subtitulo ${sliderClassName}`} key={item.id}>
                             <div className="foto">
                                 <img src={item.image} alt={item.name} />
                             </div>

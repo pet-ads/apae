@@ -1,17 +1,18 @@
-import React from "react"
-import "./contato.css"
-import Card from "../../componentes/CardContatos/Card"
-import Local from "../../componentes/Mapas/Local"
+import React from "react";
+import "./contato.css";
+import "../div-cards.css";
+import Card from "../../componentes/Cards/CardContatos/card-contatos.js";
+import Local from "../../componentes/Mapas/Local";
 
 
 export default function Contato(){
     return(
         
-        <div className="contato-container">
+        <div className="container">
 
             <p className="titulo">Contato</p>
 
-            <div className="container">
+            <div className="cards-container">
 
                 <div className= "cards">
                     <Card

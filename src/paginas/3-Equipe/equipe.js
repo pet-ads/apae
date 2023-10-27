@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "./equipe.css";
-
-import equipe from './equipe.json';
+import "../../componentes/Slider/pag_principal/slider_pag_principal.css"
+import equipe from '../../componentes/Slider/pag_principal/equipe.json';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -95,7 +94,7 @@ const Equipe = () => {
   const renderButtons = () => {
     if (largura < 700) {
       return (
-        <select className="select-button"
+        <select className="select"
           value={selectedButton}
           onChange={(e) => handleButtonClick(parseInt(e.target.value))}
         >
@@ -145,13 +144,13 @@ const Equipe = () => {
   return (
     <section className="container">
       <p className="titulo">Equipe</p>
-      <div className="carousel-equipe">
+      <div className="carousel">
         
         {renderButtons()}
 
         <Slider {...settings}>
           {equipeData.map((item) => (
-            <div className={`card-equipe ${sliderClassName}`} key={item.id}>
+            <div className={`subtitulo ${sliderClassName}`} key={item.id}>
               <div className="foto">
                 <img src={item.image} alt={item.name} />
               </div>
