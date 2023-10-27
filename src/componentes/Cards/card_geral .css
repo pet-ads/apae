@@ -4,12 +4,13 @@
     justify-content:space-between;
     text-align: center;
     padding: 1%;
-    width: 25%;
+    width: var(--largura-cards-geral);
     overflow: hidden;
     background-color:var(--branco);
     border: 2px var(--verde) solid;
-    border-radius: 30px;
+    border-radius: var(--raio-borda-cards);
     box-shadow: 0 2px 4px var(--verde-escuro);
+    align-items: center;
   }
 
 .Card:hover {
@@ -19,7 +20,7 @@
 @media(max-width:1024px){
 
 .Card {
-    width: 90%;
+    width: var(--largura-cards-max1024);
     order: 1;
     align-items: center;
     margin-bottom: 20px;

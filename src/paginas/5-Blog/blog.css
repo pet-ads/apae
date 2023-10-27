@@ -6,7 +6,7 @@
 
 .paragrafo-blog {
     font-family: var(--fonte);
-    word-spacing: 0.2vw;
+    /*word-spacing: 0.2vw;*/
     text-align: right; 
     font-size: var(--tam-descricao-geral); 
 }

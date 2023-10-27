@@ -7,11 +7,11 @@
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 1.3vw; /*verificar*/
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    padding-left: 0;
 }
 
 .select *{ /*submenu do sanduiche*/
@@ -85,18 +85,18 @@
         font-size: var(--tam-subtitulo-max768);
     }
     .select{
-        padding: 2vw 4vw 2vw 0; /*ajusta os itens do sanduiche no meio*/
-        font-size: 2vw;
+        padding: 2.3vw 2.3vw 2.3vw 0; /*ajusta os itens do sanduiche no meio*/
+        font-size: var(--tam-botao-max768);
     }
 }
 @media(max-width: 480px){
     .carousel .subtitulo p {
-        font-size: var(--tam-subtitulo-max768);
+        font-size: var(--tam-subtitulo-max480);
     }
 
     .select {
-        padding: 3vw 3vw 3vw 0; /*ajusta os itens do sanduiche no meio*/
-        font-size: 4vw;
+        padding: 3.4vw 3.4vw 3.4vw 0; /*ajusta os itens do sanduiche no meio*/
+        font-size: var(--tam-botao-max480);
     }
 
 }

@@ -5,15 +5,32 @@
   --preto: black;
   --fonte: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --tam-descricao-geral: 1.2vw;
-  --tam-subtitulo-geral: 1.3vw;
   --tam-descricao-max1024: 2.2vw;
-  --tam-subtitulo-max1024: 2.3vw;
   --tam-descricao-max768: 2.5vw;
-  --tam-subtitulo-max768: 2.6vw;
   --tam-descricao-max480: 3.5vw;
+  /*--------------*/
+  --tam-subtitulo-geral: 1.3vw;
+  --tam-subtitulo-max1024: 2.3vw;
+  --tam-subtitulo-max768: 2.6vw;
   --tam-subtitulo-max480: 3.6vw;
-
-  }
+  /*--------------*/
+  --tam-botao-geral:1.4vw;
+  --tam-botao-max1024:2.4vw;
+  --tam-botao-max768:2.7vw;
+  --tam-botao-max480:3.7vw;
+  /*--------------*/
+  --tam-p-botao-geral:1vw;
+  --tam-p-botao-max1024:2vw;
+  --tam-p-botao-max768:2.3vw; /* alterar .select em slider_pag_principal */
+  --tam-p-botao-max480:3.4vw; /* alterar .select em slider_pag_principal */
+  /*--------------*/
+  --raio-borda-cards: 30px;
+  --largura-cards-geral: 25%;
+  --largura-cards-max1024:90%;
+  --largura-interna-cards: 90%;
+  --margem-dentro-cards:5%;
+  /*--------------*/
+ }
 
 .titulo {
   font-family: var(--fonte);
@@ -28,11 +45,8 @@
 
 .container {
   background-color: var(--branco);
-  /*min-height: 50vh;*/
-  /*width: auto;*/
   width: 90%;
   margin: auto;
-  /*text-align: center;*/
   padding-top: 10px;
   padding-bottom: 70px;
 }
@@ -43,7 +57,6 @@
 
 button {
   font-family: var(--fonte);
-  /*line-height: 2.2vw;*/
   text-transform: uppercase;
   white-space: nowrap;
   word-spacing: 0px;
@@ -60,7 +73,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  /*margin-bottom: 5%;*/
   flex-direction: row;
   width: 100%;
 }
@@ -68,12 +80,13 @@ button:hover {
 .div-button * {
   display: inline-block;
   margin: 3vw;
-  padding: 1vw 1vw;
+  margin-bottom: 2.5%;
+  padding: var(--tam-p-botao-geral);
   background-color: var(--verde);
   color: var(--branco);
   border: none;
   border-radius: 5px;
-  font-size: 1vw; /* evrificar*/
+  font-size: var(--tam-botao-geral);
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -87,9 +100,8 @@ button:hover {
     font-size: 4vw;
   }
   .div-button * {
-    font-size: 2vw;
-    line-height: 25px;
-    padding: 1.2vw 1.2vw;
+    font-size: var(--tam-botao-max1024);
+    padding: var(--tam-p-botao-max1024);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +114,8 @@ button:hover {
     font-size: 5vw;
   }
   .div-button *{
-    font-size: 2vw;
+    font-size: var(--tam-botao-max768);
+    padding: var(--tam-p-botao-max768);
   }
 }
 @media(max-width: 480px){
@@ -110,6 +123,7 @@ button:hover {
     font-size: 7.5vw;
   }
   .div-button *{
-    font-size: 3vw;
+    font-size: var(--tam-botao-max480);
+    padding: var(--tam-p-botao-max480);
   }
 }

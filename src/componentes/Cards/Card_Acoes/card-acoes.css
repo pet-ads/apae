@@ -3,42 +3,29 @@
 }
 
 .imgcard {
-    width: 90%;
-    height: 90%;
-    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5% ;
     align-items: center;
-    margin: 5%;
-}
-
-.card-content {
-    margin-top: 1%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
 }
 
 .titulo-card {
     font-size: var(--tam-subtitulo-geral);
-    text-align: center;
     font-weight: bold;
-    margin-bottom: 5%;
 }
 
 .paragrafo-card {
     text-align: justify;
-    font-size: var(--tam-descricao-geral);    /*fonte size alinhada com a .paragrafo-blog em 'blog.css' */
-}
-
-.card-body{
-    max-width: 85%;
+    font-size: var(--tam-descricao-geral);   
+    margin: 0;
 }
 
 .img-titulo-body-container{ 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: var(--largura-interna);
+    margin: var(--margem-dentro-cards);
 }
 
 

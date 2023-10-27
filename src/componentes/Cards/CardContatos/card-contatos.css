@@ -6,11 +6,11 @@
   justify-content: center;
   text-align: center;
   padding: 1%;
-  width: 25%;
+  width: var(--largura-cards-geral);
   overflow: hidden;
   background-color: var(--branco);
   border: 2px var(--verde) solid;
-  border-radius: 30px;
+  border-radius: var(--raio-borda-cards);
   box-shadow: 0 2px 4px var(--verde-escuro); 
   animation: efeitoPulsar 5s infinite 3ms;
 }
@@ -46,7 +46,7 @@
 
 @media(max-width:1024px){
   .CardDestaque {
-    width: 90%;
+    width: var(--largura-cards-max1024);
     order: 0;
     align-items: center;
     margin-bottom: 20px;
@@ -59,13 +59,11 @@
     margin-bottom: 0%;
   }
 
-
   .descricao-card{
     font-size: var(--tam-descricao-max1024);
     line-height: 24px;
     
   }
-
   
 }
 @media(max-width: 768px){
