@@ -48,7 +48,7 @@
     height: 80%;
     width: 80%;
     margin: auto;
-    border-radius: var(--raio-borda-img);
+    border-radius: var(--raio-borda-img-slider);
 }
 
 /*pontos do carousel*/

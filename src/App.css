@@ -46,7 +46,8 @@
   --margem-dentro-cards:5%;
   --margem-entre-cards:2%;
   /*--------------*/
-  --raio-borda-img: 5%;
+  --raio-borda-img-card: 5%;
+  --raio-borda-img-slider: 30px;
   --raio-borda-cards: 5%;
   --raio-borda-botao: 5px;
  }
