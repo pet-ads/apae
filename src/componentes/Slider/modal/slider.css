@@ -1,36 +1,49 @@
 .swiper-container {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-.swiper {
+/*.swiper {
   height: 45vh;
-}
+}*/
 
 .img-slider {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translateY(-15px); 
+  width: 98%;
+  height: 98%;
+  /*object-fit: cover;*/
+  /*transform: translateY(-15px);*/
+  border-radius: var(--raio-borda-img); 
+}
+
+.swiper{
+  padding-bottom: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swipper-button{
+  margin-bottom: 20px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff; 
+  color: var(--branco); 
   font-size: 24px; 
   transition: color 0.3s ease;
 }
 
 .swiper-button-next:hover {
-  color: rgba(0, 128, 0, 0.473); 
+  color: var(--verde-claro); 
 }
 .swiper-button-prev:hover{
-  color: rgba(0, 128, 0, 0.473); 
+  color: var(--verde-claro); 
 }
 
 
 .swiper-pagination-bullet {
-  background-color: #19704c; /* Cor dos indicadores de página */
+  background-color: var(--verde); /* Cor dos indicadores de página */
   width: 10px; 
   height: 10px; 
   margin: 0 auto 10px; /* Espaçamento entre os indicadores de página (horizontal) */
@@ -40,9 +53,9 @@
 
 /* Estilize o indicador de página ativo */
 .swiper-pagination-bullet-active {
-  background-color: #697406; /* Cor do indicador de página ativo */
+  background-color: var(--verde-escuro); /* Cor do indicador de página ativo */
   z-index: 1; /* Reduza o z-index para colocá-lo atrás das imagens */
 }
-.swiper-pagination {
-  transform: translateY(10px); 
-}
+/*.swiper-pagination {
+  transform: translateY(10px);
+}*/
