@@ -18,7 +18,7 @@ function Slider({ slides }) {
                 loop
             >
                 {slideImages.map((slide, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide className="swiper" key={index}>
                         <img src={`/${slide}`} alt={`Slide ${index + 1}`} className='img-slider' />
                     </SwiperSlide>
                 ))}
