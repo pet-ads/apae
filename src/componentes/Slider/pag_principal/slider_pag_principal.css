@@ -70,6 +70,14 @@
 }
 /*---*/
 
+
+@media(max-width:1241px){
+    .carousel .subtitulo p {
+        font-size: var(--tam-subtitulo-max1241);
+    }
+}
+
+
 @media(max-width:1024px){
     .carousel .subtitulo p {
         font-size: var(--tam-subtitulo-max1024);

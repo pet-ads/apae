@@ -29,11 +29,9 @@
 }
 
 .button-modal {
-  padding: var(--tam-p-botao-geral);
+  padding: 0.9vw;
   margin-top: 2%;
-  /*margin-bottom: 1%;*/
-  font-size: var(--tam-botao-geral);
-  /*background-color: #2d6136; */
+  font-size: 0.8vw;
   background-color: var(--verde);
   color: var(--branco); 
   border: none;
@@ -45,8 +43,51 @@
   background-color: var(--verde-escuro);
 }
 
-/*.titulo-modal {
-  /*color: #333;*//*
+.titulo-modal {
   text-transform: uppercase;
-  color: black;
-}*/
+  font-size: 1.6vw;
+  font-family: var(--fonte);
+}
+
+
+@media(max-width: 1241px){
+  .titulo-modal {
+    font-size: 2.2vw;
+  }
+
+  .button-modal {
+    padding: 1.2vw;
+    font-size: 1.3vw;
+  }
+}
+
+
+@media(max-width: 1024px){
+  .button-modal {
+    padding: 1.4vw;
+    font-size: 1.5vw;
+}
+
+}
+
+@media(max-width: 768px){
+  .titulo-modal {
+    font-size: 2.5vw;
+  }
+
+  .button-modal {
+    padding: 1.9vw;
+    font-size: 2vw;
+  }
+}
+
+@media(max-width:480px){
+  .titulo-modal {
+    font-size: 3.7vw;
+  }
+
+  .button-modal {
+    padding: 2.9vw;
+    font-size: 3vw;
+  }
+}

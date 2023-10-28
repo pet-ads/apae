@@ -8,7 +8,6 @@
   
 .div-button-home * {
     display: inline-block;
-    margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2.5%;
     padding: var(--tam-p-botao-geral);
@@ -16,7 +15,7 @@
     color: var(--branco);
     border: none;
     border-radius: 5px;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -55,11 +54,35 @@
 .home-titulo {
     font-family: var(--fonte);
     font-size: 2.8vw;
-    /*font-weight: 100;
-    line-height: 5vw;*/
+    line-height: 4.5vw; 
     text-align: left;
-    /*word-spacing: 0vw;*/
     padding-left: 32%;
+}
+
+
+
+@media(max-width: 1241px){
+    .div-button-home * {
+        padding: 20px;
+        background-color: var(--verde);
+        font-size: 1.5vw;
+    }
+
+    .home-container {
+        padding: 9% 10% 12% 11%;
+    }
+    
+    .img-home img {
+        margin-top: 70px;
+        width: 34vw;
+        height: auto;
+    }
+    .home-titulo {
+        font-family: var(--fonte);
+        font-size: 3vw;
+        text-align: left;
+        padding-left: 27%;
+    }
 }
 
 
@@ -102,23 +125,26 @@
     }
 
     .div-button-home * {
-       font-size: 2.2vw;
-       padding: 2vw;
+       font-size: 2vw;
+       padding: 1.9vw;
       }
     
 }
 
 @media(max-width: 768px){
     .home-container {
-        padding: 7em 0em;
+        padding: 6em 0em;
     }
 
     .home-titulo {
         font-size: 6vw;
-        /*line-height: 6vw;*/
-        text-align: center; 
-        /*max-width: 70vw;*/
+        line-height: 7vw;
     }
+
+    .div-button-home * {
+        font-size: 3vw;
+        padding: 2.9vw;
+       }
 }
 
 @media(max-width: 480px){
@@ -127,13 +153,17 @@
         height: 70%;
     }
     .home-container {
-        padding: 35% 0% 5% 0%;   
+        padding: 18% 0% 5% 0%;   
     }
 
     .home-titulo {
         padding: 0% 5%;
         font-size: 5vw;
         line-height: 10vw;
+    }
+    .div-button-home * {
+        padding: 12px;
+        font-size: 3.5vw;
     }
 }
 

@@ -29,6 +29,23 @@
 }
 
 
+
+@media(max-width:1241px){
+    .titulo-card{
+        font-size: var(--tam-subtitulo-max1241);  
+    }
+    .paragrafo-card {
+        font-size: var(--tam-descricao-max1241);
+        padding-bottom: 10px;
+    }
+
+    .imgcard {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 @media(max-width:1024px){
     .titulo-card{
         font-size: var(--tam-subtitulo-max1024);  

@@ -41,6 +41,17 @@
 }
 
 
+@media(max-width:1241px){
+    .paragrafo {
+        font-size: var(--tam-texto-footer-max1241);
+    }
+    .linkifsp{
+        font-size: var(--tam-texto-footer-max1241);;
+    }
+}
+
+
+
 @media(max-width:1024px){
     .paragrafo {
         font-size: var(--tam-texto-footer-max1024);

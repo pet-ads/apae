@@ -39,6 +39,13 @@
 }
 
 
+@media(max-width:1241px){
+    .paragrafo-blog{
+        font-size: var(--tam-descricao-max1241);  
+    }
+}
+
+
 @media(max-width:1024px){
     .paragrafo-blog{
         font-size: var(--tam-descricao-max1024);  

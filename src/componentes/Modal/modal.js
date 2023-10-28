@@ -17,7 +17,7 @@ function CustomModal({ cardId, closeModal }) {
             >
                 {cardId && (
                     <>
-                        <p className="titulo">Galeria de fotos</p>
+                        <p className="titulo-modal">Galeria de fotos</p>
                         <Slider slides={sliderData.sets.find(set => set.id === cardId)} />
                         <button className="button-modal" onClick={closeModal}>Close</button>
                     </>

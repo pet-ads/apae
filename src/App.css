@@ -10,38 +10,45 @@
   --p-baixo-titulo: 2.5%;
   /*--------------*/
   --tam-titulo-geral: 2.5vw;
+  --tam-titulo-max1241: 3vw;
   --tam-titulo-max1024: 4vw;
   --tam-titulo-max768: 5vw;
   --tam-titulo-max480: 7.5vw;
   /*--------------*/
   --tam-descricao-geral: 1.2vw;
+  --tam-descricao-max1241: 1.6vw;
   --tam-descricao-max1024: 2.2vw;
   --tam-descricao-max768: 2.5vw;
   --tam-descricao-max480: 3.5vw;
   /*--------------*/
   --tam-subtitulo-geral: 1.3vw;
+  --tam-subtitulo-max1241: 1.7vw;
   --tam-subtitulo-max1024: 2.3vw;
   --tam-subtitulo-max768: 2.6vw;
   --tam-subtitulo-max480: 3.6vw;
   /*--------------*/
-  --tam-botao-geral:1.1vw;
   --tam-botao-home: 1.4vw;
+  --tam-botao-geral:1vw;
+  --tam-botao-max1241: 1.4vw;
   --tam-botao-max1024:2vw;
   --tam-botao-max768:2.2vw;
-  --tam-botao-max480:3.7vw;
+  --tam-botao-max480:3.3vw;
   /*--------------*/
-  --tam-p-botao-geral:1.2vw;
+  --tam-p-botao-geral:1.1vw;
+  --tam-p-botao-max1241: 1.1vw;
   --tam-p-botao-max1024:2vw;
   --tam-p-botao-max768:2.3vw; /* alterar .select em slider_pag_principal */
-  --tam-p-botao-max480:3.4vw; /* alterar .select em slider_pag_principal */
+  --tam-p-botao-max480:3.2vw; /* alterar .select em slider_pag_principal */
   /*--------------*/
   --tam-texto-footer-geral: 0.8vw;
+  --tam-texto-footer-max1241: 1.2vw;
   --tam-texto-footer-max1024: 1.4vw;
   --tam-texto-footer-max768: 2vw;
   --tam-texto-footer-max480: 2.4vw;
   /*--------------*/
-  --largura-cards-geral: 25%;
-  --largura-cards-max1024:90%;
+  --largura-cards-geral: 27%;
+  --largura-cards-max1241: 28%;
+  --largura-cards-max1024: 65%;
   --largura-interna-cards: 90%;
   --margem-dentro-cards:5%;
   --margem-entre-cards:2%;
@@ -51,6 +58,7 @@
   --raio-borda-cards: 5%;
   --raio-borda-botao: 5px;
  }
+
 
 .titulo {
   font-family: var(--fonte);
@@ -117,6 +125,20 @@ button:hover {
 }
 
 
+@media(max-width:1241px){
+  .titulo{
+    font-size: var(--tam-titulo-max1241);
+  }
+  .div-button * {
+    font-size: var(--tam-botao-max1241);
+    padding: var(--tam-p-botao-max1241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} 
+
+
 @media(max-width:1024px){
   .titulo{
     font-size: var(--tam-titulo-max1024);
@@ -124,9 +146,6 @@ button:hover {
   .div-button * {
     font-size: var(--tam-botao-max1024);
     padding: var(--tam-p-botao-max1024);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
 }
