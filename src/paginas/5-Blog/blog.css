@@ -27,7 +27,6 @@
 .imagem-link-blog {
     max-height: 80px;
     max-width: 80px;
-    max-width: 80%;
     animation: pulando 1s infinite;
     border-bottom: 160px;
 }
@@ -67,6 +66,9 @@
     .paragrafo-blog{
         font-size: var(--tam-descricao-max480);
         margin: 5%;
+    }
+    .imagem-link-blog {
+        max-width: 60%;
     }
 
 }
