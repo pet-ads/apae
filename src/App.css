@@ -6,6 +6,7 @@
   --preto: black;
   --cinza: gray;
   --fonte: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*--------------*/
   --p-cima-titulo: 1px;
   --p-baixo-titulo: 2.5%;
   /*--------------*/
@@ -37,14 +38,22 @@
   --tam-p-botao-geral:1.1vw;
   --tam-p-botao-max1241: 1.1vw;
   --tam-p-botao-max1024:2vw;
-  --tam-p-botao-max768:2.3vw; /* alterar .select em slider_pag_principal */
-  --tam-p-botao-max480:3.2vw; /* alterar .select em slider_pag_principal */
+  --tam-p-botao-max768:2.3vw; /* alterar --tam-p-select-max768 */
+  --tam-p-botao-max480:3.2vw; /* alterar --tam-p-select-max480 */
+  /*--------------*/
+  --tam-p-select-max768: 2.3vw 2.3vw 2.3vw 0;  
+  --tam-p-select-max480: 3.2vw 3.2vw 3.2vw 0;
+  /*--------------*/
+  --m-botao-left: 2%;
+  --m-botao-rigth: 2%;
+  --m-botao-bottom: 2.5%;
+  --m-botão-top: 2.5%;
   /*--------------*/
   --tam-texto-footer-geral: 0.8vw;
   --tam-texto-footer-max1241: 1.2vw;
-  --tam-texto-footer-max1024: 1.4vw;
+  --tam-texto-footer-max1024: 1.8vw;
   --tam-texto-footer-max768: 2vw;
-  --tam-texto-footer-max480: 2.4vw;
+  --tam-texto-footer-max480: 2.8vw;
   /*--------------*/
   --largura-cards-geral: 27%;
   --largura-cards-max1241: 28%;
@@ -87,9 +96,9 @@
 button {
   font-family: var(--fonte);
   text-transform: uppercase;
-  white-space: nowrap;
-  word-spacing: 0px;
-  background-position: 0% 0%;
+  /*white-space: nowrap;*/
+  /*word-spacing: 0px;*/
+  /*background-position: 0% 0%;*/
 }
 
 button:hover {
@@ -106,11 +115,11 @@ button:hover {
   width: 100%;
 }
 
-.div-button * {
-  display: inline-block;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 2.5%;
+.div-button * { /*altera o botão e o select*/
+  /*display: inline-block;*/
+  margin-left: var(--m-botao-left);
+  margin-right: var(--m-botao-rigth);
+  margin-bottom: var(--m-botao-bottom);
   padding: var(--tam-p-botao-geral);
   background-color: var(--verde);
   color: var(--branco);

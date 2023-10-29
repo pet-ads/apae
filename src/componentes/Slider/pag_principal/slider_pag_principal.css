@@ -10,8 +10,8 @@
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    margin-bottom: 5%;
-    padding-left: 0;
+    margin-bottom: var(--m-botao-bottom);
+    /*padding-left: 0;*/
 }
 
 .select *{ /*submenu do sanduiche*/
@@ -40,7 +40,7 @@
     max-width: 180px;
     margin: auto;
     font-family: var(--fonte);
-    font-size: var(--tam-subtitulo-geral);
+    font-size: var(--tam-descricao-geral);
 }
 
 .carousel .subtitulo img {
@@ -73,14 +73,14 @@
 
 @media(max-width:1241px){
     .carousel .subtitulo p {
-        font-size: var(--tam-subtitulo-max1241);
+        font-size: var(--tam-descricao-max1241);
     }
 }
 
 
 @media(max-width:1024px){
     .carousel .subtitulo p {
-        font-size: var(--tam-subtitulo-max1024);
+        font-size: var(--tam-descricao-max1024);
     }
     .carousel .subtitulo img {
         height: 80%;
@@ -90,20 +90,20 @@
 
 @media(max-width: 768px){
     .carousel .subtitulo p {
-        font-size: var(--tam-subtitulo-max768);
+        font-size: var(--tam-descricao-max768);
     }
     .select{
-        padding: 2.3vw 2.3vw 2.3vw 0; /*ajusta os itens do sanduiche no meio*/
+        padding: var(--tam-p-select-max768); /*ajusta os itens do sanduiche no meio*/
         font-size: var(--tam-botao-max768);
     }
 }
 @media(max-width: 480px){
     .carousel .subtitulo p {
-        font-size: var(--tam-subtitulo-max480);
+        font-size: var(--tam-descricao-max480);
     }
 
     .select {
-        padding: 3.4vw 3.4vw 3.4vw 0; /*ajusta os itens do sanduiche no meio*/
+        padding: var(--tam-p-select-max480); /*ajusta os itens do sanduiche no meio*/
         font-size: var(--tam-botao-max480);
     }
 
