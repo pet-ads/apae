@@ -5,7 +5,7 @@
 .imgcard {
     width: 100%;
     height: 100%;
-    border-radius: var(--raio-borda-img) ;
+    border-radius: var(--raio-borda-img-card) ;
     align-items: center;
 }
 
