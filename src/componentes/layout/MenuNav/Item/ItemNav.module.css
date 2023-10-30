@@ -1,34 +1,49 @@
 .item button {
     display: flex;
     justify-content: center;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: black;
-    padding: 2em 1em;
+    font-family: var(--fonte);
+    color: var(--preto);
+    padding-top: 30%;
+    padding-bottom: 30%;
     background: none;
     border: none;
     cursor: pointer;
     font-size: larger;
     width: 100px;
     text-align: center;
+    font-size: var(--tam-descricao-geral);
 }
   
 .item button:hover {
-    color: white;
-    background-color: #10813c;
+    color: var(--branco);
+    background-color: var(--verde);
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
 }
 
+@media(max-width:1241px){
+   .item button{
+    font-size: var(--tam-descricao-max1241);
+   }
+  } 
+  
+  
+@media(max-width:1024px){
+    .item button{
+        font-size: var(--tam-descricao-max1024);
+    }
+  }
+
 @media (max-width: 900px){
 
     .item button {
-        font-family: 'Trebuchet MS', sans-serif;
+        font-family: (--fonte);
         color: #17b755;
         background-color: #0d612d;
         padding: 0.5em 0.5em;
         border: none;
         cursor: pointer;
-        font-size: larger;
+        font-size: var(--tam-descricao-max1024);
         font-weight: bold;
         width: 100%;
         text-align: center;
@@ -43,4 +58,16 @@
     }
     
 }
+  
+@media(max-width: 768px){
+    .item button{
+        font-size: var(--tam-descricao-max768);
+    }
+  }
+  
+@media(max-width: 480px){
+    .item button{
+        font-size: var(--tam-descricao-max480);
+    }
+  }
 

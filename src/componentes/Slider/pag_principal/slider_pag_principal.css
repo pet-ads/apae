@@ -1,7 +1,7 @@
 /*select --- só comeca a ser usado com width<700 px, quando vira sanduiche */
 
 .select {
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: var(--verde);
     color: var(--branco);
     border: none;
@@ -23,14 +23,16 @@
 /*carroussel*/
 
 .carousel {
+    position: relative; 
     width: 90%;
+    height: auto;
     margin: auto;
     text-align: center;
 }
 
 .carousel .subtitulo {
     cursor: grab;
-    height: 380px;
+    /*height: 380px;*/
     color: var(--preto);
     box-sizing: border-box;
 }
@@ -44,8 +46,8 @@
 }
 
 .carousel .subtitulo img {
-    padding: 10px;
-    height: 80%;
+    /*padding: 10px;*/
+    height: auto;
     width: 80%;
     margin: auto;
     border-radius: var(--raio-borda-img-slider);
@@ -54,9 +56,10 @@
 /*pontos do carousel*/
 
 .slick-dots li button:before { 
+    /*position: absolute;*/
     font-size:var(--tam-descricao-geral);
     color: var(--verde);
-    padding-top: 15px;
+    /*padding-top: 15px;*/
     cursor: pointer;
 }
 
@@ -73,24 +76,24 @@
 
 @media(max-width:1241px){
     .carousel .subtitulo p {
-        font-size: var(--tam-descricao-max1241);
+        font-size: var(--tam-botao-max1241);
     }
 }
 
 
 @media(max-width:1024px){
     .carousel .subtitulo p {
-        font-size: var(--tam-descricao-max1024);
+        font-size: var(--tam-botao-max1024);
     }
     .carousel .subtitulo img {
-        height: 80%;
+        height: auto;
         width: 80%;
     }
 }
 
 @media(max-width: 768px){
     .carousel .subtitulo p {
-        font-size: var(--tam-descricao-max768);
+        font-size: var(--tam-botao-max768);
     }
     .select{
         padding: var(--tam-p-select-max768); /*ajusta os itens do sanduiche no meio*/
@@ -99,7 +102,7 @@
 }
 @media(max-width: 480px){
     .carousel .subtitulo p {
-        font-size: var(--tam-descricao-max480);
+        font-size: var(--tam-botao-max480);
     }
 
     .select {

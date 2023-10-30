@@ -22,20 +22,62 @@ function App() {
     }
   }, [listState, menuNavRef]);
 
+  const calculatePadding = (sectionId, isHome) => {
+    const windowHeight = window.innerHeight;
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const elementHeight = element.clientHeight;
+      let padding;
 
-  const scrollToSection = (sectionId, closedMenuHeight) => {
-    let element = document.getElementById(sectionId);
+      if (isHome) {
+        padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
+      } else {
+        padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
+      }
 
-    //const windowHeight = window.innerHeight;
-    const menuHeight = closedMenuHeight;
-    //const elementHeight = element.clientHeight;
-
-    //let yAdjust = - (windowHeight / 2) - menuHeight + (elementHeight / 2);
-    //console.log("Alturas:\n Janela:",windowHeight,"Menu:",menuHeight,"Elemento:",elementHeight);
-    //let ySet = element.offsetTop - yAdjust;
-    let ySet = element.offsetTop - menuHeight;
-    window.scroll({ top: ySet, behavior: 'smooth' });
+      return padding;
+    }
+    return 0;
   };
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      let ySet = element.offsetTop - closedMenuHeight;
+      window.scroll({ top: ySet, behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const sectionIds = ['home', 'projeto', 'turmas', 'equipe', 'acoes', 'contato', 'blog'];
+
+    const addPaddingToSection = (sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const isHome = sectionId === 'home';
+        const padding = calculatePadding(sectionId, isHome);
+        if (padding > 0) {
+          element.style.paddingTop = `${padding}px`;
+          element.style.paddingBottom = `${padding}px`;
+        } else {
+          element.style.paddingTop = `10%`;
+          element.style.paddingBottom = `10%`;
+        }
+      }
+    };
+
+    const addPaddingToSections = () => {
+      sectionIds.forEach((sectionId) => {
+        addPaddingToSection(sectionId);
+      });
+    };
+
+    window.addEventListener("load", addPaddingToSections);
+
+    return () => {
+      window.removeEventListener("load", addPaddingToSections);
+    };
+  }, [closedMenuHeight]);
 
   return (
     <div>
@@ -51,7 +93,7 @@ function App() {
       <Router>
         <div id="ancoras">
           <section id="home">
-          <Home scrollToSection={scrollToSection} closedMenuHeight={closedMenuHeight}/>
+            <Home scrollToSection={() => scrollToSection("projeto")} closedMenuHeight={0} />
           </section>
 
           <section id="projeto">
@@ -77,13 +119,11 @@ function App() {
           <section id="blog">
             <Blog />
           </section>
-
         </div>
 
         <div id="footer">
-        <Footer/>
+          <Footer />
         </div>
-
       </Router>
     </div>
   );
