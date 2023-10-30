@@ -4,6 +4,8 @@
     /*justify-content: space-between;*/
     align-items: center;
     gap: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .projeto__descricao{
@@ -42,12 +44,18 @@
         line-height: 2.5vw;
         text-align: justify;
     }
+    .projeto__conteudo{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
 
 
 
 @media(max-width: 1024px){
     .projeto__conteudo {
+        margin-left: 0;
+        margin-right: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;

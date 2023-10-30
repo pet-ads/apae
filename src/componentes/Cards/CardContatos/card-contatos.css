@@ -81,6 +81,9 @@
 }
 
 @media(max-width: 768px){
+  .CardDestaque{
+    width: var(--largura-cards-max768);
+  }
   .nome{
     font-size: var(--tam-subtitulo-max768);
   }
@@ -90,6 +93,9 @@
 
 }
 @media(max-width: 480px){
+  .CardDestaque{
+    width: var(--largura-cards-max480);
+  }
   .nome{
     font-size: var(--tam-subtitulo-max480);
   }

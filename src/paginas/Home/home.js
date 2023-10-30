@@ -17,7 +17,7 @@ export default function Home({scrollToSection, closedMenuHeight}) {
                     <p className="home-titulo">Atuando pela inclusão digital: uma parceria entre o IFSP e a APAE</p>
 
                     <div className="div-button-home">
-                        <button classname="button-home" onClick={() => scrollToSection("projeto", closedMenuHeight)}>Conheça o Projeto</button>
+                        <button className="button-home" onClick={() => scrollToSection("projeto", closedMenuHeight)}>Conheça o Projeto</button>
                     </div>
 
                 </div>
