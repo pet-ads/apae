@@ -14,36 +14,36 @@
   --tam-titulo-geral: 2vw;
   --tam-titulo-max1241: 2.5vw;
   --tam-titulo-max1024: 4vw;
-  --tam-titulo-max768: 5vw;
+  --tam-titulo-max768: 5.2vw;
   --tam-titulo-max480: 6vw;
   /*--------------*/
   --tam-descricao-geral: 1.2vw;
   --tam-descricao-max1241: 1.6vw;
   --tam-descricao-max1024: 1.8vw;
-  --tam-descricao-max768: 2.4vw;
+  --tam-descricao-max768: 2.7vw;
   --tam-descricao-max480: 4vw;
   /*--------------*/
   --tam-subtitulo-geral: 1.3vw;
   --tam-subtitulo-max1241: 1.7vw;
-  --tam-subtitulo-max1024: 2.3vw;
-  --tam-subtitulo-max768: 2.6vw;
+  --tam-subtitulo-max1024: 2vw;
+  --tam-subtitulo-max768: 2.8vw;
   --tam-subtitulo-max480: 4.2vw;
   /*--------------*/
   --tam-botao-home: 1.2vw;
   --tam-botao-geral:1vw;
   --tam-botao-max1241: 1.2vw;
   --tam-botao-max1024:1.6vw;
-  --tam-botao-max768:2vw;
-  --tam-botao-max480:2.5vw;
+  --tam-botao-max768:2.4vw;
+  --tam-botao-max480:2.9vw;
   /*--------------*/
-  --tam-p-botao-geral:1.1vw;
+  --tam-p-botao-geral:1vw;
   --tam-p-botao-max1241: 1.1vw;
   --tam-p-botao-max1024:1.1vw;
   --tam-p-botao-max768:1.1vw; /* alterar --tam-p-select-max768 */
   --tam-p-botao-max480:2.3vw; /* alterar --tam-p-select-max480 */
   /*--------------*/
-  --tam-p-select-max768: 1.1vw 1.1vw 1.1vw 0;  
-  --tam-p-select-max480: 2.3vw 2.3vw 2.3vw 0;
+  --tam-p-select-max768: 1.4vw 1.4vw 1.4vw 0;  
+  --tam-p-select-max480: 2.5vw 2.5vw 2.5vw 0;
   /*--------------*/
   --m-botao-left: 2%;
   --m-botao-rigth: 2%;
@@ -59,7 +59,7 @@
   --largura-cards-geral: 27%;
   --largura-cards-max1241: 28%;
   --largura-cards-max1024: 65%;
-  --largura-cards-max768: 80%;
+  --largura-cards-max768: 75%;
   --largura-cards-max480: 80%;
   --largura-interna-cards: 90%;
   --margem-dentro-cards:5%;
@@ -97,9 +97,6 @@
 button {
   font-family: var(--fonte);
   text-transform: uppercase;
-  /*white-space: nowrap;*/
-  /*word-spacing: 0px;*/
-  /*background-position: 0% 0%;*/
 }
 
 button:hover {
@@ -117,7 +114,6 @@ button:hover {
 }
 
 .div-button * { /*altera o botão e o select*/
-  /*display: inline-block;*/
   margin-left: var(--m-botao-left);
   margin-right: var(--m-botao-rigth);
   margin-bottom: var(--m-botao-bottom);

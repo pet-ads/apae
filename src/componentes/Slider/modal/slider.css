@@ -3,15 +3,9 @@
   margin-bottom: 25px;
 }
 
-/*.swiper {
-  height: 45vh;
-}*/
-
 .img-slider {
   width: 98%;
   height: 98%;
-  /*object-fit: cover;*/
-  /*transform: translateY(-15px);*/
   border-radius: var(--raio-borda-img); 
 }
 
@@ -43,19 +37,14 @@
 
 
 .swiper-pagination-bullet {
-  background-color: var(--verde); /* Cor dos indicadores de página */
+  background-color: var(--verde); 
   width: 10px; 
   height: 10px; 
-  margin: 0 auto 10px; /* Espaçamento entre os indicadores de página (horizontal) */
-  z-index: 2; /* Aumente o z-index para garantir que estejam acima do plano de fundo */
+  margin: 0 auto 10px; 
+  z-index: 2; 
 }
 
-
-/* Estilize o indicador de página ativo */
 .swiper-pagination-bullet-active {
-  background-color: var(--verde-escuro); /* Cor do indicador de página ativo */
-  z-index: 1; /* Reduza o z-index para colocá-lo atrás das imagens */
+  background-color: var(--verde-escuro); 
+  z-index: 1; 
 }
-/*.swiper-pagination {
-  transform: translateY(10px);
-}*/

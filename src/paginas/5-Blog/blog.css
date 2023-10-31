@@ -6,7 +6,6 @@
 
 .paragrafo-blog {
     font-family: var(--fonte);
-    /*word-spacing: 0.2vw;*/
     text-align: right; 
     font-size: var(--tam-descricao-geral); 
 }
@@ -18,11 +17,6 @@
     75% { transform: translateY(5px); }
     100% { transform: translateY(0); }
 }
-
-/*.imagem-blog {
-    display: flex;
-    justify-content: flex-end;
-}*/
 
 .imagem-link-blog {
     max-height: 80px;
