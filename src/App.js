@@ -56,7 +56,7 @@ function App() {
       if (element) {
         const isHome = sectionId === 'home';
         const padding = calculatePadding(sectionId, isHome);
-        if (padding > 0 && sectionId !='blog') {
+        if (padding > 0 && sectionId !== 'blog') {
           element.style.paddingTop = `${padding}px`;
           element.style.paddingBottom = `${padding}px`;
         } else {
