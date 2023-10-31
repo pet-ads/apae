@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /*padding: 1%;*/
   margin: var(--margem-entre-cards);
   width: var(--largura-cards-geral);
   overflow: hidden;
@@ -42,7 +41,6 @@
   margin-bottom: 5%;
   font-weight: bold;
   font-size: var(--tam-descricao-geral);
-  /*line-height: 2vw;*/
 }
 
 
@@ -56,7 +54,6 @@
   .descricao-card{
     font-size: var(--tam-descricao-max1241);
     padding-bottom: 10px;
-    /*line-height: 24px;*/
   }
 }
 
@@ -66,8 +63,6 @@
     width: var(--largura-cards-max1024);
     order: 0;
     align-items: center;
-    /*margin-bottom: 20px;
-    padding: 1%;*/
   }
   .nome {
     text-align: center;
@@ -78,7 +73,6 @@
 
   .descricao-card{
     font-size: var(--tam-descricao-max1024);
-    /*line-height: 24px;*/
   }
 }
 

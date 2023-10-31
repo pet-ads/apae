@@ -5,7 +5,6 @@
     border-bottom: var(--verde) solid 5px;
     bottom: 0;
     width: 100%;
-    /*background-color: white;*/
   }
 
 .paragrafo {
@@ -13,7 +12,6 @@
     display: flex;
     text-align: center;
     margin-right: 5px;
-    /*margin-block-start: auto;*/
     color: var(--cinza);
     align-items: flex-end;
     font-size: var(--tam-texto-footer-geral);
@@ -23,9 +21,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*height: 5px;*/
-    /*margin-top: 5px;*/
-    /*margin-bottom: 30px;*/
 }
 
 .linkifsp{

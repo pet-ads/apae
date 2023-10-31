@@ -1,7 +1,6 @@
 /*select --- só comeca a ser usado com width<700 px, quando vira sanduiche */
 
 .select {
-    /*display: inline-block;*/
     background-color: var(--verde);
     color: var(--branco);
     border: none;
@@ -11,7 +10,6 @@
     text-decoration: none;
     text-align: center;
     margin-bottom: var(--m-botao-bottom);
-    /*padding-left: 0;*/
 }
 
 .select *{ /*submenu do sanduiche*/
@@ -32,7 +30,6 @@
 
 .carousel .subtitulo {
     cursor: grab;
-    /*height: 380px;*/
     color: var(--preto);
     box-sizing: border-box;
 }
@@ -46,7 +43,6 @@
 }
 
 .carousel .subtitulo img {
-    /*padding: 10px;*/
     height: auto;
     width: 80%;
     margin: auto;
@@ -56,10 +52,8 @@
 /*pontos do carousel*/
 
 .slick-dots li button:before { 
-    /*position: absolute;*/
     font-size:var(--tam-descricao-geral);
     color: var(--verde);
-    /*padding-top: 15px;*/
     cursor: pointer;
 }
 
@@ -69,7 +63,7 @@
 
 /*----*/
 .slider-default {
-    cursor: default !important;
+    cursor: default;
 }
 /*---*/
 
@@ -77,6 +71,11 @@
 @media(max-width:1241px){
     .carousel .subtitulo p {
         font-size: var(--tam-botao-max1241);
+    }
+
+    .carousel .subtitulo img {
+        width: 75%;
+        height: auto;
     }
 }
 
@@ -100,6 +99,16 @@
         font-size: var(--tam-botao-max768);
     }
 }
+
+
+@media(max-width:620px){
+    .carousel .subtitulo img {
+        width: 65%;
+        height: auto;
+    }
+}
+
+
 @media(max-width: 480px){
     .carousel .subtitulo p {
         font-size: var(--tam-botao-max480);

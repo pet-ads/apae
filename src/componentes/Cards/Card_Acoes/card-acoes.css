@@ -52,7 +52,6 @@
     }
     .paragrafo-card {
         font-size: var(--tam-descricao-max1024);
-        /*padding-bottom: 1%;*/
     }
 }
 

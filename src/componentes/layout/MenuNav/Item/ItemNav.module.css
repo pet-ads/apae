@@ -26,16 +26,9 @@
     font-size: var(--tam-descricao-max1241);
    }
   } 
-  
-  
-@media(max-width:1024px){
-    .item button{
-        font-size: var(--tam-descricao-max1024);
-    }
-  }
 
+  
 @media (max-width: 900px){
-
     .item button {
         font-family: (--fonte);
         color: #17b755;
@@ -56,8 +49,13 @@
         text-decoration: none;
         transition: background-color 0.3s ease-in-out;
     }
-    
 }
+  
+@media(max-width:1024px){
+    .item button{
+        font-size: var(--tam-descricao-max1024);
+    }
+  }
   
 @media(max-width: 768px){
     .item button{
