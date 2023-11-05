@@ -31,13 +31,11 @@ function App() {
       let padding;
       if (sectionId === 'home') {
         padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
-      }
-      else if (windowWidth < windowHeight){
-        if(sectionId === 'turmas' || sectionId === 'equipe'){
-          padding = ((windowHeight - (2*element.clientHeight) - closedMenuHeight)/3);
+      } else if (windowWidth < windowHeight) {
+        if (sectionId === 'turmas' || sectionId === 'equipe') {
+          padding = ((windowHeight - (2 * element.clientHeight) - closedMenuHeight) / 3);
         }
-      }
-      else {
+      } else {
         padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
       }
 
@@ -63,28 +61,24 @@ function App() {
         const windowHeight = window.innerHeight;
         const windowWidth = window.innerWidth;
         const padding = calculatePadding(sectionId);
-        if(sectionId === 'blog'){
+        if (sectionId === 'blog') {
           element.style.paddingTop = `5%`;
           element.style.paddingBottom = `5%`;
-        }
-        else if (sectionId == 'equipe'){
-          if(windowWidth < windowHeight){
+        } else if (sectionId === 'equipe') {
+          if (windowWidth < windowHeight) {
             element.style.paddingTop = `0`;
             element.style.paddingBottom = `${padding}px`;
-          }
-          else{
+          } else {
             element.style.paddingTop = `${padding}px`;
             element.style.paddingBottom = `${padding}px`;
           }
-        }
-        else if (padding > 0) {
+        } else if (padding > 0) {
           element.style.paddingTop = `${padding}px`;
           element.style.paddingBottom = `${padding}px`;
-        } 
-        else {
+        } else {
           element.style.paddingTop = `10%`;
           element.style.paddingBottom = `10%`;
-          console.log("nao cabe na pagina",element);
+          console.log("nao cabe na pagina", element);
         }
       }
     };
@@ -100,7 +94,7 @@ function App() {
     return () => {
       window.removeEventListener("load", addPaddingToSections);
     };
-  }, [closedMenuHeight]);
+  }, [closedMenuHeight, calculatePadding]);
 
   return (
     <div>
