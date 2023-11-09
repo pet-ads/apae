@@ -99,9 +99,10 @@
 @media(max-width:480px){
     .projeto__descricao{
         font-size: var(--tam-descricao-max480);
-        line-height: 4.5vw;
+        line-height: 4.9vw;
+        
     }
-    .projeto__imagens img:nth-child(2) {
+    .projeto__imagens img:nth-child(1) {
         display: none;
       }
 }
