@@ -69,3 +69,8 @@
     }
   }
 
+  @media(max-width: 140px){
+    .item button{
+        display: none;
+    }
+  }

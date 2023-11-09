@@ -66,3 +66,9 @@
     }
 
 }
+
+@media(max-width: 300px){
+    .imagem-link-blog {
+        max-width: 50%;
+    }
+}
