@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 20px; 
   }
   
   .cards {
@@ -15,18 +16,41 @@
   
   @media(max-width:1024px){
     .cards-container {
-      background-color: white;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
     }
-    
-    .cards {
+  
+    .slick-slide-item {
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;;
-      flex-wrap: wrap;
-      align-content: center;
+      justify-content: center;
     }
 
+} 
+
+/* 
+.cards-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px; 
 }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+
+
+@media (max-width: 1024px) {
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    height: 100%; 
+  }
+ 
+}  */
