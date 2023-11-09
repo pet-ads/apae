@@ -22,15 +22,19 @@ function App() {
     }
   }, [listState, menuNavRef]);
 
-  const calculatePadding = (sectionId, isHome) => {
+  const calculatePadding = (sectionId) => {
     const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
     const element = document.getElementById(sectionId);
     if (element) {
       const elementHeight = element.clientHeight;
       let padding;
-
-      if (isHome) {
+      if (sectionId === 'home') {
         padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
+      } else if (windowWidth < windowHeight) {
+        if (sectionId === 'turmas' || sectionId === 'equipe') {
+          padding = ((windowHeight - (2 * element.clientHeight) - closedMenuHeight) / 3);
+        }
       } else {
         padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
       }
@@ -54,14 +58,27 @@ function App() {
     const addPaddingToSection = (sectionId) => {
       const element = document.getElementById(sectionId);
       if (element) {
-        const isHome = sectionId === 'home';
-        const padding = calculatePadding(sectionId, isHome);
-        if (padding > 0 && sectionId !== 'blog') {
+        const windowHeight = window.innerHeight;
+        const windowWidth = window.innerWidth;
+        const padding = calculatePadding(sectionId);
+        if (sectionId === 'blog') {
+          element.style.paddingTop = `5%`;
+          element.style.paddingBottom = `5%`;
+        } else if (sectionId === 'equipe') {
+          if (windowWidth < windowHeight) {
+            element.style.paddingTop = `0`;
+            element.style.paddingBottom = `${padding}px`;
+          } else {
+            element.style.paddingTop = `${padding}px`;
+            element.style.paddingBottom = `${padding}px`;
+          }
+        } else if (padding > 0) {
           element.style.paddingTop = `${padding}px`;
           element.style.paddingBottom = `${padding}px`;
         } else {
           element.style.paddingTop = `10%`;
           element.style.paddingBottom = `10%`;
+          console.log("nao cabe na pagina", element);
         }
       }
     };
@@ -77,7 +94,7 @@ function App() {
     return () => {
       window.removeEventListener("load", addPaddingToSections);
     };
-  }, [closedMenuHeight]);
+  }, [closedMenuHeight, calculatePadding]);
 
   return (
     <div>
