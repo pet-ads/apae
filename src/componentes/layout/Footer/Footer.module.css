@@ -74,3 +74,12 @@
         font-size: var(--tam-texto-footer-max480);
     }
 }
+
+@media(max-width: 300px){
+    .paragrafo {
+        font-size: var(--tam-texto-footer-max300);
+    }
+    .linkifsp{
+        font-size: var(--tam-texto-footer-max300);
+    }
+}

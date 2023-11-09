@@ -100,9 +100,10 @@
     .projeto__descricao{
         font-size: var(--tam-descricao-max480);
         line-height: 4.9vw;
-        
     }
     .projeto__imagens img:nth-child(1) {
-        display: none;
-      }
+        display: none; 
+    }
+
+
 }
