@@ -48,3 +48,12 @@
   background-color: var(--verde-escuro); 
   z-index: 1; 
 }
+
+
+@media (max-width: 300px) {
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    margin: 0 3px;
+  }
+}
