@@ -91,6 +91,35 @@
   margin: auto;
 }
 
+#home {
+  padding-top: 4.5em;
+}
+
+#projeto {
+/* background-color: red; */
+padding-top: 4.5em;
+}
+
+#turmas {
+  /* background-color: green; */
+  padding-top: 4.5em;
+}
+
+#equipe {
+  /* background-color: black; */
+  padding-top: 4.5em;
+}
+
+#acoes {
+  /* background-color: orange; */
+  padding-top: 4.5em;
+}
+
+#contato {
+  /* background-color: purple; */
+  padding-top: 4.5em;
+}
+
 
 /*BUTTON*/
 /*------------------------------------------------------*/
