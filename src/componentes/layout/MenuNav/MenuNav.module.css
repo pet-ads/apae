@@ -108,14 +108,22 @@ nav{
   
 }
 
-@media(max-width: 769px){
+@media(max-width: 768px){
   .logo{
-    width:7em;
+    width: 5.8em;
+    margin-left: 15px;
+  }
+  .hamburguer_menu img{
+    height: 3.8em;
+    margin: 0;
+  }
+  .hamburguer_menu:hover, .hamburguer_menu:focus{
+    height: 100%;
   }
 }
 
 @media(max-width: 480px){
-  .logo{
+  /*.logo{
     width: 5.8em;
     margin-left: 15px;
   }
@@ -124,7 +132,7 @@ nav{
   }
   .hamburguer_menu:hover, .hamburguer_menu:focus{
     height: 100%;
-  }
+  }*/
 }
 
 @media(max-width: 300px){
