@@ -1,9 +1,9 @@
 .div-button-home {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
     flex-direction: row;
-    width: 100%;
+    /*width: 100%;*/
   }
   
 .div-button-home * {
@@ -49,6 +49,7 @@
     background-color: #ffffff;
     padding: 0% 13% 0% 15%;
     z-index: 20;
+    width: auto;
 }
 
 .home-titulo {
@@ -56,10 +57,12 @@
     font-size: 2.7vw;
     line-height: 4.5vw; 
     text-align: left;
-    padding-left: 33%;
+    /*padding-left: 33%;*/
 }
 
-
+.container-titulo-and-button{
+    padding-left: 10%;
+}
 
 @media(max-width: 1241px){
     .div-button-home * {
@@ -80,7 +83,7 @@
         font-family: var(--fonte);
         font-size: 3vw;
         text-align: left;
-        padding-left: 29%;
+        /*padding-left: 30%;*/
     }
 }
 
@@ -89,6 +92,7 @@
     .img-home img {
         width: 35vw;
         height: auto;
+        /*margin-right: 10%;*/
     }
     /*.container-titulo-and-button{
         display: flex;
@@ -96,6 +100,8 @@
         align-items: center;
         flex-direction: column;
     }*/
+
+
 
     .home-container {
         /*display: block;
@@ -110,7 +116,7 @@
 
     .home-titulo {
         font-size: 4vw;
-        padding-left: 10%;
+        /*padding-left: 10%;*/
         /*text-align: center;
         padding: 0;
         margin-top: 0;
@@ -119,8 +125,8 @@
     }
 
     .div-button-home{
-        justify-content: left;
-        padding-left: 10%;
+        /*justify-content: left;*/
+        /*padding-left: 10%;*/
     }
 
     .div-button-home * {
@@ -142,8 +148,8 @@
     .home-titulo {
         font-size: 2.4vw;
         line-height: 5vw;
-        padding-left: 11%;
-        margin-right: 18%;
+        /*padding-left: 11%;*/
+        /*margin-right: 18%;*/
     }
 
     .div-button-home * {
@@ -162,23 +168,35 @@
         display: block;
         text-align: center;
         flex-direction: row-reverse;
-        width: 100%;
+        /*width: 100%;*/
         height: auto;
         align-items: center;
         justify-content: space-between;
         background-color: var(--branco);
-        padding: 8% 0% 5% 0%;   
+        padding: 8% 8% 8% 8%;
     }
 
     .home-titulo {
         text-align: center;
-        padding: 0% 5%;
+        padding-left: 0%;
+        /*margin-right: 0%;*/
         font-size: 5vw;
         line-height: 10vw;
     }
+
+    .div-button-home{
+        display: flex;
+        padding-left: 0%;
+        justify-content: center;
+    }
+
     .div-button-home * {
         padding: 12px;
         font-size: 3.5vw;
+    }
+
+    .container-titulo-and-button{
+        padding-left: 0%;
     }
 }
 
