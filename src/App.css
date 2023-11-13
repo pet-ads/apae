@@ -73,6 +73,11 @@
  }
 
 
+ .ancoras{
+  max-width: 1368px;
+  margin: auto;
+ }
+
 .titulo {
   font-family: var(--fonte);
   text-transform: uppercase;
