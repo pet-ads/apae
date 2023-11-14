@@ -23,11 +23,7 @@ iframe{
 
 .nome-local{
   font-family: var(--fonte);
-  font-size: var(--tam-subtitulo-geral);
-  padding-top: 20px;
-  margin-bottom: 2.5%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  font-size: var(--tam-subtitulo-geral); 
   font-weight: bold;
 }
 
@@ -47,6 +43,11 @@ iframe{
   .informacoes p{
     font-size: var(--tam-descricao-max1241);
   }
+  .nome-local{
+    padding-top: 0;
+  }
+ 
+  
 }
 
 

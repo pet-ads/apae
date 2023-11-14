@@ -41,63 +41,66 @@ export default function Contato(){
             <p className="titulo">Contato</p>
 
             <div className="cards-container">
-            {isMobile ? (
-                <Slider {...settings}>
+                {isMobile ? (
+                    <Slider {...settings}>
 
-                    <div className='container-card-mobile'>
-                        <Card destaque={true}
-                            nome = 'Célia Kawabata'
-                            descricao = 'Docente IFSP e Coordenadora do Projeto'
-                            email= 'celiak@ifsp.edu.br'
-                        />
-                    </div> 
-                    
-                    <div className='container-card-mobile'>
+                        <div className='container-card-mobile'>
+                            <Card destaque={true}
+                                nome = 'Célia Kawabata'
+                                descricao = 'Docente IFSP e Coordenadora do Projeto'
+                                email= 'celiak@ifsp.edu.br'
+                            />
+                        </div> 
+
+                        <div className='container-card-mobile'>
+                            <Card
+                                nome = 'Mariana Schiabel'
+                                descricao = 'Coordenadora de Projetos da APAE'
+                                email = 'coordenacao@apaesaocarlossp.org.br'  
+                            />
+                        </div>
+
+                        
+
+                        <div className='container-card-mobile'>
+                            <Card 
+                                nome = 'Gisele Dovigo'
+                                descricao = 'Docente APAE'
+                                email = 'giselelabor@yahoo.com.br'
+                            />
+                        </div>
+                
+                    </Slider>
+                
+                ):(
+
+                                
+                    <div className= "cards">
                         <Card
                             nome = 'Mariana Schiabel'
                             descricao = 'Coordenadora de Projetos da APAE'
                             email = 'coordenacao@apaesaocarlossp.org.br'  
                         />
-                    </div>
 
-                    
+                        <Card destaque={true}
+                            nome = 'Célia Kawabata'
+                            descricao = 'Docente IFSP e Coordenadora do Projeto'
+                            email= 'celiak@ifsp.edu.br'
+                        />
 
-                    <div className='container-card-mobile'>
                         <Card 
                             nome = 'Gisele Dovigo'
                             descricao = 'Docente APAE'
                             email = 'giselelabor@yahoo.com.br'
                         />
+                        
                     </div>
-
-                </Slider>
-            ):(
-
-                            
-                <div className= "cards">
-                    <Card
-                        nome = 'Mariana Schiabel'
-                        descricao = 'Coordenadora de Projetos da APAE'
-                        email = 'coordenacao@apaesaocarlossp.org.br'  
-                    />
-
-                    <Card destaque={true}
-                        nome = 'Célia Kawabata'
-                        descricao = 'Docente IFSP e Coordenadora do Projeto'
-                        email= 'celiak@ifsp.edu.br'
-                    />
-
-                    <Card 
-                        nome = 'Gisele Dovigo'
-                        descricao = 'Docente APAE'
-                        email = 'giselelabor@yahoo.com.br'
-                    />
                     
-                </div>
             )}
+            </div>
+                <div className='mapas-container'>
                 {isMobile ? (
                         <Slider {...settings}>
-                            {/* Slides para mapas */}
                             <div className='container-mapa-mobile'>
                                 <Local
                                     nome='APAE'
@@ -131,8 +134,9 @@ export default function Contato(){
             
                 </div>
                 )}
+                </div>
             
-            </div>
+            
             
         </div>
         
