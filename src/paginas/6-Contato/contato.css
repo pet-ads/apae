@@ -8,10 +8,21 @@
 
 
 @media(max-width:1024px){
+  
   .mapas{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+
   }
+  .container-mapa-mobile{
+    display: flex !important;
+    justify-content: center;
+  }
+  .locais-container{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+  }
+  
 }

@@ -1,5 +1,4 @@
 .LocalContainer{
-  padding-top: 3%;
   display:flex;
   flex-direction: column;
   text-align: center;
@@ -24,7 +23,7 @@ iframe{
 
 .nome-local{
   font-family: var(--fonte);
-  font-size: var(--tam-subtitulo-geral); 
+  font-size: var(--tam-subtitulo-geral);
   font-weight: bold;
 }
 
@@ -44,11 +43,6 @@ iframe{
   .informacoes p{
     font-size: var(--tam-descricao-max1241);
   }
-  .nome-local{
-    padding-top: 0;
-  }
- 
-  
 }
 
 
@@ -56,7 +50,8 @@ iframe{
   .LocalContainer{
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 92%;
+    
   }
 
   iframe{
