@@ -10,8 +10,18 @@
     cursor: pointer;
     font-size: larger;
     width: 100px;
+    max-width: 100px;
     text-align: center;
     font-size: var(--tam-descricao-geral);
+    padding-top: 30%;
+    padding-bottom: 30%;
+
+
+    @media (min-width: 1369px) {
+        font-size: 1.2em;
+        padding-top: 35%;
+        padding-bottom: 35%;
+    }
 }
   
 .item button:hover {
