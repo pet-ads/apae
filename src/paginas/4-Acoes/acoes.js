@@ -48,7 +48,7 @@ export default function Acoes() {
             <div className="cards-container">
                 {isMobile ? (
                     <Slider {...settings}>
-                        <div>
+                        <div className='container-card-mobile'>
                             <Card
                                 title='Aulas de Informática'
                                 imageUrl={img_aula}
@@ -57,7 +57,7 @@ export default function Acoes() {
                                 handleOpenModal={handleOpenModal}
                             />
                         </div>
-                        <div>
+                        <div className='container-card-mobile'>
                             <Card
                                 title='Visita Técnica'
                                 imageUrl={img_visita}
@@ -66,7 +66,7 @@ export default function Acoes() {
                                 handleOpenModal={handleOpenModal}
                             />
                         </div>
-                        <div>
+                        <div className='container-card-mobile'>
                             <Card
                                 title='Palestra'
                                 imageUrl={img_palestra}
