@@ -22,7 +22,6 @@ function Card({ title, imageUrl, body, handleOpenModal, cardId }) {
             <div className="div-button">
                 <button onClick={() => handleOpenModal(cardId)}>Galeria de Fotos</button>
             </div>
-
         </div>
     )
 }

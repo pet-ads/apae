@@ -9,8 +9,6 @@ import Local from "../../componentes/Mapas/Local";
 
 
 export default function Contato(){
-
-    const [selectedCardId, setSelectedCardId] = useState(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const updateWindowWidth = () => {

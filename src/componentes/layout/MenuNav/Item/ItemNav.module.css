@@ -61,6 +61,11 @@
     .item button{
         font-size: var(--tam-descricao-max768);
     }
+    @media (orientation: landscape) {
+        .item button{
+            font-size: 1.9vw;
+        }
+      }
   }
   
 @media(max-width: 480px){

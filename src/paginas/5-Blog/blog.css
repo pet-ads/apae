@@ -43,7 +43,14 @@
     .paragrafo-blog{
         font-size: var(--tam-descricao-max1024);  
     }
+    @media (orientation: landscape) {
+        .paragrafo-blog{
+            font-size: 1.6vw;
+        }
+      }
 }
+
+
 @media(max-width: 768px){
     .paragrafo-blog{
         font-size: var(--tam-descricao-max768);
@@ -55,6 +62,13 @@
     .blog{
         justify-content: center;
     }
+    @media (orientation: landscape) {
+        .paragrafo-blog{
+            font-size: 1.8vw;
+            text-align: center;
+        }
+    }
+    
 }
 @media(max-width: 480px){
     .paragrafo-blog{

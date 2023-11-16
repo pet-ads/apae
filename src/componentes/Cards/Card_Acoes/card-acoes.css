@@ -53,6 +53,15 @@
     .paragrafo-card {
         font-size: var(--tam-descricao-max1024);
     }
+    @media (orientation: landscape) {
+        .titulo-card{
+            font-size: 1.7vw;
+        }
+        .paragrafo-card{
+            font-size: 1.6vw;
+        }
+       
+    }
 }
 
 @media(max-width: 768px){
@@ -62,6 +71,16 @@
     .paragrafo-card{
         font-size: var(--tam-descricao-max768);
     }
+    @media (orientation: landscape) {
+        .titulo-card{
+            font-size: 1.9vw;
+        }
+        .paragrafo-card{
+            font-size: 1.8vw;
+        }
+       
+    }
+    
 }
 
 @media(max-width: 480px){

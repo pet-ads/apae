@@ -26,12 +26,23 @@
     width: var(--largura-cards-max1024);
     align-items: center;
   }
+  @media (orientation: landscape) {
+    .Card {
+      width: 40%;
+    }
+  }
 }
 
 @media(max-width:768px){
   .Card {
       width: var(--largura-cards-max768);
       align-items: center;
+    }
+    @media (orientation: landscape) {
+      .Card {
+        width: 48%;
+        align-items: center;
+      }
     }
   }
 

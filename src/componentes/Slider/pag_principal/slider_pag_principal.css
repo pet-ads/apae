@@ -88,6 +88,15 @@
         height: auto;
         width: 60%;
     }
+    @media (orientation: landscape) {
+        .carousel .subtitulo img {
+            width: 50%;
+            height: auto;
+        }
+        .carousel .subtitulo p {
+            font-size: 1.6vw;
+        }
+    }
 }
 
 @media(max-width: 768px){
@@ -97,6 +106,19 @@
     .select{
         padding: var(--tam-p-select-max768); /*ajusta os itens do sanduiche no meio*/
         font-size: var(--tam-botao-max768);
+    }
+    @media (orientation: landscape) {
+        .carousel .subtitulo img {
+            width: 45%;
+            height: auto;
+        }
+        .carousel .subtitulo p {
+            font-size: 1.6vw;
+        }
+        .select{
+            padding: 1.1vw;
+            font-size: 1.8vw;
+        }
     }
 }
 

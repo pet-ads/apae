@@ -66,18 +66,44 @@
   .button-modal {
     padding: 1.4vw;
     font-size: 1.5vw;
-}
-
+  }
+  @media (orientation: landscape) {
+    .conteudo-modal {
+      width: 37%;
+      margin-top:9.5%;
+    }
+    .titulo-modal {
+      display: none;
+    }
+    .button-modal {
+      padding: 0.9vw;
+      font-size: 1.6vw;
+    }  
+  }
 }
 
 @media(max-width: 768px){
   .titulo-modal {
     font-size: 2.5vw;
   }
-
   .button-modal {
     padding: 1.9vw;
     font-size: 2vw;
+  }
+  @media (orientation: landscape) {
+    .conteudo-modal {
+      width: 40%;
+      max-width: 70%;
+      margin-top:10%;
+    }
+
+    .titulo-modal {
+      display: none;
+    }
+    .button-modal {
+      padding: 1.1vw;
+      font-size: 1.8vw;
+    }  
   }
 }
 

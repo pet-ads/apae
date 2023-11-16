@@ -61,7 +61,7 @@ export default function Acoes() {
                             <Card
                                 title='Visita Técnica'
                                 imageUrl={img_visita}
-                                body='Durante a visita técnica, será agendada uma data para que os alunos bolsistas e voluntários visitem a APAE e tenham a oportunidade de conhecer o espaço e o trabalho desenvolvido por essa instituição.'
+                                body='Durante a visita técnica, os alunos bolsistas e voluntários visitam a APAE e têm a oportunidade de conhecer o espaço e o trabalho desenvolvido pela instituição.'
                                 cardId="visita"
                                 handleOpenModal={handleOpenModal}
                             />
@@ -88,7 +88,7 @@ export default function Acoes() {
                         <Card
                             title='Visita Técnica'
                             imageUrl={img_visita}
-                            body='Durante a visita técnica, será agendada uma data para que os alunos bolsistas e voluntários visitem a APAE e tenham a oportunidade de conhecer o espaço e o trabalho desenvolvido por essa instituição.'
+                            body='Durante a visita técnica, os alunos bolsistas e voluntários visitam a APAE e têm a oportunidade de conhecer o espaço e o trabalho desenvolvido pela instituição.'
                             cardId="visita"
                             handleOpenModal={handleOpenModal}
                         />
