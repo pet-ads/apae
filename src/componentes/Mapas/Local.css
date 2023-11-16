@@ -65,7 +65,7 @@ iframe{
     font-size: var(--tam-descricao-max1024);
   }
 
-  @media (orientation: landscape) {
+  /* @media (orientation: landscape) {
     .nome-local{
       font-size: 1.7vw;
     }
@@ -76,7 +76,7 @@ iframe{
       min-width: 25vw;
       height: 15vw;
     }
-  }
+  } */
 }
 
 @media(max-width: 768px){

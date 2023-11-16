@@ -43,11 +43,11 @@
     .paragrafo-blog{
         font-size: var(--tam-descricao-max1024);  
     }
-    @media (orientation: landscape) {
+    /* @media (orientation: landscape) {
         .paragrafo-blog{
             font-size: 1.6vw;
         }
-      }
+      } */
 }
 
 
