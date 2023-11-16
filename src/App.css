@@ -59,9 +59,9 @@
   /*--------------*/
   --largura-cards-geral: 27%;
   --largura-cards-max1241: 28%;
-  --largura-cards-max1024: 65%;
-  --largura-cards-max768: 75%;
-  --largura-cards-max480: 80%;
+  --largura-cards-max1024: 60%;
+  --largura-cards-max768: 70%;
+  --largura-cards-max480: 78%;
   --largura-interna-cards: 90%;
   --margem-dentro-cards:5%;
   --margem-entre-cards:1%;
