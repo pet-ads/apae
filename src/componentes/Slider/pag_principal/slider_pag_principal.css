@@ -88,7 +88,7 @@
         height: auto;
         width: 60%;
     }
-    @media (orientation: landscape) {
+    /* @media (orientation: landscape) {
         .carousel .subtitulo img {
             width: 50%;
             height: auto;
@@ -96,7 +96,7 @@
         .carousel .subtitulo p {
             font-size: 1.6vw;
         }
-    }
+    } */
 }
 
 @media(max-width: 768px){

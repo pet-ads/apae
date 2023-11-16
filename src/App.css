@@ -13,20 +13,20 @@
   /*--------------*/
   --tam-titulo-geral: 2vw;
   --tam-titulo-max1241: 2.5vw;
-  --tam-titulo-max1024: 4vw;
-  --tam-titulo-max768: 5.2vw;
+  --tam-titulo-max1024: 3.8vw;
+  --tam-titulo-max768: 4.5vw;
   --tam-titulo-max480: 6vw;
   /*--------------*/
   --tam-descricao-geral: 1.2vw;
   --tam-descricao-max1241: 1.6vw;
   --tam-descricao-max1024: 1.8vw;
-  --tam-descricao-max768: 2.7vw;
+  --tam-descricao-max768: 2.4vw;
   --tam-descricao-max480: 4vw;
   /*--------------*/
   --tam-subtitulo-geral: 1.3vw;
   --tam-subtitulo-max1241: 1.7vw;
   --tam-subtitulo-max1024: 2vw;
-  --tam-subtitulo-max768: 2.8vw;
+  --tam-subtitulo-max768: 2.5vw;
   --tam-subtitulo-max480: 4.2vw;
   /*--------------*/
   --tam-botao-home: 1.2vw;
@@ -59,7 +59,7 @@
   /*--------------*/
   --largura-cards-geral: 27%;
   --largura-cards-max1241: 28%;
-  --largura-cards-max1024: 60%;
+  --largura-cards-max1024: 50%;
   --largura-cards-max768: 70%;
   --largura-cards-max480: 78%;
   --largura-interna-cards: 90%;
@@ -72,6 +72,10 @@
   --raio-borda-botao: 5px;
  }
 
+ .ancoras{
+  max-width: 1368px;
+  margin: auto;
+ }
 
 .titulo {
   font-family: var(--fonte);
@@ -187,7 +191,7 @@ button:hover {
     font-size: var(--tam-botao-max1024);
     padding: var(--tam-p-botao-max1024);
   }
-  @media (orientation: landscape) {
+  /* @media (orientation: landscape) {
     .titulo{
       font-size: 3.2vw;
     }
@@ -195,7 +199,7 @@ button:hover {
       font-size: 1.6vw;
       padding: 0.9vw;
     }
-  }
+  } */
   
 }
 
