@@ -18,11 +18,12 @@
   .container-card-mobile{
     display: flex !important;
     justify-content: center;
+   
   }
   .cards-container {
     display: flex;
     justify-content: center;
-    gap: 2%;
+
   }
 
   .slick-slide-item {
@@ -30,4 +31,10 @@
     justify-content: center;
   }
 
+  prev:before, .slick-next:before, .slick-prev:before{
+    color: var(--verde-claro) !important;
+  }
+
+
 } 
+
