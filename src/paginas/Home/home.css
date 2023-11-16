@@ -119,7 +119,26 @@
     .div-button-home * {
        font-size: 2vw;
        padding: 1.9vw;
-      }
+    }
+    @media (orientation: landscape) {
+        .img-home img {
+            width: 22vw;
+            height: auto;
+        }
+        .home-container {
+            display: inline;
+            align-items: center;
+        }
+        .home-titulo {
+            font-size: 2.4vw;
+            line-height: 5vw;
+        }
+
+        .div-button-home * {
+            font-size: 1.3vw;
+            margin-left: 23px;
+        }
+    }
     
 }
 
@@ -165,26 +184,22 @@
 
     @media (orientation: landscape) {
         .img-home img {
-            width: 21vw;
+            width: 22vw;
             height: auto;
         }
         .home-container {
-            /*padding-left: 18%;*/
+            display: inline;
+            align-items: center;
         }
-
         .home-titulo {
             font-size: 2.4vw;
             line-height: 5vw;
-
-            /*padding-left: 11%;*/
-            /*margin-right: 18%;*/
         }
 
         .div-button-home * {
             font-size: 1.5vw;
-            /*padding: 2.6vw;*/
+            margin-left: 14px;
         }
-
     }
 }
 

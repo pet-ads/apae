@@ -54,6 +54,14 @@
     .linkifsp{
         font-size: var(--tam-texto-footer-max1024);;
     }
+    @media (orientation: landscape) {
+        .paragrafo {
+            font-size: 1.4vw;
+        }
+        .linkifsp{
+            font-size: 1.4vw;
+        } 
+    }
 }
 
 
@@ -63,6 +71,14 @@
     }
     .linkifsp{
         font-size: var(--tam-texto-footer-max768);
+    }
+    @media (orientation: landscape) {
+        .paragrafo {
+            font-size: 1.6vw;
+        }
+        .linkifsp{
+            font-size: 1.6vw;
+        }
     }
 }
 

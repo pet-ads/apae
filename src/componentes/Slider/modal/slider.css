@@ -50,6 +50,24 @@
 }
 
 
+@media(max-width: 768px){
+  
+  @media (orientation: landscape) {
+    .swiper-container {
+      width: 40%;
+      margin-bottom: 20px;
+    }
+    
+    .img-slider {
+      width: 100%;
+    }
+    .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+    }
+  }
+  
+}
 @media (max-width: 300px) {
   .swiper-pagination-bullet {
     width: 7px;

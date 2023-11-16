@@ -74,6 +74,17 @@
   .descricao-card{
     font-size: var(--tam-descricao-max1024);
   }
+  @media (orientation: landscape) {
+    .CardDestaque{
+      width: 40%;
+    }
+    .nome{
+      font-size: 1.7vw;
+    }
+    .descricao-card{
+      font-size: 1.6vw;
+    }
+  }
 }
 
 @media(max-width: 768px){
@@ -85,6 +96,17 @@
   }
   .descricao-card{
     font-size: var(--tam-descricao-max768);
+  }
+  @media (orientation: landscape) {
+    .CardDestaque{
+      width: 48%;
+    }
+    .nome{
+      font-size: 1.9vw;
+    }
+    .descricao-card{
+      font-size: 1.8vw;
+    }
   }
 
 }

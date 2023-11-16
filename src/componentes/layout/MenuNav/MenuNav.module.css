@@ -75,7 +75,6 @@ nav{
   }
 }
 
-
 @media (max-width: 900px){
   .component_container {
     position: fixed;
@@ -105,12 +104,23 @@ nav{
     flex-direction: column;
     list-style: none;
   }
-  
 }
 
 @media(max-width: 769px){
   .logo{
     width:7em;
+  }
+  @media (orientation: landscape) {
+    .logo{
+      width: 5.4em;
+      margin-left: 15px;
+    }
+    .hamburguer_menu img{
+      height: 3.2em;
+    }
+    .hamburguer_menu:hover, .hamburguer_menu:focus{
+      height: 100%;
+    }
   }
 }
 
@@ -129,11 +139,11 @@ nav{
 
 @media(max-width: 300px){
   .logo{
-    width: 5.4em;
+    width: 5em;
     margin-left: 10px;
   }
   .hamburguer_menu img{
-    height: 3.2em;
+    height: 3em;
   }
 }
 

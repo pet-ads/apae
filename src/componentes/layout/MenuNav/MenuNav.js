@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './MenuNav.module.css';
 import logo from './logo_navheader.png';
 import burguerIcon from './burguericon.png';

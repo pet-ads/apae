@@ -187,6 +187,15 @@ button:hover {
     font-size: var(--tam-botao-max1024);
     padding: var(--tam-p-botao-max1024);
   }
+  @media (orientation: landscape) {
+    .titulo{
+      font-size: 3.2vw;
+    }
+    .div-button *{
+      font-size: 1.6vw;
+      padding: 0.9vw;
+    }
+  }
   
 }
 
@@ -198,6 +207,15 @@ button:hover {
     font-size: var(--tam-botao-max768);
     padding: var(--tam-p-botao-max768);
   }
+  @media (orientation: landscape) {
+    .titulo{
+      font-size: 4.2vw;
+    }
+    .div-button *{
+      font-size: 1.8vw;
+      padding: 1.1vw;
+    }
+}
 }
 @media(max-width: 480px){
   .titulo{

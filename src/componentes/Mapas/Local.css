@@ -54,17 +54,28 @@ iframe{
     width: 92%;
     
   }
-
   iframe{
     min-width: 30vw;
     height: 25vw;
   }
-
   .nome-local{
     font-size: var(--tam-subtitulo-max1024);
   }
   .informacoes p{
     font-size: var(--tam-descricao-max1024);
+  }
+
+  @media (orientation: landscape) {
+    .nome-local{
+      font-size: 1.7vw;
+    }
+    .informacoes p{
+      font-size: 1.6vw;
+    }
+    iframe{
+      min-width: 25vw;
+      height: 15vw;
+    }
   }
 }
 
@@ -75,7 +86,20 @@ iframe{
   .informacoes p{
     font-size: var(--tam-descricao-max768);
   }
+  @media (orientation: landscape) {
+    .nome-local{
+      font-size: 1.9vw;
+    }
+    .informacoes p{
+      font-size: 1.8vw;
+    }
+    iframe{
+      min-width: 28vw;
+      height: 18vw;
+    }
+  }
 }
+
 @media(max-width: 480px){
   .nome-local{
     font-size: var(--tam-subtitulo-max480);
