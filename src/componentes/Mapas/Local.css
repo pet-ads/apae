@@ -7,41 +7,38 @@
   height: unset;
   justify-content: space-between;
 }
+.mapa{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
 
 iframe{
   border: 2px solid;
   border-radius: 25px;
   border-color: var(--verde-claro);
-  overflow: hidden;
   width: 20vw;
   height: 15vw;
 }
 
-.informacoes{
-  display:flex;
-  flex-direction: column;
+
+.nome-local, .descricao-local{
+  font-family: var(--fonte);
+  font-size: var(--tam-descricao-geral);
 }
 
 .nome-local{
-  font-family: var(--fonte);
   font-size: var(--tam-subtitulo-geral);
   font-weight: bold;
+  margin: 0;
+  
 }
 
-.informacoes p{
-  font-family: var(--fonte);
-  font-size: var(--tam-descricao-geral);
-  margin: 2%;
-  margin-bottom: 3%;
-
-}
 
 
 @media(max-width: 1241px){
-  .nome-local{
-    font-size: var(--tam-subtitulo-max1241);
-  }
-  .informacoes p{
+  
+  .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max1241);
   }
 }
@@ -51,17 +48,17 @@ iframe{
   .LocalContainer{
     align-items: center;
     justify-content: center;
-    width: 92%;
+    width: 90%;
     
   }
   iframe{
-    min-width: 30vw;
+    min-width: 40vw;
     height: 25vw;
   }
   .nome-local{
     font-size: var(--tam-subtitulo-max1024);
   }
-  .informacoes p{
+  .nome-local,.descricao-local{
     font-size: var(--tam-descricao-max1024);
   }
 
@@ -83,14 +80,14 @@ iframe{
   .nome-local{
     font-size: var(--tam-subtitulo-max768);
   }
-  .informacoes p{
+  .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max768);
   }
   @media (orientation: landscape) {
     .nome-local{
       font-size: 1.9vw;
     }
-    .informacoes p{
+    .descricao-local{
       font-size: 1.8vw;
     }
     iframe{
@@ -104,7 +101,7 @@ iframe{
   .nome-local{
     font-size: var(--tam-subtitulo-max480);
   }
-  .informacoes p{
+  .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max480);
   }
 }
@@ -113,7 +110,11 @@ iframe{
   .nome-local{
     font-size: 5em;
   }
-  .informacoes p{
+  .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max480);
+  }
+  iframe{
+    min-width: 50vw;
+    height: 40vw;
   }
 }
