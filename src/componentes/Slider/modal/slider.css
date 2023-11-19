@@ -68,10 +68,29 @@
   }
   
 }
+
+@media(max-width: 480px){
+  
+@media (orientation: landscape) {
+  .swiper-container {
+    width: 40%;
+  }
+  .img-slider {
+    width: 100%;
+  }
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+}
+
+
+
 @media (max-width: 300px) {
   .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
     margin: 0 3px;
   }
+  
 }

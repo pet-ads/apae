@@ -51,5 +51,11 @@
         width: var(--largura-cards-max480);
         align-items: center;
       }
+      @media (orientation: landscape) {
+        .Card {
+          width: 40%;
+          align-items: center;
+        }
+      }
   }
     

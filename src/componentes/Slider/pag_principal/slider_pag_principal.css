@@ -140,5 +140,18 @@
         padding: var(--tam-p-select-max480); /*ajusta os itens do sanduiche no meio*/
         font-size: var(--tam-botao-max480);
     }
+    @media (orientation: landscape) {
+        .carousel .subtitulo img {
+            width: 25%;
+            height: auto;
+        }
+        .carousel .subtitulo p {
+            font-size: 2.4vw;
+        }
+        .select{
+            padding: 1.3vw;
+            font-size: 2.2vw;
+        }
+    }
 
 }

@@ -78,7 +78,16 @@
     .imagem-link-blog {
         max-width: 60%;
     }
-
+    @media (orientation: landscape) {
+        .paragrafo-blog{
+            font-size: 2.4vw;
+            text-align: center;
+            margin: 2%;
+        }
+        .imagem-link-blog {
+            max-width: 45%;
+        }
+    }
 }
 
 @media(max-width: 300px){

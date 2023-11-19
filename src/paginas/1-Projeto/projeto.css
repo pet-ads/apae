@@ -150,6 +150,30 @@
     .projeto__imagens img:nth-child(1) {
         display: none; 
     }
+    @media (orientation: landscape) {
+        .projeto__conteudo {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .projeto__descricao{
+            font-size: 2.4vw;
+            line-height: 4vw;
+        }
+        
+        .projeto__imagens {
+            flex-direction: column;
+        }
+        
+        .projeto__imagens img {
+            height: 16vw;
+            width: 28vw;
+            margin-bottom: 20%;
+        } 
+        .projeto__imagens img:nth-child(1) {
+            display: inline; 
+        }
+    }
 
 
 }
