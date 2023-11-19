@@ -89,6 +89,14 @@
     .linkifsp{
         font-size: var(--tam-texto-footer-max480);
     }
+    @media (orientation: landscape) {
+        .paragrafo {
+            font-size: 2vw;
+        }
+        .linkifsp{
+            font-size: 2vw;
+        }
+    }
 }
 
 @media(max-width: 300px){

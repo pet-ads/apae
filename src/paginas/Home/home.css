@@ -228,6 +228,25 @@
         padding: 12px;
         font-size: 3.5vw;
     }
+    @media (orientation: landscape) {
+        .img-home img {
+            width: 22vw;
+            height: auto;
+        }
+        .home-container {
+            display: inline;
+            align-items: center;
+        }
+        .home-titulo {
+            font-size: 2.4vw;
+            line-height: 5vw;
+        }
+
+        .div-button-home * {
+            font-size: 1.5vw;
+            margin-left: 14px;
+        }
+    }
 }
 
 

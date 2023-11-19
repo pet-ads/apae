@@ -138,6 +138,15 @@ nav{
   .hamburguer_menu:hover, .hamburguer_menu:focus{
     height: 100%;
   }
+  @media (orientation: landscape) {
+    .logo{
+      width: 4em;
+      margin-left: 15px;
+    }
+    .hamburguer_menu img{
+      height: 2em;
+    }
+  }
 }
 
 @media(max-width: 300px){

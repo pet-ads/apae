@@ -104,6 +104,18 @@ iframe{
   .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max480);
   }
+  @media (orientation: landscape) {
+    .nome-local{
+      font-size: 2.5vw;
+    }
+    .descricao-local{
+      font-size: 2.4vw;
+    }
+    iframe{
+      min-width: 25vw;
+      height: 18vw;
+    }
+  }
 }
 
 @media(max-width: 300px){

@@ -45,7 +45,7 @@
 
 .titulo-modal {
   text-transform: uppercase;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   font-family: var(--fonte);
 }
 
@@ -96,7 +96,6 @@
       max-width: 70%;
       margin-top:10%;
     }
-
     .titulo-modal {
       display: none;
     }
@@ -115,5 +114,19 @@
   .button-modal {
     padding: 2.9vw;
     font-size: 3vw;
+  }
+  @media (orientation: landscape) {
+    .conteudo-modal {
+      width: 50%;
+      margin-top:25%;
+      padding: 10px; 
+    }
+
+    .titulo-modal {
+      display: none;
+    }
+    .button-modal {
+      display: none;
+    }  
   }
 }
