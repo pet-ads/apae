@@ -46,9 +46,19 @@ function App() {
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
+    const elementHeight = element.clientHeight;
+    const windowHeight = window.innerHeight;
+    let padding = 0;
     if (element) {
       let ySet = element.offsetTop - closedMenuHeight;
       window.scroll({ top: ySet, behavior: 'smooth' });
+      if(sectionId !== 'home'){
+       padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
+      }
+      else{
+       padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
+      }
+      console.log(sectionId,padding);
     }
   };
 
