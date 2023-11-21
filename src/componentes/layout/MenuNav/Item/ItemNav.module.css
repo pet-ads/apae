@@ -52,6 +52,7 @@
         font-size: var(--tam-descricao-max1024);
         font-weight: bold;
         width: 100%;
+        max-width: none;
         text-align: center;
         border-bottom: #2c924c solid 2px;
     }

@@ -46,6 +46,7 @@ iframe{
 
 @media(max-width:1024px){
   .LocalContainer{
+    padding-top: 30px;
     align-items: center;
     justify-content: center;
     width: 90%;
