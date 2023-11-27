@@ -56,9 +56,7 @@ iframe{
     min-width: 40vw;
     height: 25vw;
   }
-  .nome-local{
-    font-size: var(--tam-subtitulo-max1024);
-  }
+ 
   .nome-local,.descricao-local{
     font-size: var(--tam-descricao-max1024);
   }
@@ -78,9 +76,6 @@ iframe{
 }
 
 @media(max-width: 768px){
-  .nome-local{
-    font-size: var(--tam-subtitulo-max768);
-  }
   .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max768);
   }
@@ -99,11 +94,15 @@ iframe{
 }
 
 @media(max-width: 480px){
-  .nome-local{
-    font-size: var(--tam-subtitulo-max480);
-  }
   .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max480);
+  }
+  .mapa{
+    width: 100%;
+  }
+  iframe{
+    min-width: 50vw;
+    height: 40vw;
   }
   @media (orientation: landscape) {
     .nome-local{
@@ -120,14 +119,7 @@ iframe{
 }
 
 @media(max-width: 300px){
-  .nome-local{
-    font-size: 5em;
-  }
   .nome-local, .descricao-local{
     font-size: var(--tam-descricao-max480);
-  }
-  iframe{
-    min-width: 50vw;
-    height: 40vw;
   }
 }
