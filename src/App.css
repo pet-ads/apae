@@ -97,7 +97,7 @@
 
 #home {
 
-padding-top: 106px;
+padding-top: 63px;
 padding-bottom: 213px;
 
 @media(max-width: 1241px){
@@ -129,7 +129,7 @@ padding-bottom: 213px;
 
 #projeto { 
 
-  padding-top: 128.5px;
+  padding-top: 95.8px;
   padding-bottom: 200px; 
 
   @media(max-width: 1241px){
