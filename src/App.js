@@ -22,89 +22,38 @@ function App() {
     }
   }, [listState, menuNavRef]);
 
-  // const calculatePadding = (sectionId) => {
-  //   const windowHeight = window.innerHeight;
-  //   const windowWidth = window.innerWidth;
-  //   const element = document.getElementById(sectionId);
-  //   if (element) {
-  //     const elementHeight = element.clientHeight;
-  //     let padding;
-  //     if (sectionId === 'home') {
-  //       padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
-  //     } else if (windowWidth < windowHeight) {
-  //       if (sectionId === 'turmas' || sectionId === 'equipe') {
-  //         padding = ((windowHeight - (2 * element.clientHeight) - closedMenuHeight) / 3);
-  //       }
-  //     } else {
-  //       padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
-  //     }
+  const portraitFormat = () => {
+    return window.innerHeight > window.innerWidth;
+  }
 
-  //     return padding;
-  //   }
-  //   return 0;
-  // };
+  const isEquipe = (sectionId) => {
+    return sectionId === 'equipe';
+  }
+
+ 
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    const elementHeight = element.clientHeight;
-    const windowHeight = window.innerHeight;
-    let padding = 0;
+    let element = document.getElementById(sectionId);
+    //const elementHeight = element.clientHeight;
+    //const windowHeight = window.innerHeight;
+    //const windowWidth = window.innerWidth;
+    //let padding = 0;
     if (element) {
+      if(isEquipe(sectionId) && portraitFormat()){
+        console.log("equipe portriat");
+        element = document.getElementById('turmas');
+      }
       let ySet = element.offsetTop - closedMenuHeight;
       window.scroll({ top: ySet, behavior: 'smooth' });
-      if(sectionId !== 'home'){
-       padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
-      }
-      else{
-       padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
-      }
-      console.log(sectionId,padding);
+      //if(sectionId !== 'home'){
+      // padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
+     // }
+      //else{
+       //padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
+     // }
+      //console.log(sectionId,padding);
     }
   };
-
-  // useEffect(() => {
-  //   const sectionIds = ['home', 'projeto', 'turmas', 'equipe', 'acoes', 'contato', 'blog'];
-
-  //   const addPaddingToSection = (sectionId) => {
-  //     const element = document.getElementById(sectionId);
-  //     if (element) {
-  //       const windowHeight = window.innerHeight;
-  //       const windowWidth = window.innerWidth;
-  //       const padding = calculatePadding(sectionId);
-  //       if (sectionId === 'blog') {
-  //         element.style.paddingTop = `5%`;
-  //         element.style.paddingBottom = `5%`;
-  //       } else if (sectionId === 'equipe') {
-  //         if (windowWidth < windowHeight) {
-  //           element.style.paddingTop = `0`;
-  //           element.style.paddingBottom = `${padding}px`;
-  //         } else {
-  //           element.style.paddingTop = `${padding}px`;
-  //           element.style.paddingBottom = `${padding}px`;
-  //         }
-  //       } else if (padding > 0) {
-  //         element.style.paddingTop = `${padding}px`;
-  //         element.style.paddingBottom = `${padding}px`;
-  //       } else {
-  //         element.style.paddingTop = `10%`;
-  //         element.style.paddingBottom = `10%`;
-  //         console.log("nao cabe na pagina", element);
-  //       }
-  //     }
-  //   };
-
-  //   const addPaddingToSections = () => {
-  //     sectionIds.forEach((sectionId) => {
-  //       addPaddingToSection(sectionId);
-  //     });
-  //   };
-
-  //   window.addEventListener("load", addPaddingToSections);
-
-  //   return () => {
-  //     window.removeEventListener("load", addPaddingToSections);
-  //   };
-  // }, [closedMenuHeight, calculatePadding]);
 
   return (
     <div>

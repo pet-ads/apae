@@ -6,6 +6,7 @@
     padding-top: 30%;
     padding-bottom: 30%;
     background: none;
+    text-transform: capitalize;
     border: none;
     cursor: pointer;
     font-size: larger;

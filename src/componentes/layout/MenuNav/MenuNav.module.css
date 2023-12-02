@@ -45,8 +45,8 @@ nav{
 }
 
 .logo{
-  width: 10em;
-  max-width: 10em;
+  width: 8em;
+  max-width: 8em;
   height: auto;
   margin-left: 20px;
 }
@@ -72,7 +72,7 @@ nav{
 
 @media (max-width:1920px){
   .logo{
-    width: 8.1em;
+    width: 8em;
     height: auto;
     margin-left: 20px;
   }
