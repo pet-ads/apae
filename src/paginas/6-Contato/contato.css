@@ -13,23 +13,36 @@
   justify-content: center;
 }
 .locais-container{
-  width: 90%;
+  width: 96%;
   margin: auto;
   align-items: center;
 }
 
-@media(max-width:1024px){
+
+
+@media(max-width:768px){
   .locais-container{
-    width: 90%;
-    margin: auto;
-    align-items: center;
+    width: 93%;
   }
+
 }
+@media(max-width:600px){
+  .locais-container{
+    width: 91%;
+  }
+
+}
+
+@media(max-width:400px){
+  .locais-container{
+    width: 87%;
+  }
+
+}
+
 @media(max-width: 300px) {
   .locais-container{
-    width: 80%;
-    margin: auto;
-    align-items: center;
+    width: 84%;
   }
 }
 
