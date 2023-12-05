@@ -72,11 +72,6 @@
   --raio-borda-botao: 5px;
  }
 
- .ancoras{
-  max-width: 1368px;
-  margin: auto;
- }
-
 .titulo {
   font-family: var(--fonte);
   text-transform: uppercase;
@@ -295,6 +290,13 @@ button {
 
 button:hover {
   background-color: var(--verde-escuro);
+}
+
+#ancoras{
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: auto;
 }
 
 /*DIV-BUTTON*/

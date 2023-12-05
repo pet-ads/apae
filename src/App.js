@@ -27,15 +27,11 @@ function App() {
   }
   
   const isEquipe = (sectionId) => {
-    return sectionId == 'equipe';
+    return sectionId === 'equipe';
   }
   
   const scrollToSection = (sectionId) => {
     let element = document.getElementById(sectionId);
-    const elementHeight = element.clientHeight;
-    //const windowHeight = window.innerHeight;
-    //const windowWidth = window.innerWidth;
-    //let padding = 0;
     if (element) {
       if(isEquipe(sectionId) && portraitFormat()){
         console.log("equipe portriat");
@@ -43,15 +39,9 @@ function App() {
       }
       let ySet = element.offsetTop - closedMenuHeight;
       window.scroll({ top: ySet, behavior: 'smooth' });
-      //if(sectionId !== 'home'){
-      // padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
-     // }
-      //else{
-       //padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
-     // }
-      //console.log(sectionId,padding);
     }
   };
+
   return (
     <div>
       <div>
