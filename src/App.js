@@ -38,6 +38,7 @@ function App() {
       }
       let ySet = element.offsetTop - closedMenuHeight;
       window.scroll({ top: ySet, behavior: 'smooth' });
+
     }
   };
 

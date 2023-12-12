@@ -93,7 +93,13 @@
 #home {
 
 padding-top: 63px;
+
 padding-bottom: 213px;
+
+@media(max-width: 1570px){
+  padding-top: 159.5px;
+  padding-bottom: 159.5px;
+}
 
 @media(max-width: 1241px){
   padding-top: 159.5px;
@@ -103,6 +109,16 @@ padding-bottom: 213px;
 @media(max-width: 1024px){
   padding-top: 130px;
   padding-bottom: 150px;
+}
+
+@media only screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+  padding-top: 260px;
+  padding-bottom: 260px;
 }
 
 @media(max-width: 768px){
@@ -137,7 +153,17 @@ padding-bottom: 213px;
     padding-bottom: 50px;
   }
 
-  @media(max-width: 768px){ /*nao cabe*/
+  @media only screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  @media(max-width: 768px){ 
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -164,9 +190,20 @@ padding-bottom: 213px;
   }
   
   @media(max-width: 1024px){
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 0px;
   }
+
+  @media only screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+    padding-top: 130px;
+      padding-bottom: 130px;
+  }
+
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    padding-top: 130px;
+      padding-bottom: 130px;
+  }
+
 
   @media(max-width: 768px){
     padding-top: 50px;
@@ -198,6 +235,16 @@ padding-bottom: 213px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  @media only screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    padding-top: 40px;
+    padding-bottom: 140px;
+  }
   
   @media(max-width: 768px){
     padding-top: 50px;
@@ -224,8 +271,18 @@ padding-bottom: 213px;
   }
   
   @media(max-width: 1024px){
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 200px;
+  }
+
+  @media only screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    padding-top: 260px;
+    padding-bottom: 240px;
   }
 
   @media(max-width: 768px){
@@ -255,8 +312,18 @@ padding-bottom: 213px;
   }
   
   @media(max-width: 1024px){
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 200px;
+  }
+
+  @media only screen and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    padding-top: 260px;
+    padding-bottom: 275px;
   }
 
   @media(max-width: 768px){
