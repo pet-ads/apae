@@ -17,8 +17,8 @@ iframe{
   border: 2px solid;
   border-radius: 25px;
   border-color: var(--verde-claro);
-  width: 20vw;
-  height: 15vw;
+  width: min(20vw, 320px);
+  height: min(15vw,200px);
 }
 
 

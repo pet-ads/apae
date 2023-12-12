@@ -5,9 +5,9 @@
   width: 100%;
   gap: 5%;
   flex-wrap: wrap;
-  
-
+  margin-top: 40px;
 }
+
 .container-mapa-mobile{
   display: flex !important;
   justify-content: center;
