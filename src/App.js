@@ -34,7 +34,6 @@ function App() {
     let element = document.getElementById(sectionId);
     if (element) {
       if(isEquipe(sectionId) && portraitFormat()){
-        console.log("equipe portriat");
         element = document.getElementById('turmas');
       }
       let ySet = element.offsetTop - closedMenuHeight;
