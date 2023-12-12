@@ -25,33 +25,20 @@ function App() {
   const portraitFormat = () => {
     return window.innerHeight > window.innerWidth;
   }
-
+  
   const isEquipe = (sectionId) => {
     return sectionId === 'equipe';
   }
-
- 
-
+  
   const scrollToSection = (sectionId) => {
     let element = document.getElementById(sectionId);
-    //const elementHeight = element.clientHeight;
-    //const windowHeight = window.innerHeight;
-    //const windowWidth = window.innerWidth;
-    //let padding = 0;
     if (element) {
       if(isEquipe(sectionId) && portraitFormat()){
-        console.log("equipe portriat");
         element = document.getElementById('turmas');
       }
       let ySet = element.offsetTop - closedMenuHeight;
       window.scroll({ top: ySet, behavior: 'smooth' });
-      //if(sectionId !== 'home'){
-      // padding = ((windowHeight - elementHeight - closedMenuHeight) / 2);
-     // }
-      //else{
-       //padding = ((windowHeight - elementHeight + closedMenuHeight) / 2);
-     // }
-      //console.log(sectionId,padding);
+
     }
   };
 
