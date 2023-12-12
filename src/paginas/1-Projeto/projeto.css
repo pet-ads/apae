@@ -9,7 +9,7 @@
 
 .projeto__descricao{
     font-size: var(--tam-descricao-geral);
-    line-height: 2.5vw;
+    line-height: min(2vw, 50px);
     text-align: justify;
 }
 
@@ -23,7 +23,7 @@
 .projeto__imagens img {
     border-right: solid green 4px;
     margin-bottom: 3%;
-    height: 14vw;
+    height: min(14vw, 270px);
 }
 
 .div-descricao {

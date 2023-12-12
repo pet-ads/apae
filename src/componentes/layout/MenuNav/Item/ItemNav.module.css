@@ -18,7 +18,7 @@
     padding-bottom: 30%;
 
     @media (min-width: 1369px) {
-        font-size: 1.5em;
+        font-size: min(1.5em, 16px);
         padding-top: 35%;
         padding-bottom: 35%;
     }
