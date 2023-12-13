@@ -1,9 +1,11 @@
 .div-button-home {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: left;
+    align-self: flex-end;
+    background-color: blue;
+    width: 70%;
     flex-direction: row;
-    width: 100%;
+
 }
 
 .div-button-home * {
@@ -21,7 +23,6 @@
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    /* margin-right: 5%; */
     }
 
 .img-home img {
@@ -52,7 +53,7 @@
 .container-titulo-and-button{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: blueviolet;
 }
 
 
@@ -63,6 +64,7 @@
     text-align: left;
     width: 70%;
     align-self: flex-end;
+    background-color: aqua;
     }
 
 
