@@ -35,56 +35,56 @@
     {
         "id": "monit2",
         "funcao": "monitor",
-        "name": "Ana Lívia Hernandes da Motta",
-        "image": "MonitoresFotos/Ana Lívia Hernandes da Motta.jpg"
+        "name": "Ana Lívia da Motta",
+        "image": "MonitoresFotos/Ana Lívia da Motta.jpg"
     },
     {
         "id": "monit3",
         "funcao": "monitor",
-        "name": "Heloisa Alves da Silva",
-        "image": "MonitoresFotos/Heloisa Alves da Silva.jpg"
+        "name": "Heloisa da Silva",
+        "image": "MonitoresFotos/Heloisa da Silva.jpg"
     },
     {
         "id": "monit4",
         "funcao": "monitor",
-        "name": "Isabelly de Cassia Benedito",
-        "image": "MonitoresFotos/Isabelly de Cassia Benedito.jpg"
+        "name": "Isabelly Benedito",
+        "image": "MonitoresFotos/Isabelly Benedito.jpg"
     },
     {
         "id": "monit5",
         "funcao": "monitor",
-        "name": "Kamila Aleixo Hungaro",
-        "image": "MonitoresFotos/Kamila Aleixo Hungaro.jpg"
+        "name": "Kamila Hungaro",
+        "image": "MonitoresFotos/Kamila Hungaro.jpg"
     },
     {
         "id": "monit6",
         "funcao": "monitor",
-        "name": "Letícia Kaori Yabuuti",
-        "image": "MonitoresFotos/Letícia Kaori Yabuuti.jpg"
+        "name": "Letícia Yabuuti",
+        "image": "MonitoresFotos/Letícia Yabuuti.jpg"
     },
     {
         "id": "monit7",
         "funcao": "monitor",
-        "name": "Valentine Lorena Ferrarini do Amaral",
-        "image": "MonitoresFotos/Valentine Lorena Ferrarini do Amaral.jpg"
+        "name": "Valentine do Amaral",
+        "image": "MonitoresFotos/Valentine do Amaral.jpg"
     },
     {
         "id": "monit8",
         "funcao": "ex-monitor",
-        "name": "Bianca Carvalio Antonietti",
-        "image": "MonitoresFotos/Bianca Carvalio Antonietti.jpg"
+        "name": "Bianca Antonietti",
+        "image": "MonitoresFotos/Bianca Antonietti.jpg"
     },
     {
         "id": "monit9",
         "funcao": "monitor",
-        "name": "Marilia Paula Venega Alvares",
-        "image": "MonitoresFotos/Marilia Paula Venega Alvares.jpg"
+        "name": "Marilia Alvares",
+        "image": "MonitoresFotos/Marilia Alvares.jpg"
     },
     {
         "id": "monit10",
         "funcao": "monitor",
-        "name": "Isabella Oliveira Marcelli",
-        "image": "MonitoresFotos/Isabella Oliveira Marcelli.jpeg"
+        "name": "Isabella Marcelli",
+        "image": "MonitoresFotos/Isabella Marcelli.jpeg"
     },
     {
         "id": "monit11",
@@ -95,44 +95,44 @@
     {
         "id": "monit12",
         "funcao": "ex-monitor",
-        "name": "Rafael de Campos Brito (2017)",
-        "image": "MonitoresFotos/Rafael de Campos Brito.jpeg"
+        "name": "Rafael Brito (2017)",
+        "image": "MonitoresFotos/Rafael Brito.jpeg"
     },
     {
         "id": "monit13",
         "funcao": "ex-monitor",
-        "name": "Lílian Raquel Alves de Souza (2017)",
-        "image": "MonitoresFotos/Lílian Raquel Alves de Souza.jpeg"
+        "name": "Lílian de Souza (2017)",
+        "image": "MonitoresFotos/Lílian de Souza.jpeg"
     },
     {
         "id": "monit14",
         "funcao": "ex-monitor",
-        "name": "Joyce Mirella dos Anjos Viana (2017 á 2020)",
-        "image": "MonitoresFotos/Joyce Mirella dos Anjos Viana.jpg"
+        "name": "Joyce Viana (2017 á 2020)",
+        "image": "MonitoresFotos/Joyce Viana.jpg"
     },
     {
         "id": "monit15",
         "funcao": "ex-monitor",
-        "name": "Joel Rodrigues Ruivo (2017)",
-        "image": "MonitoresFotos/Joel Rodrigues Ruivo.jpeg"
+        "name": "Joel Ruivo (2017)",
+        "image": "MonitoresFotos/Joel Ruivo.jpeg"
     },
     {
         "id": "monit16",
         "funcao": "ex-monitor",
-        "name": "Gabriel Norde Santos (2017 á 2018)",
-        "image": "MonitoresFotos/Gabriel Norde Santos.jpeg"
+        "name": "Gabriel Santos (2017 á 2018)",
+        "image": "MonitoresFotos/Gabriel Santos.jpeg"
     },
     {
         "id": "monit17",
         "funcao": "ex-monitor",
-        "name": "Amanda Cristina Ferreira Nalesso (2017 á 2018)",
-        "image": "MonitoresFotos/Amanda Cristina Ferreira Nalesso.jpeg"
+        "name": "Amanda Nalesso (2017 á 2018)",
+        "image": "MonitoresFotos/Amanda Nalesso.jpeg"
     },
     {
         "id": "monit18",
         "funcao": "ex-monitor",
-        "name": "Larissa Costa de Castro (2018)",
-        "image": "MonitoresFotos/Larissa Costa de Castro.jpeg"
+        "name": "Larissa de Castro (2018)",
+        "image": "MonitoresFotos/Larissa de Castro.jpeg"
     },
     {
         "id": "monit19",
@@ -149,32 +149,32 @@
     {
         "id": "monit21",
         "funcao": "ex-monitor",
-        "name": "Willian Rodrigues Ferreira (2019)",
-        "image": "MonitoresFotos/Willian Rodrigues Ferreira.jpg"
+        "name": "Willian Ferreira (2019)",
+        "image": "MonitoresFotos/Willian Ferreira.jpg"
     },
     {
         "id": "monit22",
         "funcao": "ex-monitor",
-        "name": "Raiane Almeida Nepomuceno (2019)",
-        "image": "MonitoresFotos/Raiane Almeida Nepomuceno.jpg"
+        "name": "Raiane Nepomuceno (2019)",
+        "image": "MonitoresFotos/Raiane Nepomuceno.jpg"
     },
     {
         "id": "monit23",
         "funcao": "ex-monitor",
-        "name": "Paulo Henrique Fios (2019)",
-        "image": "MonitoresFotos/Paulo Henrique Fios.jpg"
+        "name": "Paulo Fios (2019)",
+        "image": "MonitoresFotos/Paulo Fios.jpg"
     },
     {
         "id": "monit24",
         "funcao": "ex-monitor",
-        "name": "Matheus Rosales da Silva (2019)",
-        "image": "MonitoresFotos/Matheus Rosales da Silva.jpg"
+        "name": "Matheus da Silva (2019)",
+        "image": "MonitoresFotos/Matheus da Silva.jpg"
     },
     {
         "id": "monit25",
         "funcao": "ex-monitor",
-        "name": "Lucas Guedes Brazelino (2019)",
-        "image": "MonitoresFotos/Lucas Guedes Brazelino.jpg"
+        "name": "Lucas Brazelino (2019)",
+        "image": "MonitoresFotos/Lucas Brazelino.jpg"
     },
     {
         "id": "monit26",
@@ -185,8 +185,8 @@
     {
         "id": "monit27",
         "funcao": "ex-monitor",
-        "name": "Jhuliane Beatriz Spineli (2019)",
-        "image": "MonitoresFotos/Jhuliane Beatriz Spineli.jpg"
+        "name": "Jhuliane Spineli (2019)",
+        "image": "MonitoresFotos/Jhuliane Spineli.jpg"
     },
     {
         "id": "monit28",
@@ -197,8 +197,8 @@
     {
         "id": "monit29",
         "funcao": "ex-monitor",
-        "name": "Erika Raissa Bueno da Silva (2019)",
-        "image": "MonitoresFotos/Erika Raissa Bueno da Silva.jpg"
+        "name": "Erika da Silva (2019)",
+        "image": "MonitoresFotos/Erika da Silva.jpg"
     },
     {
         "id": "monit30",
@@ -209,26 +209,26 @@
     {
         "id": "monit31",
         "funcao": "ex-monitor",
-        "name": "Vitória Camilo Mendes (2022)",
-        "image": "MonitoresFotos/Vitória Camilo Mendes.jpg"
+        "name": "Vitória Mendes (2022)",
+        "image": "MonitoresFotos/Vitória Mendes.jpg"
     },
     {
         "id": "monit32",
         "funcao": "ex-monitor",
-        "name": "Thomas Caio Santos (2022)",
-        "image": "MonitoresFotos/Thomas Caio Santos.jpg"
+        "name": "Thomas Santos (2022)",
+        "image": "MonitoresFotos/Thomas Santos.jpg"
     },
     {
         "id": "monit33",
         "funcao": "ex-monitor",
-        "name": "Rogerio Faria Galeote (2022)",
-        "image": "MonitoresFotos/Rogerio Faria Galeote.jpg"
+        "name": "Rogerio Galeote (2022)",
+        "image": "MonitoresFotos/Rogerio Galeote.jpg"
     },
     {
         "id": "monit34",
         "funcao": "ex-monitor",
-        "name": "Mikaelle Santos Mendes Brito (2022)",
-        "image": "MonitoresFotos/Mikaelle Santos Mendes Brito.jpg"
+        "name": "Mikaelle Brito (2022)",
+        "image": "MonitoresFotos/Mikaelle Brito.jpg"
     },
     {
         "id": "monit35",
@@ -239,8 +239,8 @@
     {
         "id": "monit36",
         "funcao": "ex-monitor",
-        "name": "Kerolyn Cristina dos Santos (2022)",
-        "image": "MonitoresFotos/Kerolyn Cristina dos Santos.jpg"
+        "name": "Kerolyn dos Santos (2022)",
+        "image": "MonitoresFotos/Kerolyn dos Santos.jpg"
     },
     {
         "id": "monit37",
