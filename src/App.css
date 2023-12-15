@@ -92,9 +92,13 @@
 
 #home {
 
-padding-top: 63px;
+padding-top: 270px;
+padding-bottom: 289px; 
 
-padding-bottom: 213px;
+@media(max-width: 2560px){
+  padding-top: 159px;
+  padding-bottom: 232.5px;
+}
 
 @media(max-width: 1570px){
   padding-top: 159.5px;
@@ -139,9 +143,13 @@ padding-bottom: 213px;
 }
 
 #projeto { 
+  padding-top: 300px;
+  padding-bottom: 450px;  
 
-  padding-top: 95.8px;
-  padding-bottom: 200px; 
+  @media(max-width:2560px){
+    padding-top: 95.8px;
+    padding-bottom: 200px; 
+  }
 
   @media(max-width: 1241px){
     padding-top: 150px;
@@ -181,9 +189,14 @@ padding-bottom: 213px;
 
 #turmas {
 
-  padding-top: 128.5px;
-  padding-bottom: 231.5px;
-  
+  padding-top: 450px;
+  padding-bottom: 350px;
+   
+
+  @media(max-width: 2560px){
+    padding-top: 210px;
+    padding-bottom: 210px;
+  }
   @media(max-width: 1241px){
     padding-top: 180px;
     padding-bottom: 180px;
@@ -223,8 +236,13 @@ padding-bottom: 213px;
 
 #equipe {
 
-  padding-top: 128.5px;
-  padding-bottom: 231.5px;
+  padding-top: 360px;
+  padding-bottom: 480px;
+
+  @media(max-width: 2560px){
+    padding-top: 210px;
+    padding-bottom: 280px;
+  }
   
   @media(max-width: 1241px){
     padding-top: 180px;
@@ -262,8 +280,15 @@ padding-bottom: 213px;
 }
 
 #acoes {
-  padding-top: 50px;
-  padding-bottom: 231.5px; 
+  padding-top: 300px;
+  padding-bottom: 400px;
+  /* padding-top: 50px;
+  padding-bottom: 231.5px;  */
+
+  @media(max-width: 2560px){
+    padding-top: 120px;
+    padding-bottom: 180px;
+  }
 
   @media(max-width: 1241px){
     padding-top: 89.5px;
@@ -302,9 +327,17 @@ padding-bottom: 213px;
 }
 
 #contato {
+
+  padding-top: 230px;
+  padding-bottom: 280px;
   
-  padding-top: 50px;
-  padding-bottom: 152px;
+  /* padding-top: 50px;
+  padding-bottom: 152px; */
+ 
+  @media(max-width: 2560px){
+    padding-top: 120px;
+    padding-bottom: 180px;
+  }
 
   @media(max-width: 1241px){
     padding-top: 99px;

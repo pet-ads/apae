@@ -45,7 +45,7 @@ const Turmas = () => {
     const getDistinctYears = () => {
         const years = turma.map((item) => item.ano);
         const distinctYears = [...new Set(years)];
-        return distinctYears;
+        return distinctYears.sort((a, b) => b - a);
     };
     const distinctYears = getDistinctYears();
 

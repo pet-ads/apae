@@ -1,9 +1,10 @@
 .div-button-home {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: left;
+    align-self: flex-end;
+    width: 70%;
     flex-direction: row;
-    width: 100%;
+
 }
 
 .div-button-home * {
@@ -21,7 +22,6 @@
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    /* margin-right: 5%; */
     }
 
 .img-home img {
@@ -52,7 +52,6 @@
 .container-titulo-and-button{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 
@@ -78,7 +77,7 @@
         padding: 19px;
         background-color: var(--verde);
         font-size: 1.5vw;
-        margin-left: 9%;
+        /* margin-left: 9%; */
     }
 
     .home-container {
@@ -92,8 +91,8 @@
     .home-titulo {
         font-family: var(--fonte);
         font-size: 2.8vw;
-        text-align: left;
-        padding-left: 35%;
+        /* text-align: left;
+        padding-left: 35%; */
     }
 }
 
@@ -131,11 +130,15 @@
         margin-right: 20%;
         align-self: center;
     }
+    .div-button-home{
+        align-self: center;
+        justify-content: center;
+    }
 
     .div-button-home * {
        font-size: 1.5vw;
        padding: 1.9vw;
-       margin-left: 3%;
+       /* margin-left: 3%; */
     }
     /* @media (orientation: landscape) {
         .img-home img {
