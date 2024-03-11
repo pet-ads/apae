@@ -10,7 +10,7 @@ export default function Home({scrollToSection, closedMenuHeight}) {
             <section className="home-container">
 
                 <div className="img-home">
-                    <img src={Banner} alt="Img_Home" />
+                    <img src={Banner} alt="Logo do Projeto - Símbolo da neurodivergência sobre uma mão e três pessoas ao fundo"/>
                 </div>
 
                 <div className="container-titulo-and-button">
