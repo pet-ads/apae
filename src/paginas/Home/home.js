@@ -2,6 +2,7 @@ import "./home.css";
 import React from 'react';
 import Banner from './banner.png';
 
+
 export default function Home({scrollToSection, closedMenuHeight}) {
     return (
         <div>
@@ -17,9 +18,9 @@ export default function Home({scrollToSection, closedMenuHeight}) {
                     <p className="home-titulo">Atuando pela inclusão digital: uma parceria entre o IFSP e a APAE</p>
 
                     <div className="div-button-home">
-                        <button className="button-home" onClick={() => scrollToSection("projeto", closedMenuHeight)}>Conheça o Projeto</button>
+                        <button className="button-home-projeto" onClick={() => scrollToSection("projeto", closedMenuHeight)}>Conheça o Projeto</button>
+                        <a href="https://www.youtube.com/watch?v=LFMaYR4owGQ" className="fake-button-home-video" >Veja nosso vídeo</a>
                     </div>
-
                 </div>
 
             </section>

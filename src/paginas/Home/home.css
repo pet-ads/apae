@@ -4,6 +4,7 @@
     align-self: flex-end;
     width: 70%;
     flex-direction: row;
+    gap: 3%;
 
 }
 
@@ -12,7 +13,6 @@
     /* margin-right: 2%; */
     margin-bottom: 2.5%;
     padding: var(--tam-p-botao-geral);
-    background-color: var(--verde);
     color: var(--branco);
     border: none;
     border-radius: 5px;
@@ -22,7 +22,18 @@
     text-align: center;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    }
+}
+
+.div-button-home .button-home-projeto{
+    background-color: var(--verde);
+}
+
+.div-button-home .fake-button-home-video{
+    background-color: var(--azul);
+    text-transform: uppercase
+}
+
+
 
 .img-home img {
     width: min(23vw, 380px);
